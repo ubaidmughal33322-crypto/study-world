@@ -4,330 +4,313 @@
 <head>
 <meta name="google-site-verification" content="5ab1VycST9ssVsFxGMiQlL5Fi0bYosNuueKCSs6nYEc" />
     <title>Study World</title>
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Study World - Free Education</title>
+<title>Study World - Free Education</title>
 
-    <meta name="description"
-        content="Study World par free English, Math, Computer, Science aur school lessons seekhein.">
+<meta name="description"
+content="Study World par free English, Math, Computer, Science aur school lessons seekhein.">
 
-    <meta name="keywords"
-        content="Study World, English Grammar, Math, Computer, Science, Class 5, Class 6, Class 7">
+<meta name="keywords"
+content="Study World, English Grammar, Math, Computer, Science, Class 5, Class 6, Class 7">
 
-    <meta name="author" content="Study World">
+<meta name="author" content="Study World">
 
 
-    <!--
-    APNA EXISTING GOOGLE SEARCH CONSOLE
-    VERIFICATION TAG YAHAN RAKHNA HAI
-    -->
+<!-- APNA EXISTING GOOGLE SEARCH CONSOLE VERIFICATION TAG YAHAN RAKHO -->
 
 
-    <style>
+<style>
 
-        * {
-            box-sizing: border-box;
-        }
+* {
+    box-sizing: border-box;
+}
 
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            color: #222;
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #222;
 
-            background-image:
-                linear-gradient(
-                    rgba(240, 247, 255, 0.90),
-                    rgba(240, 247, 255, 0.94)
-                ),
-                url("https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=1600&q=80");
+    background-image:
+        linear-gradient(
+            rgba(240,247,255,0.90),
+            rgba(240,247,255,0.94)
+        ),
+        url("https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=1600&q=80");
 
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-        }
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
 
 
-        /* HEADER */
+/* HEADER */
 
-        header {
-            background: linear-gradient(
-                135deg,
-                #174ea6,
-                #2878d8
-            );
+header {
+    background: linear-gradient(
+        135deg,
+        #174ea6,
+        #2878d8
+    );
 
-            color: white;
-            text-align: center;
-            padding: 35px 15px;
+    color: white;
+    text-align: center;
+    padding: 35px 15px;
+}
 
-            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-        }
+header h1 {
+    margin: 0;
+    font-size: 40px;
+}
 
-        header h1 {
-            margin: 0;
-            font-size: 40px;
-        }
+header p {
+    font-size: 18px;
+}
 
-        header p {
-            margin: 10px 0 0;
-            font-size: 18px;
-        }
 
+/* NAVIGATION */
 
-        /* NAVIGATION */
+nav {
+    background: white;
+    padding: 15px;
+    text-align: center;
 
-        nav {
-            background: rgba(255,255,255,0.97);
-            padding: 15px;
-            text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 
-            position: sticky;
-            top: 0;
-            z-index: 1000;
+    box-shadow: 0 3px 10px #ccc;
+}
 
-            box-shadow: 0 3px 10px rgba(0,0,0,0.12);
-        }
+nav a {
+    color: #174ea6;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 8px;
+}
 
-        nav a {
-            color: #174ea6;
-            text-decoration: none;
-            font-weight: bold;
-            margin: 0 9px;
-        }
 
-        nav a:hover {
-            color: #e67e22;
-        }
+/* HERO */
 
+.hero {
+    text-align: center;
+    padding: 40px 20px 20px;
+}
 
-        /* HERO */
+.hero h2 {
+    color: #174ea6;
+    font-size: 30px;
+}
 
-        .hero {
-            text-align: center;
-            padding: 45px 20px 20px;
-        }
+.hero p {
+    font-size: 18px;
+}
 
-        .hero h2 {
-            font-size: 32px;
-            color: #174ea6;
-            margin-bottom: 10px;
-        }
 
-        .hero p {
-            font-size: 18px;
-            color: #555;
-        }
+/* SEARCH */
 
+.search-box {
+    text-align: center;
+    padding: 15px 20px 30px;
+}
 
-        /* SEARCH */
+.search-box input {
+    width: 90%;
+    max-width: 600px;
+    padding: 16px;
 
-        .search-box {
-            text-align: center;
-            padding: 15px 20px 30px;
-        }
+    border: 2px solid #174ea6;
+    border-radius: 12px;
 
-        .search-box input {
-            width: 90%;
-            max-width: 600px;
+    font-size: 17px;
+    outline: none;
+}
 
-            padding: 16px;
 
-            border: 2px solid #174ea6;
-            border-radius: 12px;
+/* CONTAINER */
 
-            font-size: 17px;
-            outline: none;
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 10px 20px 40px;
+}
 
-            background: white;
-        }
 
-        .search-box input:focus {
-            box-shadow: 0 0 12px rgba(23,78,166,0.25);
-        }
+/* TITLES */
 
+.section-title {
+    text-align: center;
+    color: #174ea6;
+    margin: 35px 0 20px;
+}
 
-        /* MAIN */
 
-        .container {
-            max-width: 950px;
-            margin: auto;
-            padding: 10px 20px 40px;
-        }
+/* CARDS */
 
+.card {
+    background: rgba(255,255,255,0.97);
 
-        /* SECTION TITLE */
+    margin: 22px auto;
+    padding: 26px;
 
-        .section-title {
-            text-align: center;
-            color: #174ea6;
-            margin: 35px 0 20px;
-            font-size: 28px;
-        }
+    max-width: 650px;
 
+    border-radius: 18px;
 
-        /* CARDS */
+    box-shadow: 0 7px 22px rgba(0,0,0,0.12);
+}
 
-        .card {
-            background: rgba(255,255,255,0.97);
+.card h2 {
+    color: #174ea6;
+    margin-top: 0;
+}
 
-            margin: 22px auto;
-            padding: 26px;
+.card p {
+    font-size: 17px;
+    line-height: 1.6;
+}
 
-            max-width: 650px;
 
-            border-radius: 18px;
+/* BUTTON */
 
-            box-shadow:
-                0 7px 22px rgba(0,0,0,0.12);
+.btn {
+    display: inline-block;
 
-            transition: 0.3s;
-        }
+    background: linear-gradient(
+        135deg,
+        #174ea6,
+        #2878d8
+    );
 
-        .card:hover {
-            transform: translateY(-4px);
+    color: white;
 
-            box-shadow:
-                0 12px 28px rgba(0,0,0,0.18);
-        }
+    padding: 13px 22px;
 
-        .card h2 {
-            color: #174ea6;
-            margin-top: 0;
-        }
+    border: none;
+    border-radius: 10px;
 
-        .card p {
-            font-size: 17px;
-            line-height: 1.6;
-        }
+    text-decoration: none;
 
+    font-weight: bold;
 
-        /* BUTTON */
+    cursor: pointer;
 
-        .btn {
-            display: inline-block;
+    font-size: 15px;
+}
 
-            background: linear-gradient(
-                135deg,
-                #174ea6,
-                #2878d8
-            );
+.btn:hover {
+    transform: scale(1.04);
+}
 
-            color: white;
 
-            padding: 13px 22px;
+/* LESSON CONTENT */
 
-            border-radius: 10px;
+.lesson-content {
+    display: none;
 
-            text-decoration: none;
+    margin-top: 20px;
 
-            font-weight: bold;
+    padding: 20px;
 
-            margin-top: 8px;
+    background: #eef5ff;
 
-            border: none;
+    border-left: 5px solid #174ea6;
 
-            cursor: pointer;
+    border-radius: 10px;
+}
 
-            font-size: 15px;
-        }
+.lesson-content p {
+    font-size: 16px;
+    line-height: 1.7;
+}
 
-        .btn:hover {
-            transform: scale(1.04);
-        }
 
+/* ABOUT */
 
-        /* ABOUT */
+.about {
+    background: white;
 
-        .about {
-            background: rgba(255,255,255,0.97);
+    max-width: 750px;
 
-            max-width: 750px;
+    margin: 35px auto;
 
-            margin: 35px auto;
+    padding: 35px 25px;
 
-            padding: 35px 25px;
+    border-radius: 18px;
 
-            border-radius: 18px;
+    text-align: center;
 
-            text-align: center;
+    box-shadow: 0 5px 18px #ccc;
+}
 
-            box-shadow: 0 7px 20px rgba(0,0,0,0.12);
-        }
+.about h2 {
+    color: #174ea6;
+}
 
-        .about h2 {
-            color: #174ea6;
-        }
+.about p {
+    font-size: 17px;
+    line-height: 1.7;
+}
 
-        .about p {
-            font-size: 17px;
-            line-height: 1.7;
-        }
 
+/* CONTACT */
 
-        /* CONTACT */
+.contact {
+    background: #174ea6;
 
-        .contact {
-            background: #174ea6;
+    color: white;
 
-            color: white;
+    max-width: 750px;
 
-            max-width: 750px;
+    margin: 35px auto;
 
-            margin: 35px auto;
+    padding: 35px 25px;
 
-            padding: 35px 25px;
+    border-radius: 18px;
 
-            border-radius: 18px;
+    text-align: center;
+}
 
-            text-align: center;
-        }
 
-        .contact h2 {
-            margin-top: 0;
-        }
+/* FOOTER */
 
+footer {
+    background: #0d2f63;
 
-        /* FOOTER */
+    color: white;
 
-        footer {
-            background: #0d2f63;
+    text-align: center;
 
-            color: white;
+    padding: 22px;
+}
 
-            text-align: center;
 
-            padding: 22px;
+/* MOBILE */
 
-            margin-top: 30px;
-        }
+@media (max-width:600px) {
 
+    header h1 {
+        font-size: 30px;
+    }
 
-        /* MOBILE */
+    .hero h2 {
+        font-size: 26px;
+    }
 
-        @media (max-width: 600px) {
+    nav a {
+        font-size: 14px;
+        margin: 0 4px;
+    }
 
-            header h1 {
-                font-size: 30px;
-            }
+    .card {
+        padding: 22px;
+    }
 
-            .hero h2 {
-                font-size: 26px;
-            }
+}
 
-            nav a {
-                margin: 0 5px;
-                font-size: 14px;
-            }
-
-            .card {
-                padding: 22px;
-            }
-
-        }
-
-    </style>
+</style>
 
 </head>
 
@@ -335,506 +318,661 @@
 <body>
 
 
-    <!-- HEADER -->
+<!-- HEADER -->
 
-    <header>
+<header>
 
-        <h1>📚 Study World</h1>
+<h1>📚 Study World</h1>
 
-        <p>
-            Free mein parhai aur learning tips
-        </p>
+<p>Free mein parhai aur learning tips</p>
 
-    </header>
+</header>
 
 
-    <!-- NAVIGATION -->
+<!-- NAVIGATION -->
 
-    <nav>
+<nav>
 
-        <a href="#home">Home</a>
+<a href="#home">Home</a>
 
-        <a href="#classes">Classes</a>
+<a href="#classes">Classes</a>
 
-        <a href="#lessons">Lessons</a>
+<a href="#lessons">Lessons</a>
 
-        <a href="#about">About</a>
+<a href="#about">About</a>
 
-        <a href="#contact">Contact</a>
+<a href="#contact">Contact</a>
 
-    </nav>
+</nav>
 
 
-    <!-- HERO -->
+<!-- HERO -->
 
-    <section class="hero" id="home">
+<section class="hero" id="home">
 
-        <h2>
-            🎓 Learn Something New Every Day
-        </h2>
+<h2>🎓 Learn Something New Every Day</h2>
 
-        <p>
-            English, Math, Computer, Science
-            aur school learning ke free lessons.
-        </p>
+<p>
+English, Math, Computer, Science
+aur school learning ke free lessons.
+</p>
 
-    </section>
+</section>
 
 
-    <!-- SEARCH -->
+<!-- SEARCH -->
 
-    <div class="search-box">
+<div class="search-box">
 
-        <input
-            type="text"
-            id="searchInput"
-            placeholder="🔎 Search lessons..."
-            onkeyup="searchLessons()"
-        >
+<input
+type="text"
+id="searchInput"
+placeholder="🔎 Search lessons..."
+onkeyup="searchLessons()"
+>
 
-    </div>
+</div>
 
 
-    <div class="container">
+<div class="container">
 
 
-        <!-- POPULAR LESSONS -->
+<!-- POPULAR LESSONS -->
 
-        <h2 class="section-title">
-            📚 Popular Lessons
-        </h2>
+<h2 class="section-title">
+📚 Popular Lessons
+</h2>
 
 
-        <div class="card">
+<div class="card">
 
-            <h2>📖 English Grammar</h2>
+<h2>📖 English Grammar</h2>
 
-            <p>
-                English grammar ke basic rules
-                easy tareeqe se seekhein.
-            </p>
+<p>
+English grammar ke basic rules
+easy tareeqe se seekhein.
+</p>
 
-            <a class="btn" href="grammar.html">
-                Read More →
-            </a>
+<a class="btn" href="grammar.html">
+Read More →
+</a>
 
-        </div>
+</div>
 
 
-        <div class="card">
+<div class="card">
 
-            <h2>🧮 Math Tips</h2>
+<h2>🧮 Math Tips</h2>
 
-            <p>
-                Math ko simple aur easy examples
-                ke saath seekhein.
-            </p>
+<p>
+Math ko simple examples aur
+practice ke saath seekhein.
+</p>
 
-            <a class="btn" href="math.html">
-                Read More →
-            </a>
+<a class="btn" href="math.html">
+Read More →
+</a>
 
-        </div>
+</div>
 
 
-        <div class="card">
+<div class="card">
 
-            <h2>💻 Computer Basics</h2>
+<h2>💻 Computer Basics</h2>
 
-            <p>
-                Computer ke basic concepts
-                beginners ke liye seekhein.
-            </p>
+<p>
+Computer ke basic concepts,
+hardware aur software seekhein.
+</p>
 
-            <a class="btn" href="computer.html">
-                Read More →
-            </a>
+<a class="btn" href="computer.html">
+Read More →
+</a>
 
-        </div>
+</div>
 
 
-        <!-- CLASSES -->
+<!-- CLASSES -->
 
-        <h2 class="section-title" id="classes">
-            🎓 School Classes
-        </h2>
+<h2 class="section-title" id="classes">
+🎓 School Classes
+</h2>
 
 
-        <div class="card">
+<div class="card">
 
-            <h2>📘 Class 5</h2>
+<h2>📘 Class 5</h2>
 
-            <p>
-                Class 5 ke English, Math aur
-                Computer lessons.
-            </p>
+<p>
+Class 5 ke English, Math aur
+Computer lessons.
+</p>
 
-            <a class="btn" href="class5.html">
-                Start Learning →
-            </a>
+<a class="btn" href="class5.html">
+Start Learning →
+</a>
 
-        </div>
+</div>
 
 
-        <div class="card">
+<div class="card">
 
-            <h2>📗 Class 6</h2>
+<h2>📗 Class 6</h2>
 
-            <p>
-                Class 6 ke English, Math aur
-                Computer lessons.
-            </p>
+<p>
+Class 6 ke English, Math aur
+Computer lessons.
+</p>
 
-            <a class="btn" href="class6.html">
-                Start Learning →
-            </a>
+<a class="btn" href="class6.html">
+Start Learning →
+</a>
 
-        </div>
+</div>
 
 
-        <div class="card">
+<div class="card">
 
-            <h2>📕 Class 7</h2>
+<h2>📕 Class 7</h2>
 
-            <p>
-                Class 7 ke English, Math aur
-                Computer lessons.
-            </p>
+<p>
+Class 7 ke English, Math aur
+Computer lessons.
+</p>
 
-            <a class="btn" href="class7.html">
-                Start Learning →
-            </a>
+<a class="btn" href="class7.html">
+Start Learning →
+</a>
 
-        </div>
+</div>
 
 
-        <!-- 10 NEW LESSONS -->
+<!-- NEW LESSONS -->
 
-        <h2 class="section-title" id="lessons">
-            🆕 New Educational Lessons
-        </h2>
+<h2 class="section-title" id="lessons">
+🆕 10 Educational Lessons
+</h2>
 
 
-        <!-- 1 -->
+<!-- 1 -->
 
-        <div class="card">
+<div class="card">
 
-            <h2>📝 Parts of Speech</h2>
+<h2>📝 Parts of Speech</h2>
 
-            <p>
-                Noun, Pronoun, Verb, Adjective aur
-                Adverb ke basic rules seekhein.
-            </p>
+<p>
+Noun, Pronoun, Verb, Adjective aur
+Adverb ke basic rules.
+</p>
 
-            <button class="btn"
-                onclick="showLesson(
-                'Parts of Speech',
-                'Noun kisi person, place ya thing ka naam hota hai. Verb action batata hai. Adjective kisi noun ki quality batata hai.'
-                )">
-                Learn Now
-            </button>
+<button class="btn"
+onclick="toggleLesson('lesson1')">
+Learn Now
+</button>
 
-        </div>
+<div class="lesson-content" id="lesson1">
 
+<p>
+<strong>Noun:</strong> Person, place ya thing ka naam.
+</p>
 
-        <!-- 2 -->
+<p>
+<strong>Verb:</strong> Kisi action ko show karta hai.
+</p>
 
-        <div class="card">
+<p>
+<strong>Adjective:</strong> Noun ki quality batata hai.
+</p>
 
-            <h2>⏰ English Tenses</h2>
+<p>
+<strong>Example:</strong>
+Ali is a smart boy.
+</p>
 
-            <p>
-                Present, Past aur Future Tenses ko
-                easy examples ke saath seekhein.
-            </p>
+</div>
 
-            <button class="btn"
-                onclick="showLesson(
-                'English Tenses',
-                'Present: I play. Past: I played. Future: I will play.'
-                )">
-                Learn Now
-            </button>
+</div>
 
-        </div>
 
+<!-- 2 -->
 
-        <!-- 3 -->
+<div class="card">
 
-        <div class="card">
+<h2>⏰ English Tenses</h2>
 
-            <h2>➗ Fractions</h2>
+<p>
+Present, Past aur Future Tenses
+easy examples ke saath.
+</p>
 
-            <p>
-                Fractions ko simple examples ke
-                saath samjhein.
-            </p>
+<button class="btn"
+onclick="toggleLesson('lesson2')">
+Learn Now
+</button>
 
-            <button class="btn"
-                onclick="showLesson(
-                'Fractions',
-                'Fraction kisi whole cheez ke part ko show karta hai. Example: 1/2 ka matlab one half hai.'
-                )">
-                Learn Now
-            </button>
+<div class="lesson-content" id="lesson2">
 
-        </div>
+<p>
+<strong>Present:</strong> I play cricket.
+</p>
 
+<p>
+<strong>Past:</strong> I played cricket.
+</p>
 
-        <!-- 4 -->
+<p>
+<strong>Future:</strong> I will play cricket.
+</p>
 
-        <div class="card">
+</div>
 
-            <h2>🔢 Basic Algebra</h2>
+</div>
 
-            <p>
-                Variables aur simple equations ko
-                easy tareeqe se seekhein.
-            </p>
 
-            <button class="btn"
-                onclick="showLesson(
-                'Basic Algebra',
-                'Example: x + 5 = 10. Dono sides se 5 minus karne par x = 5.'
-                )">
-                Learn Now
-            </button>
+<!-- 3 -->
 
-        </div>
+<div class="card">
 
+<h2>➗ Fractions</h2>
 
-        <!-- 5 -->
+<p>
+Fractions ko simple examples ke
+saath samjhein.
+</p>
 
-        <div class="card">
+<button class="btn"
+onclick="toggleLesson('lesson3')">
+Learn Now
+</button>
 
-            <h2>🌐 Internet Safety</h2>
+<div class="lesson-content" id="lesson3">
 
-            <p>
-                Internet use karte waqt privacy,
-                passwords aur safe browsing seekhein.
-            </p>
+<p>
+Fraction whole cheez ke parts ko show karta hai.
+</p>
 
-            <button class="btn"
-                onclick="showLesson(
-                'Internet Safety',
-                'Apna password, OTP aur private information unknown logon ke saath share na karein.'
-                )">
-                Learn Now
-            </button>
+<p>
+<strong>1/2</strong> = One Half
+</p>
 
-        </div>
+<p>
+<strong>1/4</strong> = One Quarter
+</p>
 
+<p>
+Upar wala number Numerator aur
+neeche wala Denominator hota hai.
+</p>
 
-        <!-- 6 -->
+</div>
 
-        <div class="card">
+</div>
 
-            <h2>💻 MS Word Basics</h2>
 
-            <p>
-                Typing, formatting aur documents ke
-                basic concepts seekhein.
-            </p>
+<!-- 4 -->
 
-            <button class="btn"
-                onclick="showLesson(
-                'MS Word Basics',
-                'MS Word documents create aur edit karne ke liye use hota hai.'
-                )">
-                Learn Now
-            </button>
+<div class="card">
 
-        </div>
+<h2>🔢 Basic Algebra</h2>
 
+<p>
+Variables aur simple equations seekhein.
+</p>
 
-        <!-- 7 -->
+<button class="btn"
+onclick="toggleLesson('lesson4')">
+Learn Now
+</button>
 
-        <div class="card">
+<div class="lesson-content" id="lesson4">
 
-            <h2>🔬 Basic Science</h2>
+<p>
+Example:
+</p>
 
-            <p>
-                Science ke basic concepts aur
-                daily life examples seekhein.
-            </p>
+<p>
+x + 5 = 10
+</p>
 
-            <button class="btn"
-                onclick="showLesson(
-                'Basic Science',
-                'Science humein nature aur duniya mein hone wale different processes ko samajhne mein madad karti hai.'
-                )">
-                Learn Now
-            </button>
+<p>
+x = 10 - 5
+</p>
 
-        </div>
+<p>
+<strong>x = 5</strong>
+</p>
 
+</div>
 
-        <!-- 8 -->
+</div>
 
-        <div class="card">
 
-            <h2>🌍 General Knowledge</h2>
+<!-- 5 -->
 
-            <p>
-                Countries, planets, inventions aur
-                interesting facts seekhein.
-            </p>
+<div class="card">
 
-            <button class="btn"
-                onclick="showLesson(
-                'General Knowledge',
-                'Earth hamara planet hai aur Sun ek star hai.'
-                )">
-                Learn Now
-            </button>
+<h2>🌐 Internet Safety</h2>
 
-        </div>
+<p>
+Internet ko safe tareeqe se use karna seekhein.
+</p>
 
+<button class="btn"
+onclick="toggleLesson('lesson5')">
+Learn Now
+</button>
 
-        <!-- 9 -->
+<div class="lesson-content" id="lesson5">
 
-        <div class="card">
+<p>
+Apna password aur OTP kisi ke saath
+share na karein.
+</p>
 
-            <h2>📚 Study Tips</h2>
+<p>
+Unknown links par click karne se pehle
+unhein check karein.
+</p>
 
-            <p>
-                Better learning ke liye time management,
-                revision aur practice tips seekhein.
-            </p>
+<p>
+Private information public websites par
+share na karein.
+</p>
 
-            <button class="btn"
-                onclick="showLesson(
-                'Study Tips',
-                'Roz thora thora study karein, notes banayein aur important topics ki revision karein.'
-                )">
-                Learn Now
-            </button>
+</div>
 
-        </div>
+</div>
 
 
-        <!-- 10 -->
+<!-- 6 -->
 
-        <div class="card">
+<div class="card">
 
-            <h2>🌐 HTML Basics</h2>
+<h2>💻 MS Word Basics</h2>
 
-            <p>
-                Website banane ke liye HTML ke
-                basic tags aur structure seekhein.
-            </p>
+<p>
+MS Word ke basic tools aur features seekhein.
+</p>
 
-            <button class="btn"
-                onclick="showLesson(
-                'HTML Basics',
-                'HTML website ka structure banane ke liye use hoti hai. Common tags mein h1, p, a aur img shamil hain.'
-                )">
-                Learn Now
-            </button>
+<button class="btn"
+onclick="toggleLesson('lesson6')">
+Learn Now
+</button>
 
-        </div>
+<div class="lesson-content" id="lesson6">
 
+<p>
+MS Word documents create aur edit
+karne ke liye use hota hai.
+</p>
 
-        <!-- ABOUT -->
+<p>
+Common tools:
+<strong>Bold, Italic, Underline, Font Size</strong>
+</p>
 
-        <div class="about" id="about">
+</div>
 
-            <h2>
-                📚 About Study World
-            </h2>
+</div>
 
-            <p>
-                Study World ek free educational website hai
-                jahan students English Grammar, Math,
-                Computer, Science aur school subjects
-                ke basic concepts seek sakte hain.
-            </p>
 
-        </div>
+<!-- 7 -->
 
+<div class="card">
 
-        <!-- CONTACT -->
+<h2>🔬 Basic Science</h2>
 
-        <div class="contact" id="contact">
+<p>
+Science ke basic concepts seekhein.
+</p>
 
-            <h2>
-                📩 Contact Us
-            </h2>
+<button class="btn"
+onclick="toggleLesson('lesson7')">
+Learn Now
+</button>
 
-            <p>
-                Email: studyworld@example.com
-            </p>
+<div class="lesson-content" id="lesson7">
 
-        </div>
+<p>
+Science humein nature aur duniya mein
+hone wale processes ko samajhne mein
+madad karti hai.
+</p>
 
+<p>
+Plants sunlight, water aur carbon dioxide
+ki madad se food banate hain.
+</p>
 
-    </div>
+</div>
 
+</div>
 
-    <!-- FOOTER -->
 
-    <footer>
+<!-- 8 -->
 
-        <p>
-            © 2026 Study World | Free Education
-        </p>
+<div class="card">
 
-        <p>
-            Learn Today • Grow Tomorrow 🎓
-        </p>
+<h2>🌍 General Knowledge</h2>
 
-    </footer>
+<p>
+Duniya aur interesting facts ke baare mein seekhein.
+</p>
 
+<button class="btn"
+onclick="toggleLesson('lesson8')">
+Learn Now
+</button>
 
-    <!-- JAVASCRIPT -->
+<div class="lesson-content" id="lesson8">
 
-    <script>
+<p>
+Earth hamara planet hai.
+</p>
 
+<p>
+Sun hamare Solar System ka star hai.
+</p>
 
-        /* SEARCH */
+<p>
+Solar System mein Sun aur us ke
+around orbit karne wale planets shamil hain.
+</p>
 
-        function searchLessons() {
+</div>
 
-            let input =
-                document
-                .getElementById("searchInput")
-                .value
-                .toLowerCase();
+</div>
 
-            let cards =
-                document
-                .querySelectorAll(".card");
 
-            cards.forEach(function(card) {
+<!-- 9 -->
 
-                let text =
-                    card.innerText.toLowerCase();
+<div class="card">
 
-                if (text.includes(input)) {
+<h2>📚 Study Tips</h2>
 
-                    card.style.display = "block";
+<p>
+Better study aur revision ke useful tips.
+</p>
 
-                } else {
+<button class="btn"
+onclick="toggleLesson('lesson9')">
+Learn Now
+</button>
 
-                    card.style.display = "none";
+<div class="lesson-content" id="lesson9">
 
-                }
+<p>
+• Daily study timetable banayein.
+</p>
 
-            });
+<p>
+• Important points ke notes banayein.
+</p>
+
+<p>
+• Difficult topics ki practice karein.
+</p>
+
+<p>
+• Regular revision karein.
+</p>
+
+</div>
+
+</div>
+
+
+<!-- 10 -->
+
+<div class="card">
+
+<h2>🌐 HTML Basics</h2>
+
+<p>
+Website banane ke HTML basics seekhein.
+</p>
+
+<button class="btn"
+onclick="toggleLesson('lesson10')">
+Learn Now
+</button>
+
+<div class="lesson-content" id="lesson10">
+
+<p>
+HTML website ka structure banane ke
+liye use hoti hai.
+</p>
+
+<p>
+<strong>Common HTML tags:</strong>
+</p>
+
+<p>
+&lt;h1&gt; Heading &lt;/h1&gt;
+</p>
+
+<p>
+&lt;p&gt; Paragraph &lt;/p&gt;
+</p>
+
+<p>
+&lt;a&gt; Link &lt;/a&gt;
+</p>
+
+<p>
+HTML ke saath CSS design aur
+JavaScript interactivity ke liye use hoti hai.
+</p>
+
+</div>
+
+</div>
+
+
+<!-- ABOUT -->
+
+<div class="about" id="about">
+
+<h2>📚 About Study World</h2>
+
+<p>
+Study World ek free educational website hai
+jahan students English, Math, Computer,
+Science aur school subjects ke basic concepts
+seekh sakte hain.
+</p>
+
+</div>
+
+
+<!-- CONTACT -->
+
+<div class="contact" id="contact">
+
+<h2>📩 Contact Us</h2>
+
+<p>
+Email: studyworld@example.com
+</p>
+
+</div>
+
+
+</div>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+<p>
+© 2026 Study World | Free Education
+</p>
+
+<p>
+Learn Today • Grow Tomorrow 🎓
+</p>
+
+</footer>
+
+
+<script>
+
+
+/* SEARCH */
+
+function searchLessons() {
+
+    let input =
+        document
+        .getElementById("searchInput")
+        .value
+        .toLowerCase();
+
+    let cards =
+        document.querySelectorAll(".card");
+
+    cards.forEach(function(card) {
+
+        let text =
+            card.innerText.toLowerCase();
+
+        if (text.includes(input)) {
+
+            card.style.display = "block";
+
+        } else {
+
+            card.style.display = "none";
 
         }
 
+    });
 
-        /* LESSON POPUP */
-
-        function showLesson(title, text) {
-
-            alert(title + "\n\n" + text);
-
-        }
+}
 
 
-    </script>
+/* OPEN / CLOSE LESSON */
+
+function toggleLesson(id) {
+
+    let lesson =
+        document.getElementById(id);
+
+    if (lesson.style.display === "block") {
+
+        lesson.style.display = "none";
+
+    } else {
+
+        lesson.style.display = "block";
+
+    }
+
+}
+
+</script>
 
 
 </body>
