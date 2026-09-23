@@ -1,288 +1,183 @@
-E html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Class 9 Complete Study - Study World</title>
+<title>Class 9 Study World Pakistan – Complete Notes</title>
+
+<meta name="description"
+content="Class 9 complete study material for English, Urdu, Mathematics, Physics, Chemistry, Biology, Computer, Islamiat and Tarjuma-tul-Quran.">
 
 <style>
-*{box-sizing:border-box}
+
+*{
+    box-sizing:border-box;
+}
 
 body{
     margin:0;
     font-family:Arial,sans-serif;
-    background:#f1f5f9;
-    color:#173b68;
+    background:#eef4ff;
+    color:#1f2937;
 }
 
 header{
-    background:linear-gradient(135deg,#1261a0,#008b62);
+    background:linear-gradient(135deg,#174ea6,#0b7dda);
     color:white;
     text-align:center;
-    padding:25px 12px;
+    padding:30px 15px;
 }
 
-header h1{margin:0 0 8px}
-header p{margin:6px}
+header h1{
+    margin:0 0 8px;
+    font-size:28px;
+}
 
-nav{
+header p{
+    margin:0;
+}
+
+.back{
+    display:inline-block;
+    margin-top:15px;
+    padding:10px 16px;
     background:white;
-    padding:12px;
-    text-align:center;
-    box-shadow:0 2px 8px #ccc;
-}
-
-nav a{
     color:#174ea6;
     text-decoration:none;
+    border-radius:8px;
     font-weight:bold;
-    margin:0 8px;
+}
+
+.container{
+    max-width:1050px;
+    margin:auto;
+    padding:18px;
 }
 
 .search{
-    text-align:center;
-    padding:20px;
-}
-
-.search input{
-    width:92%;
-    max-width:650px;
+    width:100%;
     padding:15px;
     border:2px solid #174ea6;
     border-radius:12px;
     font-size:16px;
+    outline:none;
+    margin-bottom:20px;
 }
 
 .subject{
     background:white;
-    margin:18px 12px;
-    padding:15px;
+    margin:18px 0;
     border-radius:15px;
-    box-shadow:0 3px 12px #d1d5db;
-}
-
-.subject h2{
-    border-bottom:1px solid #ddd;
-    padding-bottom:12px;
-}
-
-details{
-    margin:10px 0;
-    background:#f8fafc;
-    border:1px solid #e2e8f0;
-    border-radius:10px;
     overflow:hidden;
+    box-shadow:0 4px 14px #cbd5e1;
 }
 
-summary{
+.subject-title{
+    background:#174ea6;
+    color:white;
+    padding:18px;
+    font-size:21px;
+    font-weight:bold;
+}
+
+.chapter{
+    border-top:1px solid #e5e7eb;
+}
+
+.chapter summary{
     padding:15px;
     cursor:pointer;
     font-weight:bold;
     color:#174ea6;
+    background:#f8fbff;
+    font-size:16px;
 }
 
-summary:hover{
+.chapter summary:hover{
     background:#eaf2ff;
 }
 
 .content{
-    background:white;
     padding:15px;
-    line-height:1.7;
-    border-top:1px solid #ddd;
-}
-
-.content h3{
-    color:#1261a0;
 }
 
 .box{
     background:#f1f5f9;
-    padding:12px;
-    margin:10px 0;
-    border-radius:10px;
+    border-left:5px solid #174ea6;
+    padding:13px;
+    border-radius:9px;
+    margin-bottom:12px;
 }
 
-.mcq{
-    background:#eef6ff;
-    padding:12px;
-    margin:8px 0;
+.box h3{
+    margin-top:0;
+    color:#174ea6;
+}
+
+.btn{
+    display:inline-block;
+    background:#174ea6;
+    color:white;
+    padding:9px 13px;
     border-radius:8px;
+    text-decoration:none;
+    margin-top:5px;
 }
 
 footer{
-    background:#173b68;
+    background:#174ea6;
     color:white;
     text-align:center;
     padding:25px;
     margin-top:30px;
 }
 
-footer a{color:white}
-
-@media(max-width:600px){
-    header h1{font-size:22px}
-    .subject{margin:12px 8px}
-}
 </style>
 </head>
 
+
 <body>
 
+
 <header>
-<h1>📚 Class 9 Complete Study</h1>
-<p>Study World</p>
+
+<h1>📚 Class 9 Study World Pakistan</h1>
+
 <p>
-English • Urdu • Mathematics • Islamiat • Tarjuma-tul-Quran •
-Physics • Chemistry • Biology • Computer
+New Syllabus 2025–26 — Complete Study Material
 </p>
+
+<a class="back" href="index.html">
+← Back to Home
+</a>
+
 </header>
 
-<nav>
-<a href="index.html">🏠 Home</a>
-<a href="#subjects">📚 Subjects</a>
-<a href="#contact">📩 Contact</a>
-</nav>
 
-<div class="search">
+<div class="container">
+
+
 <input
 id="search"
+class="search"
 type="text"
 placeholder="🔎 Search subject or chapter..."
-onkeyup="searchData()">
-</div>
-
-<div id="subjects">
+onkeyup="searchStudy()"
+>
 
 
 <!-- ================= ENGLISH ================= -->
 
 <section class="subject">
 
-<h2>📘 English</h2>
-
-<details>
-<summary>Chapter 1 — The Saviour of Mankind</summary>
-<div class="content">
-
-<h3>📖 Notes</h3>
-<p>
-Study the life, character, teachings and important events
-discussed in the lesson.
-</p>
-
-<h3>✏️ Short Questions</h3>
-<ul>
-<li>What is the main idea of the chapter?</li>
-<li>What important qualities are discussed?</li>
-<li>What lesson do we learn from the chapter?</li>
-</ul>
-
-<h3>📝 Long Questions</h3>
-<ul>
-<li>Write a detailed summary of the chapter.</li>
-<li>Explain the main message of the lesson.</li>
-</ul>
-
-<h3>❓ MCQs</h3>
-<div class="mcq">1. The chapter mainly discusses important moral and historical ideas.</div>
-<div class="mcq">2. The central purpose of the lesson is to teach positive values.</div>
-
-<h3>📚 Practice</h3>
-<div class="box">
-Revise vocabulary, grammar, comprehension and textbook questions.
+<div class="subject-title">
+📘 English
 </div>
 
-</div>
-</details>
 
-<details>
-<summary>Chapter 2 — Patriotism</summary>
-<div class="content">
-
-<h3>📖 Notes</h3>
-<p>
-Patriotism means love, loyalty and responsibility towards one's country.
-</p>
-
-<h3>✏️ Short Questions</h3>
-<ul>
-<li>What is patriotism?</li>
-<li>Why is patriotism important?</li>
-<li>How can students serve their country?</li>
-</ul>
-
-<h3>📝 Long Questions</h3>
-<ul>
-<li>Explain the importance of patriotism.</li>
-<li>Write a detailed note on responsible citizenship.</li>
-</ul>
-
-<h3>❓ MCQs</h3>
-<div class="mcq">1. Patriotism means love and loyalty towards one's country.</div>
-<div class="mcq">2. A responsible citizen follows laws and helps society.</div>
-
-<h3>📚 Practice</h3>
-<div class="box">Practice vocabulary, comprehension and grammar.</div>
-
-</div>
-</details>
-
-<details>
-<summary>Chapter 3 — Daffodils</summary>
-<div class="content">
-
-<h3>📖 Notes</h3>
-<p>
-Study the poem, its theme, imagery, vocabulary and central idea.
-</p>
-
-<h3>✏️ Short Questions</h3>
-<ul>
-<li>What is the central idea of the poem?</li>
-<li>What does the poet observe?</li>
-<li>What feeling does nature create?</li>
-</ul>
-
-<h3>📝 Long Questions</h3>
-<ul>
-<li>Explain the central idea of the poem.</li>
-<li>Write a summary of the poem.</li>
-</ul>
-
-<h3>📚 Practice</h3>
-<div class="box">Practice explanation of important lines and poetic devices.</div>
-
-</div>
-</details>
-
-<details>
-<summary>Chapter 4 — Hazrat Muhammad ﷺ</summary>
-<div class="content">
-
-<h3>📖 Notes</h3>
-<p>
-Study the important qualities, teachings and events presented in the lesson.
-</p>
-
-<h3>✏️ Short Questions</h3>
-<ul>
-<li>What is the main message of the lesson?</li>
-<li>Which qualities are highlighted?</li>
-</ul>
-
-<h3>📝 Long Questions</h3>
-<ul>
-<li>Explain the main teachings of the lesson.</li>
-<li>Write a detailed summary.</li>
-</ul>
-
-<h3>📚 Practice</h3>
-<div class="box">Practice vocabulary and comprehension questions.</div>
-
-</div>
-</details>
+<div id="english"></div>
 
 </section>
 
@@ -291,75 +186,11 @@ Study the important qualities, teachings and events presented in the lesson.
 
 <section class="subject">
 
-<h2>📕 Urdu</h2>
-
-<details>
-<summary>سبق 1 — حمد</summary>
-<div class="content">
-
-<h3>📖 نوٹس</h3>
-<p>حمد میں اللہ تعالیٰ کی حمد و ثنا اور اس کی نعمتوں کا بیان ہوتا ہے۔</p>
-
-<h3>✏️ مختصر سوالات</h3>
-<ul>
-<li>حمد کا مرکزی خیال کیا ہے؟</li>
-<li>مشکل الفاظ کے معنی لکھیں۔</li>
-<li>حمد میں کن صفات کا ذکر ہے؟</li>
-</ul>
-
-<h3>📝 طویل سوال</h3>
-<p>حمد کا مرکزی خیال اپنے الفاظ میں بیان کریں۔</p>
-
-<h3>📚 مشق</h3>
-<div class="box">تشریح، الفاظ کے معنی اور سوالات کی پریکٹس کریں۔</div>
-
+<div class="subject-title">
+📕 Urdu
 </div>
-</details>
 
-<details>
-<summary>سبق 2 — نعت</summary>
-<div class="content">
-
-<h3>📖 نوٹس</h3>
-<p>نعت رسول اکرم ﷺ کی تعریف و توصیف پر مشتمل ہوتی ہے۔</p>
-
-<h3>✏️ مختصر سوالات</h3>
-<ul>
-<li>نعت کسے کہتے ہیں؟</li>
-<li>نعت کا مرکزی خیال کیا ہے؟</li>
-<li>اہم الفاظ کے معنی لکھیں۔</li>
-</ul>
-
-<h3>📝 طویل سوال</h3>
-<p>نعت کے مرکزی پیغام کی وضاحت کریں۔</p>
-
-<h3>📚 مشق</h3>
-<div class="box">تشریح اور سوالات کی پریکٹس کریں۔</div>
-
-</div>
-</details>
-
-<details>
-<summary>سبق 3 — سبق اور نظم</summary>
-<div class="content">
-
-<h3>📖 نوٹس</h3>
-<p>سبق کا خلاصہ، مرکزی خیال، مشکل الفاظ اور اہم نکات تیار کریں۔</p>
-
-<h3>✏️ مختصر سوالات</h3>
-<ul>
-<li>سبق کا مرکزی خیال کیا ہے؟</li>
-<li>اہم نکات لکھیں۔</li>
-</ul>
-
-<h3>📝 طویل سوال</h3>
-<p>سبق کا خلاصہ اپنے الفاظ میں لکھیں۔</p>
-
-<h3>📚 مشق</h3>
-<div class="box">خلاصہ، تشریح اور سوالات کی پریکٹس کریں۔</div>
-
-</div>
-</details>
+<div id="urdu"></div>
 
 </section>
 
@@ -368,371 +199,11 @@ Study the important qualities, teachings and events presented in the lesson.
 
 <section class="subject">
 
-<h2>📐 Mathematics</h2>
-
-<details>
-<summary>Chapter 1 — Matrices and Determinants</summary>
-<div class="content">
-
-<h3>📖 Topics</h3>
-<ul>
-<li>Matrices</li>
-<li>Order of matrix</li>
-<li>Types of matrices</li>
-<li>Determinants</li>
-<li>Matrix operations</li>
-</ul>
-
-<h3>✏️ Short Questions</h3>
-<ul>
-<li>What is a matrix?</li>
-<li>What is the order of a matrix?</li>
-<li>What is a determinant?</li>
-</ul>
-
-<h3>📝 Long Questions</h3>
-<ul>
-<li>Explain different types of matrices with examples.</li>
-<li>Perform operations on given matrices.</li>
-</ul>
-
-<h3>🧮 Practice</h3>
-<div class="box">Solve examples and numerical questions from your textbook.</div>
-
+<div class="subject-title">
+📐 Mathematics
 </div>
-</details>
 
-<details>
-<summary>Chapter 2 — Real and Complex Numbers</summary>
-<div class="content">
-
-<h3>📖 Topics</h3>
-<ul>
-<li>Real numbers</li>
-<li>Complex numbers</li>
-<li>Properties of numbers</li>
-<li>Operations</li>
-</ul>
-
-<h3>✏️ Short Questions</h3>
-<ul>
-<li>Define real number.</li>
-<li>Define complex number.</li>
-<li>Identify real and imaginary parts.</li>
-</ul>
-
-<h3>🧮 Practice</h3>
-<div class="box">Practice numerical problems involving real and complex numbers.</div>
-
-</div>
-</details>
-
-<details>
-<summary>Chapter 3 — Logarithms</summary>
-<div class="content">
-
-<h3>📖 Topics</h3>
-<ul>
-<li>Logarithm</li>
-<li>Base</li>
-<li>Laws of logarithms</li>
-<li>Calculations</li>
-</ul>
-
-<h3>✏️ Short Questions</h3>
-<ul>
-<li>What is a logarithm?</li>
-<li>State the basic laws of logarithms.</li>
-</ul>
-
-<h3>🧮 Practice</h3>
-<div class="box">Solve logarithmic expressions and numerical questions.</div>
-
-</div>
-</details>
-
-<details>
-<summary>Chapter 4 — Algebraic Expressions and Algebraic Formulas</summary>
-<div class="content">
-
-<h3>📖 Topics</h3>
-<ul>
-<li>Algebraic expressions</li>
-<li>Identities</li>
-<li>Factorization</li>
-<li>Algebraic formulas</li>
-</ul>
-
-<h3>✏️ Short Questions</h3>
-<ul>
-<li>What is an algebraic expression?</li>
-<li>What is factorization?</li>
-<li>Write common algebraic identities.</li>
-</ul>
-
-<h3>🧮 Practice</h3>
-<div class="box">Practice expansion and factorization problems.</div>
-
-</div>
-</details>
-
-<details>
-<summary>Chapter 5 — Linear Equations and Inequalities</summary>
-<div class="content">
-
-<h3>📖 Topics</h3>
-<ul>
-<li>Linear equations</li>
-<li>Inequalities</li>
-<li>Solutions</li>
-<li>Word problems</li>
-</ul>
-
-<h3>✏️ Practice</h3>
-<div class="box">Solve linear equations and inequalities step by step.</div>
-
-</div>
-</details>
-
-<details>
-<summary>Chapter 6 — Geometry</summary>
-<div class="content">
-
-<h3>📖 Topics</h3>
-<ul>
-<li>Angles</li>
-<li>Triangles</li>
-<li>Geometrical reasoning</li>
-<li>Properties of shapes</li>
-</ul>
-
-<h3>🧮 Practice</h3>
-<div class="box">Practice geometrical constructions and proofs.</div>
-
-</div>
-</details>
-
-<details>
-<summary>Chapter 7 — Coordinate Geometry</summary>
-<div class="content">
-
-<ul>
-<li>Cartesian plane</li>
-<li>Coordinates</li>
-<li>Points</li>
-<li>Graphs</li>
-</ul>
-
-<div class="box">Practice plotting points and solving coordinate problems.</div>
-
-</div>
-</details>
-
-<details>
-<summary>Chapter 8 — Trigonometry</summary>
-<div class="content">
-
-<ul>
-<li>Angles</li>
-<li>Trigonometric ratios</li>
-<li>Right triangles</li>
-<li>Applications</li>
-</ul>
-
-<div class="box">Practice trigonometric ratio questions.</div>
-
-</div>
-</details>
-
-<details>
-<summary>Chapter 9 — Graphs of Functions</summary>
-<div class="content">
-
-<ul>
-<li>Functions</li>
-<li>Graphs</li>
-<li>Domain</li>
-<li>Range</li>
-</ul>
-
-<div class="box">Practice drawing and interpreting graphs.</div>
-
-</div>
-</details>
-
-<details>
-<summary>Chapter 10 — Statistics</summary>
-<div class="content">
-
-<ul>
-<li>Data</li>
-<li>Tables</li>
-<li>Graphs</li>
-<li>Mean</li>
-<li>Median</li>
-<li>Mode</li>
-</ul>
-
-<div class="box">Practice statistical calculations.</div>
-
-</div>
-</details>
-
-</section>
-
-
-<!-- ================= ISLAMIAT ================= -->
-
-<section class="subject">
-
-<h2>🕌 Islamiat</h2>
-
-<details>
-<summary>Chapter 1 — Quran Majeed</summary>
-<div class="content">
-
-<h3>📖 Topics</h3>
-<ul>
-<li>Importance of Quran</li>
-<li>Quranic teachings</li>
-<li>Guidance for human life</li>
-</ul>
-
-<h3>✏️ Questions</h3>
-<ul>
-<li>Why is Quran important?</li>
-<li>What guidance does Quran provide?</li>
-</ul>
-
-<h3>📝 Long Question</h3>
-<p>Explain the importance of Quran in the life of a Muslim.</p>
-
-</div>
-</details>
-
-<details>
-<summary>Chapter 2 — Seerat-un-Nabi ﷺ</summary>
-<div class="content">
-
-<ul>
-<li>Life of Prophet Muhammad ﷺ</li>
-<li>Character</li>
-<li>Important events</li>
-<li>Teachings</li>
-</ul>
-
-<h3>✏️ Questions</h3>
-<ul>
-<li>What can we learn from the Seerah?</li>
-<li>Describe important qualities.</li>
-</ul>
-
-</div>
-</details>
-
-<details>
-<summary>Chapter 3 — Islamic Ethics</summary>
-<div class="content">
-
-<ul>
-<li>Truthfulness</li>
-<li>Justice</li>
-<li>Honesty</li>
-<li>Respect</li>
-<li>Good manners</li>
-</ul>
-
-<div class="box">Prepare definitions, examples and practical applications.</div>
-
-</div>
-</details>
-
-<details>
-<summary>Chapter 4 — Islamic Society</summary>
-<div class="content">
-
-<ul>
-<li>Brotherhood</li>
-<li>Rights</li>
-<li>Responsibilities</li>
-<li>Social values</li>
-</ul>
-
-</div>
-</details>
-
-<details>
-<summary>Chapter 5 — Islamic Worship</summary>
-<div class="content">
-
-<ul>
-<li>Salah</li>
-<li>Fasting</li>
-<li>Zakat</li>
-<li>Hajj</li>
-</ul>
-
-<div class="box">Prepare definitions, importance and basic teachings.</div>
-
-</div>
-</details>
-
-</section>
-
-
-<!-- ================= TARJUMA ================= -->
-
-<section class="subject">
-
-<h2>📖 Tarjuma-tul-Quran</h2>
-
-<details>
-<summary>Unit 1 — Quranic Guidance</summary>
-<div class="content">
-
-<h3>📖 Study</h3>
-<p>Selected verses, translation, vocabulary and central message.</p>
-
-<h3>✏️ Practice</h3>
-<ul>
-<li>Translate important words.</li>
-<li>Learn meanings.</li>
-<li>Understand the central message.</li>
-</ul>
-
-</div>
-</details>
-
-<details>
-<summary>Unit 2 — Moral Teachings</summary>
-<div class="content">
-
-<p>Study selected verses and their moral teachings.</p>
-
-<div class="box">Practice translation and vocabulary.</div>
-
-</div>
-</details>
-
-<details>
-<summary>Unit 3 — Social Teachings</summary>
-<div class="content">
-
-<p>Study selected verses related to social responsibilities and values.</p>
-
-<div class="box">Prepare translation and important words.</div>
-
-</div>
-</details>
-
-<details>
-<summary>Unit 4 — Guidance for Life</summary>
-<div class="content">
-
-<p>Study the selected verses, meanings and practical guidance.</p>
-
-</div>
-</details>
+<div id="math"></div>
 
 </section>
 
@@ -741,138 +212,11 @@ Study the important qualities, teachings and events presented in the lesson.
 
 <section class="subject">
 
-<h2>⚡ Physics</h2>
-
-<details>
-<summary>Chapter 1 — Physical Quantities and Measurements</summary>
-<div class="content">
-
-<ul>
-<li>Physical quantities</li>
-<li>SI units</li>
-<li>Measuring instruments</li>
-<li>Accuracy</li>
-<li>Precision</li>
-</ul>
-
-<h3>✏️ Short Questions</h3>
-<ul>
-<li>What is a physical quantity?</li>
-<li>What is an SI unit?</li>
-<li>Differentiate accuracy and precision.</li>
-</ul>
-
-<h3>🧮 Numericals</h3>
-<div class="box">Practice unit conversion and measurement problems.</div>
-
+<div class="subject-title">
+⚡ Physics
 </div>
-</details>
 
-<details>
-<summary>Chapter 2 — Kinematics</summary>
-<div class="content">
-
-<ul>
-<li>Motion</li>
-<li>Distance</li>
-<li>Displacement</li>
-<li>Speed</li>
-<li>Velocity</li>
-<li>Acceleration</li>
-</ul>
-
-<h3>🧮 Numericals</h3>
-<div class="box">Practice speed, velocity and acceleration calculations.</div>
-
-</div>
-</details>
-
-<details>
-<summary>Chapter 3 — Dynamics</summary>
-<div class="content">
-
-<ul>
-<li>Force</li>
-<li>Mass</li>
-<li>Newton's laws</li>
-<li>Momentum</li>
-</ul>
-
-<div class="box">Practice force and momentum numericals.</div>
-
-</div>
-</details>
-
-<details>
-<summary>Chapter 4 — Turning Effect of Forces</summary>
-<div class="content">
-
-<ul>
-<li>Moment of force</li>
-<li>Torque</li>
-<li>Equilibrium</li>
-</ul>
-
-</div>
-</details>
-
-<details>
-<summary>Chapter 5 — Work, Energy and Power</summary>
-<div class="content">
-
-<ul>
-<li>Work</li>
-<li>Energy</li>
-<li>Power</li>
-<li>Kinetic energy</li>
-<li>Potential energy</li>
-</ul>
-
-<div class="box">Practice formulas and numerical questions.</div>
-
-</div>
-</details>
-
-<details>
-<summary>Chapter 6 — States of Matter</summary>
-<div class="content">
-
-<ul>
-<li>Solids</li>
-<li>Liquids</li>
-<li>Gases</li>
-<li>Properties of matter</li>
-</ul>
-
-</div>
-</details>
-
-<details>
-<summary>Chapter 7 — Thermal Properties</summary>
-<div class="content">
-
-<ul>
-<li>Temperature</li>
-<li>Heat</li>
-<li>Thermal expansion</li>
-</ul>
-
-</div>
-</details>
-
-<details>
-<summary>Chapter 8 — Waves</summary>
-<div class="content">
-
-<ul>
-<li>Wave motion</li>
-<li>Frequency</li>
-<li>Wavelength</li>
-<li>Sound</li>
-</ul>
-
-</div>
-</details>
+<div id="physics"></div>
 
 </section>
 
@@ -881,129 +225,11 @@ Study the important qualities, teachings and events presented in the lesson.
 
 <section class="subject">
 
-<h2>🧪 Chemistry</h2>
-
-<details>
-<summary>Chapter 1 — States of Matter</summary>
-<div class="content">
-
-<ul>
-<li>Solid</li>
-<li>Liquid</li>
-<li>Gas</li>
-<li>Changes of state</li>
-</ul>
-
-<div class="box">Prepare definitions and differences.</div>
-
+<div class="subject-title">
+🧪 Chemistry
 </div>
-</details>
 
-<details>
-<summary>Chapter 2 — Atomic Structure</summary>
-<div class="content">
-
-<ul>
-<li>Atom</li>
-<li>Proton</li>
-<li>Neutron</li>
-<li>Electron</li>
-<li>Atomic number</li>
-<li>Mass number</li>
-</ul>
-
-<h3>✏️ Questions</h3>
-<ul>
-<li>What is an atom?</li>
-<li>What is atomic number?</li>
-<li>What is mass number?</li>
-</ul>
-
-</div>
-</details>
-
-<details>
-<summary>Chapter 3 — Chemical Bonding</summary>
-<div class="content">
-
-<ul>
-<li>Ionic bonding</li>
-<li>Covalent bonding</li>
-<li>Metallic bonding</li>
-</ul>
-
-<div class="box">Practice definitions and differences between bonds.</div>
-
-</div>
-</details>
-
-<details>
-<summary>Chapter 4 — Stoichiometry</summary>
-<div class="content">
-
-<ul>
-<li>Chemical equations</li>
-<li>Mole</li>
-<li>Molar mass</li>
-<li>Chemical calculations</li>
-</ul>
-
-<div class="box">Practice numerical problems.</div>
-
-</div>
-</details>
-
-<details>
-<summary>Chapter 5 — Energetics</summary>
-<div class="content">
-
-<ul>
-<li>Energy changes</li>
-<li>Exothermic reactions</li>
-<li>Endothermic reactions</li>
-</ul>
-
-</div>
-</details>
-
-<details>
-<summary>Chapter 6 — Equilibria</summary>
-<div class="content">
-
-<p>Study chemical equilibrium and related concepts.</p>
-
-<div class="box">Prepare definitions and examples.</div>
-
-</div>
-</details>
-
-<details>
-<summary>Chapter 7 — Acids, Bases and Salts</summary>
-<div class="content">
-
-<ul>
-<li>Acids</li>
-<li>Bases</li>
-<li>Salts</li>
-<li>pH</li>
-</ul>
-
-</div>
-</details>
-
-<details>
-<summary>Chapter 8 — Periodic Table</summary>
-<div class="content">
-
-<ul>
-<li>Periodic table</li>
-<li>Groups</li>
-<li>Periods</li>
-<li>Periodic properties</li>
-</ul>
-
-</div>
-</details>
+<div id="chemistry"></div>
 
 </section>
 
@@ -1012,134 +238,11 @@ Study the important qualities, teachings and events presented in the lesson.
 
 <section class="subject">
 
-<h2>🧬 Biology</h2>
-
-<details>
-<summary>Chapter 1 — The Science of Biology</summary>
-<div class="content">
-
-<ul>
-<li>Biology</li>
-<li>Branches of biology</li>
-<li>Biological method</li>
-</ul>
-
-<h3>✏️ Questions</h3>
-<ul>
-<li>What is biology?</li>
-<li>Name important branches of biology.</li>
-<li>What is biological method?</li>
-</ul>
-
+<div class="subject-title">
+🧬 Biology
 </div>
-</details>
 
-<details>
-<summary>Chapter 2 — Biodiversity</summary>
-<div class="content">
-
-<ul>
-<li>Classification</li>
-<li>Kingdoms</li>
-<li>Biodiversity</li>
-</ul>
-
-<div class="box">Prepare definitions and classification concepts.</div>
-
-</div>
-</details>
-
-<details>
-<summary>Chapter 3 — The Cell</summary>
-<div class="content">
-
-<ul>
-<li>Cell structure</li>
-<li>Cell membrane</li>
-<li>Nucleus</li>
-<li>Cell organelles</li>
-<li>Plant cell</li>
-<li>Animal cell</li>
-</ul>
-
-<h3>✏️ Questions</h3>
-<ul>
-<li>What is a cell?</li>
-<li>Differentiate plant and animal cells.</li>
-<li>Write functions of important organelles.</li>
-</ul>
-
-</div>
-</details>
-
-<details>
-<summary>Chapter 4 — Cell Cycle</summary>
-<div class="content">
-
-<ul>
-<li>Cell division</li>
-<li>Mitosis</li>
-<li>Meiosis</li>
-</ul>
-
-<div class="box">Prepare differences between mitosis and meiosis.</div>
-
-</div>
-</details>
-
-<details>
-<summary>Chapter 5 — Tissues, Organs and Organ Systems</summary>
-<div class="content">
-
-<ul>
-<li>Plant tissues</li>
-<li>Animal tissues</li>
-<li>Organs</li>
-<li>Organ systems</li>
-</ul>
-
-</div>
-</details>
-
-<details>
-<summary>Chapter 6 — Biomolecules</summary>
-<div class="content">
-
-<ul>
-<li>Carbohydrates</li>
-<li>Proteins</li>
-<li>Lipids</li>
-<li>Nucleic acids</li>
-</ul>
-
-</div>
-</details>
-
-<details>
-<summary>Chapter 7 — Enzymes</summary>
-<div class="content">
-
-<ul>
-<li>Enzymes</li>
-<li>Properties</li>
-<li>Factors affecting enzymes</li>
-</ul>
-
-</div>
-</details>
-
-<details>
-<summary>Chapter 8 — Bioenergetics</summary>
-<div class="content">
-
-<ul>
-<li>Photosynthesis</li>
-<li>Respiration</li>
-<li>Energy production</li>
-</ul>
-
-</div>
-</details>
+<div id="biology"></div>
 
 </section>
 
@@ -1148,160 +251,475 @@ Study the important qualities, teachings and events presented in the lesson.
 
 <section class="subject">
 
-<h2>💻 Computer Science</h2>
-
-<details>
-<summary>Chapter 1 — Introduction to Computer</summary>
-<div class="content">
-
-<ul>
-<li>Computer</li>
-<li>Hardware</li>
-<li>Software</li>
-<li>Input devices</li>
-<li>Output devices</li>
-</ul>
-
-<h3>✏️ Questions</h3>
-<ul>
-<li>What is a computer?</li>
-<li>Differentiate hardware and software.</li>
-<li>Name input and output devices.</li>
-</ul>
-
+<div class="subject-title">
+💻 Computer
 </div>
-</details>
 
-<details>
-<summary>Chapter 2 — Computational Thinking</summary>
-<div class="content">
-
-<ul>
-<li>Problem solving</li>
-<li>Algorithms</li>
-<li>Flowcharts</li>
-</ul>
-
-<div class="box">Practice writing simple algorithms and flowcharts.</div>
-
-</div>
-</details>
-
-<details>
-<summary>Chapter 3 — Programming Fundamentals</summary>
-<div class="content">
-
-<ul>
-<li>Programming</li>
-<li>Variables</li>
-<li>Data types</li>
-<li>Operators</li>
-</ul>
-
-</div>
-</details>
-
-<details>
-<summary>Chapter 4 — Control Structures</summary>
-<div class="content">
-
-<ul>
-<li>Conditions</li>
-<li>Loops</li>
-<li>Decision making</li>
-</ul>
-
-<div class="box">Practice simple programming problems.</div>
-
-</div>
-</details>
-
-<details>
-<summary>Chapter 5 — Data and Information</summary>
-<div class="content">
-
-<ul>
-<li>Data</li>
-<li>Information</li>
-<li>Data processing</li>
-</ul>
-
-</div>
-</details>
-
-<details>
-<summary>Chapter 6 — Networks</summary>
-<div class="content">
-
-<ul>
-<li>Computer networks</li>
-<li>Internet</li>
-<li>Network devices</li>
-</ul>
-
-<div class="box">Prepare definitions, examples and differences.</div>
-
-</div>
-</details>
+<div id="computer"></div>
 
 </section>
 
+
+<!-- ================= ISLAMIAT ================= -->
+
+<section class="subject">
+
+<div class="subject-title">
+🕌 Islamiat
 </div>
 
-
-<!-- CONTACT -->
-
-<section class="subject" id="contact">
-
-<h2>📩 Contact Us</h2>
-
-<p>
-Questions, suggestions ya feedback ke liye:
-</p>
-
-<p>
-📧
-<a href="mailto:mughalbadshaaa978@gmail.com">
-mughalbadshaaa978@gmail.com
-</a>
-</p>
+<div id="islamiat"></div>
 
 </section>
+
+
+<!-- ================= TARJUMA ================= -->
+
+<section class="subject">
+
+<div class="subject-title">
+📖 Tarjuma-tul-Quran
+</div>
+
+<div id="quran"></div>
+
+</section>
+
+
+</div>
 
 
 <footer>
 
-<p>📚 Study World — Class 9</p>
-<p>Learn • Practice • Improve</p>
-<p>© 2026 Study World</p>
+<p>
+📚 Study World Pakistan
+</p>
+
+<p>
+Class 9 — New Syllabus 2025–26
+</p>
 
 </footer>
 
 
+
 <script>
 
-function searchData(){
 
-    let input =
-    document.getElementById("search")
-    .value
-    .toLowerCase();
+/* ================= CHAPTER FUNCTION ================= */
 
-    let subjects =
-    document.querySelectorAll(".subject");
+function chapter(
+title,
+subject,
+link=""
+){
 
-    subjects.forEach(function(subject){
+let button="";
 
-        let text =
-        subject.innerText.toLowerCase();
+if(link!=""){
 
-        if(text.includes(input)){
-            subject.style.display="block";
-        }else{
-            subject.style.display="none";
-        }
+button=`
+<a
+class="btn"
+href="${link}"
+target="_blank"
+rel="noopener">
+Open Notes
+</a>
+`;
 
-    });
+}
+
+
+return `
+
+<details class="chapter">
+
+<summary>
+${title}
+</summary>
+
+<div class="content">
+
+
+<div class="box">
+
+<h3>📚 Notes</h3>
+
+<p>
+${subject} ${title} ke important notes
+aur concepts yahan study karein.
+</p>
+
+${button}
+
+</div>
+
+
+<div class="box">
+
+<h3>❓ Short Questions</h3>
+
+<p>
+Is chapter ke important short questions
+prepare karein.
+</p>
+
+</div>
+
+
+<div class="box">
+
+<h3>📝 Long Questions</h3>
+
+<p>
+Important detailed questions aur answers
+ki practice karein.
+</p>
+
+</div>
+
+
+<div class="box">
+
+<h3>🎯 MCQs</h3>
+
+<p>
+Chapter ke important multiple choice
+questions ki practice karein.
+</p>
+
+</div>
+
+
+<div class="box">
+
+<h3>📖 Exercise</h3>
+
+<p>
+Textbook exercise aur practice questions
+complete karein.
+</p>
+
+</div>
+
+
+</div>
+
+</details>
+
+`;
+
+}
+
+
+/* ================= ENGLISH ================= */
+
+let englishData=[
+
+["Unit 1 — The Saviour of Mankind",
+"https://www.freeilm.com/9th-class-english-unit-1-notes-new-syllabus/"],
+
+["Unit 2 — Patriotism",
+"https://www.freeilm.com/9th-class-english-unit-2-notes-new-syllabus/"],
+
+["Unit 3 — Daffodils",
+"https://www.freeilm.com/9th-class-english-unit-3-notes-new-syllabus/"],
+
+["Unit 4 — Hazrat Asma",
+"https://www.freeilm.com/9th-class-english-unit-4-notes-new-syllabus/"],
+
+["Unit 5 — Women Empowerment through Entrepreneurship",
+"https://www.freeilm.com/9th-class-english-unit-5-notes-new-syllabus/"],
+
+["Unit 6 — The Value of Time",
+"https://www.freeilm.com/9th-class-english-unit-6-notes-new-syllabus/"],
+
+["Unit 7 — If",
+"https://www.freeilm.com/9th-class-english-unit-7-notes-new-syllabus/"],
+
+["Unit 8 — The Impact of Globalisation on Culture and Economy",
+"https://www.freeilm.com/9th-class-english-unit-8-notes-new-syllabus/"],
+
+["Unit 9 — Quality Education: A Key to Success",
+"https://www.freeilm.com/9th-class-english-unit-9-notes-new-syllabus/"],
+
+["Unit 10 — Snow Leopard and Markhor",
+"https://www.freeilm.com/9th-class-english-unit-10-notes-new-syllabus/"],
+
+["Unit 11 — The Dear Departed",
+"https://www.freeilm.com/9th-class-english-unit-11-notes-new-syllabus/"]
+
+];
+
+
+englishData.forEach(function(x){
+
+document.getElementById("english").innerHTML +=
+chapter(x[0],"English",x[1]);
+
+});
+
+
+
+/* ================= URDU ================= */
+
+let urduData=[
+
+"Chapter 1 — Nazam Hamad",
+"Chapter 2 — Nazam Naat",
+"Chapter 3 — Akhlaq e Hasna",
+"Chapter 4 — Apni Madad Aap",
+"Chapter 5 — Kaleem aur Mirza Zahir Dar Baig",
+"Chapter 6 — Naam Dev Maali",
+"Chapter 7 — Araam o Sukoon",
+"Chapter 8 — Katba",
+"Chapter 9 — Ibtidai Hisab",
+"Chapter 10 — Lari Mein Paroye Huay Manazr",
+"Chapter 11 — Bhairiya",
+"Chapter 12 — Nazam Mehnat Ki Barkaat",
+"Chapter 13 — Nazam Javed Ke Naam",
+"Chapter 14 — Nazam Payam-e-Latif",
+"Chapter 15 — Cricket aur Mushaira",
+"Chapter 16 — Ghazal Faqirana Aaye Sada Kar Chale",
+"Chapter 17 — Ghazal Sun To Sahi Jahan Mein Hai Tera Fasana",
+"Chapter 18 — Ghazal Gham Hai Ya Khushi Hai Tu",
+"Chapter 19 — Ghazal Kash Tufaan Mein Safeene Ko Utara Hota",
+"Chapter 20 — Hosla Na Haro Aage Barho",
+"Chapter 21 — Shuhdaye Peshawar Ke Liye Ek Nazam"
+
+];
+
+
+urduData.forEach(function(x){
+
+document.getElementById("urdu").innerHTML +=
+chapter(x,"Urdu");
+
+});
+
+
+
+/* ================= MATHEMATICS ================= */
+
+for(let i=1;i<=13;i++){
+
+document.getElementById("math").innerHTML +=
+chapter(
+"Unit "+i,
+"Mathematics"
+);
+
+}
+
+
+
+/* ================= PHYSICS ================= */
+
+for(let i=1;i<=9;i++){
+
+document.getElementById("physics").innerHTML +=
+chapter(
+"Chapter "+i,
+"Physics"
+);
+
+}
+
+
+
+/* ================= CHEMISTRY ================= */
+
+for(let i=1;i<=13;i++){
+
+document.getElementById("chemistry").innerHTML +=
+chapter(
+"Chapter "+i,
+"Chemistry"
+);
+
+}
+
+
+
+/* ================= BIOLOGY ================= */
+
+for(let i=1;i<=11;i++){
+
+document.getElementById("biology").innerHTML +=
+chapter(
+"Chapter "+i,
+"Biology"
+);
+
+}
+
+
+
+/* ================= COMPUTER ================= */
+
+for(let i=1;i<=12;i++){
+
+document.getElementById("computer").innerHTML +=
+chapter(
+"Chapter "+i,
+"Computer"
+);
+
+}
+
+
+
+/* ================= ISLAMIAT ================= */
+
+let islamiatData=[
+
+"Chapter 1 — Quran Majeed aur Hadees Nabwi (S.A.W)",
+
+"Chapter 2 — Imaniyat aur Ibadaat",
+
+"Chapter 3 — Seerat-e-Nabwi (S.A.W)",
+
+"Chapter 4 — Akhlaq-o-Adab",
+
+"Chapter 5 — Husn-e-Mamlaat and Muashrat",
+
+"Chapter 6 — Hidayat ke Sar Chashme aur Mashaheer-e-Islam",
+
+"Chapter 7 — Islami Taleemat aur Asr Hazir ke Taqaze"
+
+];
+
+
+islamiatData.forEach(function(x){
+
+document.getElementById("islamiat").innerHTML +=
+chapter(x,"Islamiat");
+
+});
+
+
+
+/* ================= TARJUMA TUL QURAN ================= */
+
+let quranData=[
+
+"Chapter 1 — Surah Maryam",
+
+"Chapter 2 — Surah Taha",
+
+"Chapter 3 — Surah Al Anbiya",
+
+"Chapter 4 — Surah Al Hujj",
+
+"Chapter 5 — Surah Al Furqan",
+
+"Chapter 6 — Surah Al Shuara",
+
+"Chapter 7 — Surah An Naml",
+
+"Chapter 8 — Surah Al Qasas",
+
+"Chapter 9 — Surah Ankabut",
+
+"Chapter 10 — Surah Rum",
+
+"Chapter 11 — Surah Luqman",
+
+"Chapter 12 — Surah Sajdah",
+
+"Chapter 13 — Surah Saba",
+
+"Chapter 14 — Surah Fatir",
+
+"Chapter 15 — Surah Yaseen",
+
+"Chapter 16 — Surah As Saffat",
+
+"Chapter 17 — Surah Suad",
+
+"Chapter 18 — Surah Al-Ahqaf"
+
+];
+
+
+quranData.forEach(function(x){
+
+document.getElementById("quran").innerHTML +=
+chapter(x,"Tarjuma-tul-Quran");
+
+});
+
+
+
+/* ================= SEARCH ================= */
+
+function searchStudy(){
+
+let query=
+document
+.getElementById("search")
+.value
+.toLowerCase()
+.trim();
+
+
+document
+.querySelectorAll(".subject")
+.forEach(function(subject){
+
+let subjectText=
+subject.innerText.toLowerCase();
+
+let subjectMatch=
+subjectText.includes(query);
+
+let count=0;
+
+
+subject
+.querySelectorAll(".chapter")
+.forEach(function(ch){
+
+let match=
+subjectMatch ||
+ch.innerText
+.toLowerCase()
+.includes(query);
+
+if(match){
+
+ch.style.display="block";
+count++;
+
+}else{
+
+ch.style.display="none";
+
+}
+
+});
+
+
+if(query==""){
+
+subject.style.display="block";
+
+}
+
+else if(subjectMatch || count>0){
+
+subject.style.display="block";
+
+}
+
+else{
+
+subject.style.display="none";
+
+}
+
+});
 
 }
 
