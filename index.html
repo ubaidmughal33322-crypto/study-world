@@ -1,12 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-   <title>Study World - Free Learning</title> 
 <meta name="google-site-verification" content="5ab1VycST9ssVsFxGMiQlL5Fi0bYosNuueKCSs6nYEc" />
     <title>Study World</title>
-    <meta name="description" content="Study World par free English, Math aur Computer learning tips seekhein.">
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Study World - Free Learning</title>
+
+    <!-- Apni Google Search Console wali verification line yahan rakho -->
+
+    <meta name="description"
+    content="Study World par free English Grammar, Math Tips aur Computer Basics seekhein.">
+
+    <meta name="keywords"
+    content="English Grammar, Math Tips, Computer Basics, Study, Education">
+
+    <meta name="author" content="Study World">
+
 
     <style>
+
         * {
             box-sizing: border-box;
         }
@@ -14,57 +30,96 @@
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background: #f5f7fb;
             color: #222;
+
+            /* EDUCATION BACKGROUND IMAGE */
+            background-image:
+                linear-gradient(
+                    rgba(240, 247, 255, 0.88),
+                    rgba(240, 247, 255, 0.92)
+                ),
+                url("https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=1600&q=80");
+
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
         }
 
+
+        /* HEADER */
+
         header {
-            background: linear-gradient(135deg, #174ea6, #4285f4);
+            background: linear-gradient(
+                135deg,
+                #174ea6,
+                #2878d8
+            );
+
             color: white;
-            padding: 40px 20px;
             text-align: center;
+            padding: 35px 15px;
+
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
         }
 
         header h1 {
-            font-size: 36px;
-            margin: 0 0 10px;
+            margin: 0;
+            font-size: 38px;
         }
 
         header p {
-            font-size: 18px;
-            margin: 0;
+            margin: 10px 0 0;
+            font-size: 17px;
         }
 
+
+        /* NAVIGATION */
+
         nav {
-            background: white;
-            padding: 16px;
+            background: rgba(255,255,255,0.96);
+            padding: 15px;
             text-align: center;
-            box-shadow: 0 2px 10px #ddd;
+
             position: sticky;
             top: 0;
+
+            z-index: 1000;
+
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
         }
 
         nav a {
             color: #174ea6;
             text-decoration: none;
             font-weight: bold;
-            margin: 0 10px;
+            margin: 0 12px;
         }
+
+        nav a:hover {
+            color: #e67e22;
+        }
+
+
+        /* HERO */
 
         .hero {
             text-align: center;
-            padding: 40px 20px 20px;
+            padding: 55px 20px 30px;
         }
 
         .hero h2 {
+            font-size: 32px;
             color: #174ea6;
-            font-size: 28px;
+            margin-bottom: 10px;
         }
 
         .hero p {
-            font-size: 17px;
-            color: #666;
+            font-size: 18px;
+            color: #555;
         }
+
+
+        /* CARDS */
 
         .cards {
             max-width: 900px;
@@ -73,11 +128,24 @@
         }
 
         .card {
-            background: white;
-            margin: 20px 0;
-            padding: 25px;
-            border-radius: 18px;
-            box-shadow: 0 5px 20px #ddd;
+            background: rgba(255,255,255,0.96);
+
+            margin: 25px 0;
+            padding: 28px;
+
+            border-radius: 20px;
+
+            box-shadow:
+                0 8px 25px rgba(0,0,0,0.12);
+
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+
+            box-shadow:
+                0 12px 30px rgba(0,0,0,0.18);
         }
 
         .card h2 {
@@ -86,128 +154,266 @@
         }
 
         .card p {
-            color: #666;
+            font-size: 17px;
             line-height: 1.6;
         }
 
+
+        /* BUTTON */
+
         .btn {
             display: inline-block;
-            background: #174ea6;
+
+            background: linear-gradient(
+                135deg,
+                #174ea6,
+                #2878d8
+            );
+
             color: white;
-            padding: 12px 22px;
+
+            padding: 13px 25px;
+
             border-radius: 10px;
+
             text-decoration: none;
+
             font-weight: bold;
+
             margin-top: 10px;
+
+            transition: 0.3s;
         }
 
         .btn:hover {
-            background: #0d3b82;
+            transform: scale(1.05);
         }
 
-        .about {
-            background: white;
+
+        /* ABOUT */
+
+        #about {
+            background: rgba(255,255,255,0.95);
+
             text-align: center;
-            padding: 40px 20px;
+
+            padding: 45px 20px;
+
+            margin-top: 20px;
         }
 
-        .about h2 {
+        #about h2 {
             color: #174ea6;
         }
 
-        footer {
-            background: #12345b;
-            color: white;
-            text-align: center;
-            padding: 25px;
+        #about p {
+            max-width: 700px;
+            margin: auto;
+
+            font-size: 17px;
+            line-height: 1.7;
         }
 
-        footer p {
-            margin: 5px;
+
+        /* CONTACT */
+
+        #contact {
+            background: #174ea6;
+
+            color: white;
+
+            text-align: center;
+
+            padding: 40px 20px;
         }
+
+        #contact h2 {
+            margin-top: 0;
+        }
+
+
+        /* FOOTER */
+
+        footer {
+            background: #0d2f63;
+
+            color: white;
+
+            text-align: center;
+
+            padding: 18px;
+        }
+
+
+        /* MOBILE */
+
+        @media (max-width: 600px) {
+
+            header h1 {
+                font-size: 30px;
+            }
+
+            .hero h2 {
+                font-size: 26px;
+            }
+
+            nav a {
+                margin: 0 6px;
+                font-size: 14px;
+            }
+
+            .card {
+                padding: 22px;
+            }
+
+        }
+
     </style>
+
 </head>
+
 
 <body>
 
-<header>
-    <h1>📚 Study World</h1>
-    <p>Learn Today • Grow Tomorrow</p>
-</header>
 
-<nav>
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
-</nav>
+    <!-- HEADER -->
 
-<section class="hero" id="home">
-    <h2>Welcome to Study World 🎓</h2>
-    <p>Free mein English, Math aur Computer seekhein.</p>
-</section>
+    <header>
 
-<div class="cards">
+        <h1>📚 Study World</h1>
 
-    <div class="card">
-        <h2>📖 English Grammar</h2>
         <p>
-            English grammar ke basic rules aur examples
-            easy tareeqe se seekhein.
+            Free mein parhai aur learning tips
         </p>
 
-        <a class="btn" href="grammar.html">
-            Read Article →
-        </a>
-    </div>
+    </header>
 
-    <div class="card">
-        <h2>🧮 Math Tips</h2>
+
+    <!-- NAVIGATION -->
+
+    <nav>
+
+        <a href="#home">Home</a>
+
+        <a href="#about">About</a>
+
+        <a href="#contact">Contact</a>
+
+    </nav>
+
+
+    <!-- HERO -->
+
+    <section class="hero" id="home">
+
+        <h2>🎓 Learn Something New Every Day</h2>
+
         <p>
-            Math ko simple examples aur practice ke
-            through easy banayein.
+            English, Math aur Computer ki free learning.
         </p>
 
-        <a class="btn" href="math.html">
-            Read Article →
-        </a>
+    </section>
+
+
+    <!-- CARDS -->
+
+    <div class="cards">
+
+
+        <!-- ENGLISH -->
+
+        <div class="card">
+
+            <h2>📖 English Grammar</h2>
+
+            <p>
+                English grammar ke basic rules
+                easy tareeqe se seekhein.
+            </p>
+
+            <a class="btn" href="grammar.html">
+                Read More →
+            </a>
+
+        </div>
+
+
+        <!-- MATH -->
+
+        <div class="card">
+
+            <h2>🧮 Math Tips</h2>
+
+            <p>
+                Math ko simple aur easy tareeqe
+                se seekhein.
+            </p>
+
+            <a class="btn" href="math.html">
+                Read More →
+            </a>
+
+        </div>
+
+
+        <!-- COMPUTER -->
+
+        <div class="card">
+
+            <h2>💻 Computer Basics</h2>
+
+            <p>
+                Computer ke basic concepts
+                beginners ke liye.
+            </p>
+
+            <a class="btn" href="computer.html">
+                Read More →
+            </a>
+
+        </div>
+
+
     </div>
 
-    <div class="card">
-        <h2>💻 Computer Basics</h2>
+
+    <!-- ABOUT -->
+
+    <section id="about">
+
+        <h2>📚 About Study World</h2>
+
         <p>
-            Computer ke basic concepts aur important
-            parts ke baare mein seekhein.
+            Study World ek free educational website hai
+            jahan students English Grammar, Math aur
+            Computer ke basic concepts seekh sakte hain.
         </p>
 
-        <a class="btn" href="computer.html">
-            Read Article →
-        </a>
-    </div>
+    </section>
 
-</div>
 
-<section class="about" id="about">
-    <h2>🌟 About Study World</h2>
+    <!-- CONTACT -->
 
-    <p>
-        Study World ek free educational website hai
-        jahan students easy language mein learning
-        articles parh sakte hain.
-    </p>
-</section>
+    <section id="contact">
 
-<section class="about" id="contact">
-    <h2>📩 Contact</h2>
+        <h2>📩 Contact Us</h2>
 
-    <p>
-        Email: studyworld@example.com
-    </p>
-</section>
+        <p>
+            Email: studyworld@example.com
+        </p>
 
-<footer>
-    <p>© 2026 Study World</p>
-    <p>Learn • Practice • Improve</p>
-</footer>
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        © 2026 Study World | Free Education
+
+    </footer>
+
 
 </body>
+
 </html>
