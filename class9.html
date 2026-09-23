@@ -31,7 +31,7 @@ header h1{
 }
 
 header p{
-    margin:5px;
+    margin:6px;
 }
 
 nav{
@@ -39,9 +39,6 @@ nav{
     text-align:center;
     padding:13px;
     box-shadow:0 2px 8px #ccc;
-    position:sticky;
-    top:0;
-    z-index:10;
 }
 
 nav a{
@@ -63,7 +60,6 @@ nav a{
     border:2px solid #174ea6;
     border-radius:12px;
     font-size:16px;
-    outline:none;
 }
 
 .container{
@@ -82,71 +78,55 @@ nav a{
 
 .subject h2{
     color:#174ea6;
-    margin-top:0;
     border-bottom:2px solid #eee;
     padding-bottom:10px;
 }
 
-.chapter{
+details{
     margin:10px 0;
     border:1px solid #dce3eb;
     border-radius:11px;
     overflow:hidden;
 }
 
-.chapter-title{
+summary{
+    padding:16px;
     background:#f8fafc;
-    padding:15px;
     color:#174ea6;
     font-weight:bold;
     cursor:pointer;
-    position:relative;
-    padding-right:75px;
 }
 
-.chapter-title:hover{
+summary:hover{
     background:#eaf2ff;
 }
 
-.open-btn{
-    position:absolute;
-    right:10px;
-    top:10px;
-    background:#174ea6;
-    color:white;
-    border:0;
-    border-radius:20px;
-    padding:6px 11px;
-    font-size:12px;
-    cursor:pointer;
-}
-
-.chapter-content{
-    display:none;
+.content{
     padding:18px;
     background:white;
     border-top:1px solid #ddd;
-}
-
-.chapter-content h3{
-    color:#0b8043;
-    margin-bottom:7px;
-}
-
-.chapter-content p{
     line-height:1.7;
 }
 
-.chapter-content li{
-    margin:7px 0;
-    line-height:1.6;
+.content h3{
+    color:#0b8043;
 }
 
-.box{
-    background:#f8fafc;
-    padding:12px;
-    border-radius:10px;
-    margin:12px 0;
+.content li{
+    margin:7px 0;
+}
+
+.open{
+    float:right;
+    background:#174ea6;
+    color:white;
+    padding:5px 10px;
+    border-radius:20px;
+    font-size:12px;
+}
+
+details[open] .open{
+    background:#0b8043;
 }
 
 .back{
@@ -177,22 +157,12 @@ footer a{
 }
 
 @media(max-width:600px){
-
     header h1{
         font-size:24px;
     }
 
     .subject{
         padding:14px;
-    }
-
-    .chapter-title{
-        font-size:14px;
-    }
-
-    nav a{
-        display:inline-block;
-        margin:5px;
     }
 }
 </style>
@@ -203,7 +173,10 @@ footer a{
 <header>
 <h1>📚 Class 9 Complete Syllabus</h1>
 <p>Study World</p>
-<p>English • Urdu • Mathematics • Islamiat • Tarjuma-tul-Quran • Physics • Chemistry • Biology • Computer</p>
+<p>
+English • Urdu • Mathematics • Islamiat •
+Tarjuma-tul-Quran • Physics • Chemistry • Biology • Computer
+</p>
 </header>
 
 <nav>
@@ -215,49 +188,42 @@ footer a{
 <div class="search">
 <input
 type="text"
-id="searchInput"
-placeholder="🔎 Search subject or chapter..."
-onkeyup="searchChapters()">
+placeholder="🔎 Search subject or chapter...">
 </div>
 
 <div class="container" id="subjects">
 
 
-<!-- ================= ENGLISH ================= -->
+<!-- ENGLISH -->
 
 <section class="subject">
 
 <h2>📘 English</h2>
 
-<div class="chapter">
-<div class="chapter-title" onclick="toggleChapter(this)">
+<details>
+<summary>
 1. The Saviour of Mankind
-<button class="open-btn">Open</button>
-</div>
+<span class="open">Open</span>
+</summary>
 
-<div class="chapter-content">
+<div class="content">
 
 <h3>📖 Lesson</h3>
-<p>Study the lesson, vocabulary, comprehension and grammar.</p>
+<p>Study the lesson, vocabulary and comprehension.</p>
 
-<div class="box">
 <h3>❓ Short Questions</h3>
 <ul>
 <li>Write the main idea of the lesson.</li>
 <li>Explain important events.</li>
 <li>Write meanings of difficult words.</li>
 </ul>
-</div>
 
-<div class="box">
 <h3>📝 Long Questions</h3>
 <ul>
 <li>Write a detailed summary of the lesson.</li>
 <li>Explain the main message of the lesson.</li>
 </ul>
-</div>
 
-<div class="box">
 <h3>✍️ Practice</h3>
 <ul>
 <li>Vocabulary</li>
@@ -265,22 +231,21 @@ onkeyup="searchChapters()">
 <li>Comprehension</li>
 <li>MCQs</li>
 </ul>
-</div>
 
 </div>
-</div>
+</details>
 
 
-<div class="chapter">
-<div class="chapter-title" onclick="toggleChapter(this)">
+<details>
+<summary>
 2. Patriotism
-<button class="open-btn">Open</button>
-</div>
+<span class="open">Open</span>
+</summary>
 
-<div class="chapter-content">
+<div class="content">
 
 <h3>📖 Lesson</h3>
-<p>Study the lesson and understand its main ideas.</p>
+<p>Study the lesson and its main ideas.</p>
 
 <h3>❓ Short Questions</h3>
 <ul>
@@ -292,7 +257,6 @@ onkeyup="searchChapters()">
 <h3>📝 Long Questions</h3>
 <ul>
 <li>Explain the importance of patriotism.</li>
-<li>Write a detailed answer about the lesson.</li>
 </ul>
 
 <h3>✍️ Practice</h3>
@@ -303,19 +267,19 @@ onkeyup="searchChapters()">
 </ul>
 
 </div>
-</div>
+</details>
 
 
-<div class="chapter">
-<div class="chapter-title" onclick="toggleChapter(this)">
+<details>
+<summary>
 3. Daffodils
-<button class="open-btn">Open</button>
-</div>
+<span class="open">Open</span>
+</summary>
 
-<div class="chapter-content">
+<div class="content">
 
 <h3>🌼 Poem</h3>
-<p>Study the poem, theme, vocabulary and comprehension.</p>
+<p>Study the poem, theme and vocabulary.</p>
 
 <h3>❓ Questions</h3>
 <ul>
@@ -332,19 +296,19 @@ onkeyup="searchChapters()">
 </ul>
 
 </div>
-</div>
+</details>
 
 
-<div class="chapter">
-<div class="chapter-title" onclick="toggleChapter(this)">
+<details>
+<summary>
 4. Hazrat Muhammad ﷺ
-<button class="open-btn">Open</button>
-</div>
+<span class="open">Open</span>
+</summary>
 
-<div class="chapter-content">
+<div class="content">
 
 <h3>📖 Lesson</h3>
-<p>Study the lesson and prepare its comprehension and vocabulary.</p>
+<p>Study the lesson and prepare vocabulary and comprehension.</p>
 
 <h3>❓ Questions</h3>
 <ul>
@@ -354,25 +318,25 @@ onkeyup="searchChapters()">
 </ul>
 
 </div>
-</div>
+</details>
 
 </section>
 
 
 
-<!-- ================= URDU ================= -->
+<!-- URDU -->
 
 <section class="subject">
 
 <h2>📕 Urdu</h2>
 
-<div class="chapter">
-<div class="chapter-title" onclick="toggleChapter(this)">
+<details>
+<summary>
 1. حمد
-<button class="open-btn">Open</button>
-</div>
+<span class="open">Open</span>
+</summary>
 
-<div class="chapter-content">
+<div class="content">
 
 <h3>📖 سبق</h3>
 <p>حمد کا مطالعہ کریں اور مرکزی خیال سمجھیں۔</p>
@@ -381,7 +345,6 @@ onkeyup="searchChapters()">
 <ul>
 <li>حمد کا مرکزی خیال لکھیں۔</li>
 <li>مشکل الفاظ کے معنی لکھیں۔</li>
-<li>سوالات کے جوابات تیار کریں۔</li>
 </ul>
 
 <h3>📝 تفصیلی سوال</h3>
@@ -390,21 +353,21 @@ onkeyup="searchChapters()">
 </ul>
 
 </div>
-</div>
+</details>
 
 
-<div class="chapter">
-<div class="chapter-title" onclick="toggleChapter(this)">
+<details>
+<summary>
 2. نعت
-<button class="open-btn">Open</button>
-</div>
+<span class="open">Open</span>
+</summary>
 
-<div class="chapter-content">
+<div class="content">
 
 <h3>📖 سبق</h3>
 <p>نعت کا مطالعہ کریں۔</p>
 
-<h3>❓ مختصر سوالات</h3>
+<h3>❓ سوالات</h3>
 <ul>
 <li>نعت کا مرکزی خیال کیا ہے؟</li>
 <li>مشکل الفاظ کے معنی لکھیں۔</li>
@@ -416,16 +379,16 @@ onkeyup="searchChapters()">
 </ul>
 
 </div>
-</div>
+</details>
 
 
-<div class="chapter">
-<div class="chapter-title" onclick="toggleChapter(this)">
+<details>
+<summary>
 3. سبق اور نثر
-<button class="open-btn">Open</button>
-</div>
+<span class="open">Open</span>
+</summary>
 
-<div class="chapter-content">
+<div class="content">
 
 <h3>📖 سبق</h3>
 <p>سبق کو غور سے پڑھیں اور اہم نکات نوٹ کریں۔</p>
@@ -438,25 +401,25 @@ onkeyup="searchChapters()">
 </ul>
 
 </div>
-</div>
+</details>
 
 </section>
 
 
 
-<!-- ================= MATHEMATICS ================= -->
+<!-- MATHEMATICS -->
 
 <section class="subject">
 
 <h2>📐 Mathematics</h2>
 
-<div class="chapter">
-<div class="chapter-title" onclick="toggleChapter(this)">
+<details>
+<summary>
 Chapter 1 — Matrices and Determinants
-<button class="open-btn">Open</button>
-</div>
+<span class="open">Open</span>
+</summary>
 
-<div class="chapter-content">
+<div class="content">
 
 <h3>📖 Topics</h3>
 <ul>
@@ -475,16 +438,16 @@ Chapter 1 — Matrices and Determinants
 </ul>
 
 </div>
-</div>
+</details>
 
 
-<div class="chapter">
-<div class="chapter-title" onclick="toggleChapter(this)">
+<details>
+<summary>
 Chapter 2 — Real and Complex Numbers
-<button class="open-btn">Open</button>
-</div>
+<span class="open">Open</span>
+</summary>
 
-<div class="chapter-content">
+<div class="content">
 
 <h3>📖 Topics</h3>
 <ul>
@@ -500,16 +463,16 @@ Chapter 2 — Real and Complex Numbers
 </ul>
 
 </div>
-</div>
+</details>
 
 
-<div class="chapter">
-<div class="chapter-title" onclick="toggleChapter(this)">
+<details>
+<summary>
 Chapter 3 — Logarithms
-<button class="open-btn">Open</button>
-</div>
+<span class="open">Open</span>
+</summary>
 
-<div class="chapter-content">
+<div class="content">
 
 <h3>📖 Topics</h3>
 <ul>
@@ -525,16 +488,16 @@ Chapter 3 — Logarithms
 </ul>
 
 </div>
-</div>
+</details>
 
 
-<div class="chapter">
-<div class="chapter-title" onclick="toggleChapter(this)">
+<details>
+<summary>
 Chapter 4 — Algebraic Expressions
-<button class="open-btn">Open</button>
-</div>
+<span class="open">Open</span>
+</summary>
 
-<div class="chapter-content">
+<div class="content">
 
 <h3>📖 Topics</h3>
 <ul>
@@ -543,23 +506,17 @@ Chapter 4 — Algebraic Expressions
 <li>Factorization</li>
 </ul>
 
-<h3>🧮 Practice</h3>
-<ul>
-<li>Solve algebraic expressions.</li>
-<li>Practice identities.</li>
-</ul>
-
 </div>
-</div>
+</details>
 
 
-<div class="chapter">
-<div class="chapter-title" onclick="toggleChapter(this)">
+<details>
+<summary>
 Chapter 5 — Linear Equations and Inequalities
-<button class="open-btn">Open</button>
-</div>
+<span class="open">Open</span>
+</summary>
 
-<div class="chapter-content">
+<div class="content">
 
 <h3>📖 Topics</h3>
 <ul>
@@ -568,23 +525,17 @@ Chapter 5 — Linear Equations and Inequalities
 <li>Solutions</li>
 </ul>
 
-<h3>🧮 Practice</h3>
-<ul>
-<li>Solve equations.</li>
-<li>Solve inequalities.</li>
-</ul>
-
 </div>
-</div>
+</details>
 
 
-<div class="chapter">
-<div class="chapter-title" onclick="toggleChapter(this)">
+<details>
+<summary>
 Chapter 6 — Geometry
-<button class="open-btn">Open</button>
-</div>
+<span class="open">Open</span>
+</summary>
 
-<div class="chapter-content">
+<div class="content">
 
 <h3>📖 Topics</h3>
 <ul>
@@ -594,32 +545,26 @@ Chapter 6 — Geometry
 <li>Geometrical Proofs</li>
 </ul>
 
-<h3>🧮 Practice</h3>
-<ul>
-<li>Practice theorems.</li>
-<li>Solve geometrical problems.</li>
-</ul>
-
 </div>
-</div>
+</details>
 
 </section>
 
 
 
-<!-- ================= ISLAMIAT ================= -->
+<!-- ISLAMIAT -->
 
 <section class="subject">
 
 <h2>🕌 Islamiat</h2>
 
-<div class="chapter">
-<div class="chapter-title" onclick="toggleChapter(this)">
+<details>
+<summary>
 1. Quran Majeed
-<button class="open-btn">Open</button>
-</div>
+<span class="open">Open</span>
+</summary>
 
-<div class="chapter-content">
+<div class="content">
 
 <h3>📖 Topics</h3>
 <ul>
@@ -635,16 +580,16 @@ Chapter 6 — Geometry
 </ul>
 
 </div>
-</div>
+</details>
 
 
-<div class="chapter">
-<div class="chapter-title" onclick="toggleChapter(this)">
+<details>
+<summary>
 2. Seerat-un-Nabi ﷺ
-<button class="open-btn">Open</button>
-</div>
+<span class="open">Open</span>
+</summary>
 
-<div class="chapter-content">
+<div class="content">
 
 <h3>📖 Topics</h3>
 <ul>
@@ -654,23 +599,17 @@ Chapter 6 — Geometry
 <li>Important Events</li>
 </ul>
 
-<h3>❓ Questions</h3>
-<ul>
-<li>Seerat-un-Nabi ﷺ ki ahmiyat.</li>
-<li>Aap ﷺ ke akhlaq.</li>
-</ul>
-
 </div>
-</div>
+</details>
 
 
-<div class="chapter">
-<div class="chapter-title" onclick="toggleChapter(this)">
+<details>
+<summary>
 3. Islamic Ethics
-<button class="open-btn">Open</button>
-</div>
+<span class="open">Open</span>
+</summary>
 
-<div class="chapter-content">
+<div class="content">
 
 <h3>📖 Topics</h3>
 <ul>
@@ -682,25 +621,25 @@ Chapter 6 — Geometry
 </ul>
 
 </div>
-</div>
+</details>
 
 </section>
 
 
 
-<!-- ================= TARJUMA ================= -->
+<!-- TARJUMA -->
 
 <section class="subject">
 
 <h2>📗 Tarjuma-tul-Quran</h2>
 
-<div class="chapter">
-<div class="chapter-title" onclick="toggleChapter(this)">
+<details>
+<summary>
 Unit 1 — Quranic Translation
-<button class="open-btn">Open</button>
-</div>
+<span class="open">Open</span>
+</summary>
 
-<div class="chapter-content">
+<div class="content">
 
 <h3>📖 Study</h3>
 <ul>
@@ -718,16 +657,16 @@ Unit 1 — Quranic Translation
 </ul>
 
 </div>
-</div>
+</details>
 
 
-<div class="chapter">
-<div class="chapter-title" onclick="toggleChapter(this)">
+<details>
+<summary>
 Unit 2 — Quranic Teachings
-<button class="open-btn">Open</button>
-</div>
+<span class="open">Open</span>
+</summary>
 
-<div class="chapter-content">
+<div class="content">
 
 <h3>📖 Study</h3>
 <ul>
@@ -737,25 +676,25 @@ Unit 2 — Quranic Teachings
 </ul>
 
 </div>
-</div>
+</details>
 
 </section>
 
 
 
-<!-- ================= PHYSICS ================= -->
+<!-- PHYSICS -->
 
 <section class="subject">
 
 <h2>⚡ Physics</h2>
 
-<div class="chapter">
-<div class="chapter-title" onclick="toggleChapter(this)">
+<details>
+<summary>
 Chapter 1 — Physical Quantities and Measurements
-<button class="open-btn">Open</button>
-</div>
+<span class="open">Open</span>
+</summary>
 
-<div class="chapter-content">
+<div class="content">
 
 <h3>📖 Topics</h3>
 <ul>
@@ -773,16 +712,16 @@ Chapter 1 — Physical Quantities and Measurements
 </ul>
 
 </div>
-</div>
+</details>
 
 
-<div class="chapter">
-<div class="chapter-title" onclick="toggleChapter(this)">
+<details>
+<summary>
 Chapter 2 — Kinematics
-<button class="open-btn">Open</button>
-</div>
+<span class="open">Open</span>
+</summary>
 
-<div class="chapter-content">
+<div class="content">
 
 <h3>📖 Topics</h3>
 <ul>
@@ -802,16 +741,16 @@ Chapter 2 — Kinematics
 </ul>
 
 </div>
-</div>
+</details>
 
 
-<div class="chapter">
-<div class="chapter-title" onclick="toggleChapter(this)">
+<details>
+<summary>
 Chapter 3 — Dynamics
-<button class="open-btn">Open</button>
-</div>
+<span class="open">Open</span>
+</summary>
 
-<div class="chapter-content">
+<div class="content">
 
 <h3>📖 Topics</h3>
 <ul>
@@ -821,23 +760,17 @@ Chapter 3 — Dynamics
 <li>Momentum</li>
 </ul>
 
-<h3>🧮 Practice</h3>
-<ul>
-<li>Force numericals</li>
-<li>Momentum numericals</li>
-</ul>
-
 </div>
-</div>
+</details>
 
 
-<div class="chapter">
-<div class="chapter-title" onclick="toggleChapter(this)">
+<details>
+<summary>
 Chapter 4 — Turning Effect of Forces
-<button class="open-btn">Open</button>
-</div>
+<span class="open">Open</span>
+</summary>
 
-<div class="chapter-content">
+<div class="content">
 
 <h3>📖 Topics</h3>
 <ul>
@@ -846,32 +779,26 @@ Chapter 4 — Turning Effect of Forces
 <li>Equilibrium</li>
 </ul>
 
-<h3>🧮 Practice</h3>
-<ul>
-<li>Moment calculations</li>
-<li>Equilibrium problems</li>
-</ul>
-
 </div>
-</div>
+</details>
 
 </section>
 
 
 
-<!-- ================= CHEMISTRY ================= -->
+<!-- CHEMISTRY -->
 
 <section class="subject">
 
 <h2>🧪 Chemistry</h2>
 
-<div class="chapter">
-<div class="chapter-title" onclick="toggleChapter(this)">
+<details>
+<summary>
 Chapter 1 — Fundamentals of Chemistry
-<button class="open-btn">Open</button>
-</div>
+<span class="open">Open</span>
+</summary>
 
-<div class="chapter-content">
+<div class="content">
 
 <h3>📖 Topics</h3>
 <ul>
@@ -890,16 +817,16 @@ Chapter 1 — Fundamentals of Chemistry
 </ul>
 
 </div>
-</div>
+</details>
 
 
-<div class="chapter">
-<div class="chapter-title" onclick="toggleChapter(this)">
+<details>
+<summary>
 Chapter 2 — Structure of Atoms
-<button class="open-btn">Open</button>
-</div>
+<span class="open">Open</span>
+</summary>
 
-<div class="chapter-content">
+<div class="content">
 
 <h3>📖 Topics</h3>
 <ul>
@@ -911,24 +838,17 @@ Chapter 2 — Structure of Atoms
 <li>Mass Number</li>
 </ul>
 
-<h3>❓ Questions</h3>
-<ul>
-<li>What is an atom?</li>
-<li>What are subatomic particles?</li>
-<li>Define atomic number.</li>
-</ul>
-
 </div>
-</div>
+</details>
 
 
-<div class="chapter">
-<div class="chapter-title" onclick="toggleChapter(this)">
+<details>
+<summary>
 Chapter 3 — Periodic Table
-<button class="open-btn">Open</button>
-</div>
+<span class="open">Open</span>
+</summary>
 
-<div class="chapter-content">
+<div class="content">
 
 <h3>📖 Topics</h3>
 <ul>
@@ -939,16 +859,16 @@ Chapter 3 — Periodic Table
 </ul>
 
 </div>
-</div>
+</details>
 
 
-<div class="chapter">
-<div class="chapter-title" onclick="toggleChapter(this)">
+<details>
+<summary>
 Chapter 4 — Chemical Bonding
-<button class="open-btn">Open</button>
-</div>
+<span class="open">Open</span>
+</summary>
 
-<div class="chapter-content">
+<div class="content">
 
 <h3>📖 Topics</h3>
 <ul>
@@ -958,32 +878,26 @@ Chapter 4 — Chemical Bonding
 <li>Valency</li>
 </ul>
 
-<h3>❓ Questions</h3>
-<ul>
-<li>What is chemical bonding?</li>
-<li>Differentiate ionic and covalent bonds.</li>
-</ul>
-
 </div>
-</div>
+</details>
 
 </section>
 
 
 
-<!-- ================= BIOLOGY ================= -->
+<!-- BIOLOGY -->
 
 <section class="subject">
 
 <h2>🧬 Biology</h2>
 
-<div class="chapter">
-<div class="chapter-title" onclick="toggleChapter(this)">
+<details>
+<summary>
 Chapter 1 — The Science of Biology
-<button class="open-btn">Open</button>
-</div>
+<span class="open">Open</span>
+</summary>
 
-<div class="chapter-content">
+<div class="content">
 
 <h3>📖 Topics</h3>
 <ul>
@@ -993,23 +907,17 @@ Chapter 1 — The Science of Biology
 <li>Importance of Biology</li>
 </ul>
 
-<h3>❓ Questions</h3>
-<ul>
-<li>What is biology?</li>
-<li>Name branches of biology.</li>
-</ul>
-
 </div>
-</div>
+</details>
 
 
-<div class="chapter">
-<div class="chapter-title" onclick="toggleChapter(this)">
+<details>
+<summary>
 Chapter 2 — Biodiversity
-<button class="open-btn">Open</button>
-</div>
+<span class="open">Open</span>
+</summary>
 
-<div class="chapter-content">
+<div class="content">
 
 <h3>📖 Topics</h3>
 <ul>
@@ -1019,23 +927,17 @@ Chapter 2 — Biodiversity
 <li>Species</li>
 </ul>
 
-<h3>❓ Questions</h3>
-<ul>
-<li>Define biodiversity.</li>
-<li>Why is classification important?</li>
-</ul>
-
 </div>
-</div>
+</details>
 
 
-<div class="chapter">
-<div class="chapter-title" onclick="toggleChapter(this)">
+<details>
+<summary>
 Chapter 3 — Cells
-<button class="open-btn">Open</button>
-</div>
+<span class="open">Open</span>
+</summary>
 
-<div class="chapter-content">
+<div class="content">
 
 <h3>📖 Topics</h3>
 <ul>
@@ -1046,23 +948,17 @@ Chapter 3 — Cells
 <li>Cell Organelles</li>
 </ul>
 
-<h3>❓ Questions</h3>
-<ul>
-<li>What is a cell?</li>
-<li>Write functions of cell organelles.</li>
-</ul>
-
 </div>
-</div>
+</details>
 
 
-<div class="chapter">
-<div class="chapter-title" onclick="toggleChapter(this)">
+<details>
+<summary>
 Chapter 4 — Cell Cycle
-<button class="open-btn">Open</button>
-</div>
+<span class="open">Open</span>
+</summary>
 
-<div class="chapter-content">
+<div class="content">
 
 <h3>📖 Topics</h3>
 <ul>
@@ -1072,32 +968,26 @@ Chapter 4 — Cell Cycle
 <li>Cell Cycle</li>
 </ul>
 
-<h3>❓ Questions</h3>
-<ul>
-<li>What is mitosis?</li>
-<li>What is meiosis?</li>
-</ul>
-
 </div>
-</div>
+</details>
 
 </section>
 
 
 
-<!-- ================= COMPUTER ================= -->
+<!-- COMPUTER -->
 
 <section class="subject">
 
 <h2>💻 Computer Science</h2>
 
-<div class="chapter">
-<div class="chapter-title" onclick="toggleChapter(this)">
+<details>
+<summary>
 Chapter 1 — Introduction to Computer Science
-<button class="open-btn">Open</button>
-</div>
+<span class="open">Open</span>
+</summary>
 
-<div class="chapter-content">
+<div class="content">
 
 <h3>📖 Topics</h3>
 <ul>
@@ -1107,15 +997,100 @@ Chapter 1 — Introduction to Computer Science
 <li>Data</li>
 </ul>
 
-<h3>❓ Questions</h3>
+</div>
+</details>
+
+
+<details>
+<summary>
+Chapter 2 — Digital Systems
+<span class="open">Open</span>
+</summary>
+
+<div class="content">
+
+<h3>📖 Topics</h3>
 <ul>
-<li>What is computer science?</li>
-<li>What is data?</li>
+<li>Digital Systems</li>
+<li>Binary Numbers</li>
+<li>Digital Information</li>
 </ul>
 
 </div>
+</details>
+
+
+<details>
+<summary>
+Chapter 3 — Data Representation
+<span class="open">Open</span>
+</summary>
+
+<div class="content">
+
+<h3>📖 Topics</h3>
+<ul>
+<li>Data Representation</li>
+<li>Binary</li>
+<li>Numbers</li>
+<li>Characters</li>
+</ul>
+
+</div>
+</details>
+
+
+<details>
+<summary>
+Chapter 4 — Computational Thinking
+<span class="open">Open</span>
+</summary>
+
+<div class="content">
+
+<h3>📖 Topics</h3>
+<ul>
+<li>Problem Solving</li>
+<li>Algorithms</li>
+<li>Flowcharts</li>
+<li>Logical Thinking</li>
+</ul>
+
+</div>
+</details>
+
+</section>
+
+
+
+<div class="back">
+<a href="index.html">⬅️ Back to Home</a>
+</div>
+
 </div>
 
 
-<div class="chapter">
-<div
+<section id="contact"
+style="background:white;padding:30px;text-align:center;margin-top:20px;">
+
+<h2>📩 Contact Us</h2>
+
+<p>Question, suggestion ya feedback ke liye contact karein.</p>
+
+<p>
+📧
+<a href="mailto:mughalbadshaaa978@gmail.com">
+mughalbadshaaa978@gmail.com
+</a>
+</p>
+
+</section>
+
+
+<footer>
+<p>© 2026 Study World</p>
+<p>Class 9 Educational Website</p>
+</footer>
+
+</body>
+</html>
