@@ -1,112 +1,137 @@
-CTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
 
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="viewport"
-content="width=device-width, initial-scale=1.0">
-
-<title>Class 9 - Study World</title>
+<title>Class 9 Complete Syllabus - Study World</title>
 
 <style>
 
-* {
-    box-sizing: border-box;
+*{
+box-sizing:border-box;
 }
 
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #f4f7fb;
-    color: #222;
+body{
+margin:0;
+font-family:Arial,sans-serif;
+background:#f4f7fb;
+color:#222;
 }
 
-header {
-    background: linear-gradient(135deg, #174ea6, #4285f4);
-    color: white;
-    text-align: center;
-    padding: 30px 15px;
+header{
+background:linear-gradient(135deg,#174ea6,#4285f4);
+color:white;
+text-align:center;
+padding:30px 15px;
 }
 
-header h1 {
-    margin: 0 0 10px;
+header h1{
+margin:0 0 8px;
 }
 
-nav {
-    background: white;
-    padding: 15px;
-    text-align: center;
-    box-shadow: 0 2px 8px #ccc;
+nav{
+background:white;
+padding:15px;
+text-align:center;
+box-shadow:0 2px 8px #ccc;
+position:sticky;
+top:0;
+z-index:10;
 }
 
-nav a {
-    text-decoration: none;
-    color: #174ea6;
-    font-weight: bold;
+nav a{
+color:#174ea6;
+text-decoration:none;
+font-weight:bold;
+margin:6px 10px;
 }
 
-.container {
-    width: 92%;
-    max-width: 1000px;
-    margin: 25px auto;
+.container{
+width:94%;
+max-width:1100px;
+margin:25px auto;
 }
 
-.subject {
-    background: white;
-    margin-bottom: 25px;
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0 4px 15px #ddd;
+.search{
+text-align:center;
+margin-bottom:25px;
 }
 
-.subject h2 {
-    color: #174ea6;
+.search input{
+width:95%;
+max-width:650px;
+padding:15px;
+border:2px solid #174ea6;
+border-radius:12px;
+font-size:16px;
 }
 
-.chapter {
-    background: #f8faff;
-    border: 1px solid #dbe5f5;
-    border-radius: 12px;
-    margin: 12px 0;
-    padding: 15px;
+.subject{
+background:white;
+padding:20px;
+margin-bottom:22px;
+border-radius:16px;
+box-shadow:0 4px 15px #ddd;
 }
 
-.chapter h3 {
-    color: #174ea6;
-    margin-top: 0;
+.subject h2{
+color:#174ea6;
+margin-top:0;
 }
 
-button {
-    background: #174ea6;
-    color: white;
-    border: none;
-    padding: 11px 16px;
-    border-radius: 8px;
-    cursor: pointer;
+.chapter{
+background:#f7f9ff;
+border:1px solid #dbe5f5;
+border-radius:12px;
+padding:15px;
+margin-top:12px;
 }
 
-.content {
-    display: none;
-    margin-top: 15px;
-    line-height: 1.7;
+.chapter h3{
+color:#174ea6;
+margin-top:0;
 }
 
-.box {
-    background: white;
-    padding: 12px;
-    margin-top: 10px;
-    border-radius: 8px;
-    border-left: 4px solid #174ea6;
+button{
+background:#174ea6;
+color:white;
+border:0;
+padding:11px 17px;
+border-radius:8px;
+font-size:15px;
 }
 
-footer {
-    background: #174ea6;
-    color: white;
-    text-align: center;
-    padding: 25px;
-    margin-top: 40px;
+.content{
+display:none;
+margin-top:15px;
+}
+
+.box{
+background:white;
+padding:14px;
+margin-top:10px;
+border-left:4px solid #174ea6;
+border-radius:8px;
+line-height:1.7;
+}
+
+.box h4{
+color:#174ea6;
+margin-top:0;
+}
+
+footer{
+background:#174ea6;
+color:white;
+text-align:center;
+padding:25px;
+margin-top:35px;
+}
+
+footer a{
+color:white;
 }
 
 </style>
@@ -114,7 +139,6 @@ footer {
 </head>
 
 <body>
-
 
 <header>
 
@@ -127,7 +151,8 @@ footer {
 
 <nav>
 
-<a href="index.html">🏠 Back to Home</a>
+<a href="index.html">🏠 Home</a>
+<a href="#subjects">📚 Subjects</a>
 
 </nav>
 
@@ -135,9 +160,126 @@ footer {
 <div class="container">
 
 
+<div class="search">
+
+<input
+type="text"
+id="search"
+placeholder="🔎 Search subject..."
+onkeyup="searchSubjects()">
+
+</div>
+
+
+<!-- ENGLISH -->
+
+<div class="subject searchable">
+
+<h2>📘 English</h2>
+
+<div class="chapter">
+
+<h3>English Complete Study</h3>
+
+<button onclick="openBox('english')">
+Open English
+</button>
+
+<div id="english" class="content">
+
+<div class="box">
+<h4>📖 Lessons</h4>
+<p>
+English textbook lessons, reading,
+comprehension and important concepts.
+</p>
+</div>
+
+<div class="box">
+<h4>❓ Short Questions</h4>
+<p>
+Chapter-wise short questions and answers
+will be placed here.
+</p>
+</div>
+
+<div class="box">
+<h4>📝 Long Questions</h4>
+<p>
+Chapter-wise detailed questions and answers.
+</p>
+</div>
+
+<div class="box">
+<h4>✍️ Exercise</h4>
+<p>
+Textbook exercises and practice work.
+</p>
+</div>
+
+<div class="box">
+<h4>🔘 MCQs</h4>
+<p>
+Chapter-wise English MCQs.
+</p>
+</div>
+
+</div>
+</div>
+
+</div>
+
+
+<!-- URDU -->
+
+<div class="subject searchable">
+
+<h2>📕 Urdu</h2>
+
+<div class="chapter">
+
+<h3>Urdu Complete Study</h3>
+
+<button onclick="openBox('urdu')">
+Open Urdu
+</button>
+
+<div id="urdu" class="content">
+
+<div class="box">
+<h4>📖 نثر</h4>
+<p>نثر کے اسباق اور اہم نکات۔</p>
+</div>
+
+<div class="box">
+<h4>🎵 شاعری</h4>
+<p>شاعری، تشریح اور اہم سوالات۔</p>
+</div>
+
+<div class="box">
+<h4>❓ مختصر سوالات</h4>
+<p>اہم مختصر سوالات اور جوابات۔</p>
+</div>
+
+<div class="box">
+<h4>📝 طویل سوالات</h4>
+<p>اہم تفصیلی سوالات اور جوابات۔</p>
+</div>
+
+<div class="box">
+<h4>✍️ مشق</h4>
+<p>کتابی مشق اور پریکٹس۔</p>
+</div>
+
+</div>
+</div>
+
+</div>
+
+
 <!-- MATHEMATICS -->
 
-<div class="subject">
+<div class="subject searchable">
 
 <h2>📗 Mathematics</h2>
 
@@ -146,89 +288,40 @@ footer {
 
 <h3>Chapter 1 — Real Numbers</h3>
 
-<button onclick="showChapter('math1')">
+<button onclick="openBox('math1')">
 Open Chapter
 </button>
-
 
 <div id="math1" class="content">
 
 <div class="box">
-
-<h4>📖 Chapter Lesson</h4>
-
+<h4>📖 Lesson</h4>
 <p>
-Is chapter mein Real Numbers ke basic
-concepts, properties aur mathematical
-operations study kiye jate hain.
+Real Numbers ke concepts aur properties.
 </p>
-
 </div>
 
-
 <div class="box">
-
 <h4>❓ Short Questions</h4>
-
-<ol>
-
-<li>Real number kya hota hai?</li>
-
-<li>Rational number kya hota hai?</li>
-
-<li>Irrational number kya hota hai?</li>
-
-</ol>
-
+<p>Important short questions.</p>
 </div>
 
-
 <div class="box">
-
 <h4>📝 Long Questions</h4>
-
-<ol>
-
-<li>
-Real numbers ki properties
-example ke saath explain karein.
-</li>
-
-<li>
-Rational aur irrational numbers
-mein farq explain karein.
-</li>
-
-</ol>
-
+<p>Detailed mathematical questions.</p>
 </div>
 
+<div class="box">
+<h4>🧮 Numericals</h4>
+<p>Solved examples aur practice numericals.</p>
+</div>
 
 <div class="box">
-
 <h4>✍️ Exercise</h4>
-
-<p>
-Yahan textbook ki relevant exercise
-aur questions add kiye jayenge.
-</p>
-
+<p>Textbook exercise practice.</p>
 </div>
 
-
-<div class="box">
-
-<h4>🔘 MCQs</h4>
-
-<p>
-Practice MCQs yahan add kiye jayenge.
-</p>
-
 </div>
-
-
-</div>
-
 </div>
 
 
@@ -236,68 +329,140 @@ Practice MCQs yahan add kiye jayenge.
 
 <h3>Chapter 2 — Logarithms</h3>
 
-<button onclick="showChapter('math2')">
+<button onclick="openBox('math2')">
 Open Chapter
 </button>
-
 
 <div id="math2" class="content">
 
 <div class="box">
-
-<h4>📖 Chapter Lesson</h4>
-
-<p>
-Logarithms ke basic concepts,
-rules aur mathematical applications.
-</p>
-
+<h4>📖 Lesson</h4>
+<p>Logarithms ke concepts aur rules.</p>
 </div>
 
 <div class="box">
-
 <h4>❓ Short Questions</h4>
-
-<p>
-Chapter ke short questions yahan
-add kiye jayenge.
-</p>
-
+<p>Important short questions.</p>
 </div>
 
 <div class="box">
-
 <h4>📝 Long Questions</h4>
-
-<p>
-Chapter ke long questions yahan
-add kiye jayenge.
-</p>
-
+<p>Detailed questions.</p>
 </div>
 
 <div class="box">
+<h4>🧮 Numericals</h4>
+<p>Practice numericals.</p>
+</div>
 
+<div class="box">
 <h4>✍️ Exercise</h4>
+<p>Exercise practice.</p>
+</div>
 
+</div>
+</div>
+
+</div>
+
+
+<!-- ISLAMIAT -->
+
+<div class="subject searchable">
+
+<h2>🕌 Islamiat</h2>
+
+<div class="chapter">
+
+<h3>Islamiat Complete Study</h3>
+
+<button onclick="openBox('islamiat')">
+Open Islamiat
+</button>
+
+<div id="islamiat" class="content">
+
+<div class="box">
+<h4>📖 Lessons</h4>
 <p>
-Relevant textbook exercise yahan
-add ki jayegi.
+Quranic teachings, Ahadith, Seerat
+aur Islamic teachings.
 </p>
+</div>
 
+<div class="box">
+<h4>❓ Short Questions</h4>
+<p>اہم مختصر سوالات اور جوابات۔</p>
+</div>
+
+<div class="box">
+<h4>📝 Long Questions</h4>
+<p>اہم تفصیلی سوالات اور جوابات۔</p>
+</div>
+
+<div class="box">
+<h4>✍️ Exercise</h4>
+<p>کتابی مشق اور پریکٹس۔</p>
+</div>
+
+<div class="box">
+<h4>🔘 MCQs</h4>
+<p>اہم MCQs۔</p>
+</div>
+
+</div>
 </div>
 
 </div>
 
+
+<!-- TARJUMA -->
+
+<div class="subject searchable">
+
+<h2>📖 Tarjuma-tul-Quran</h2>
+
+<div class="chapter">
+
+<h3>Tarjuma-tul-Quran-ul-Majeed</h3>
+
+<button onclick="openBox('quran')">
+Open Subject
+</button>
+
+<div id="quran" class="content">
+
+<div class="box">
+<h4>📖 Selected Surahs</h4>
+<p>
+Selected Quranic passages aur translation.
+</p>
 </div>
 
+<div class="box">
+<h4>❓ Short Questions</h4>
+<p>اہم مختصر سوالات۔</p>
+</div>
+
+<div class="box">
+<h4>📝 Long Questions</h4>
+<p>اہم تفصیلی سوالات۔</p>
+</div>
+
+<div class="box">
+<h4>✍️ Exercise</h4>
+<p>متعلقہ مشق اور پریکٹس۔</p>
+</div>
+
+</div>
+</div>
 
 </div>
 
 
 <!-- PHYSICS -->
 
-<div class="subject">
+<div class="subject searchable">
 
 <h2>⚛️ Physics</h2>
 
@@ -306,74 +471,40 @@ add ki jayegi.
 
 <h3>Chapter 1 — Physical Quantities & Measurements</h3>
 
-<button onclick="showChapter('physics1')">
+<button onclick="openBox('physics1')">
 Open Chapter
 </button>
-
 
 <div id="physics1" class="content">
 
 <div class="box">
-
-<h4>📖 Chapter Lesson</h4>
-
+<h4>📖 Lesson</h4>
 <p>
-Physical quantities, units,
-measurements aur measuring instruments
-ke concepts.
+Physical quantities, units and measurements.
 </p>
-
 </div>
 
-
 <div class="box">
-
 <h4>❓ Short Questions</h4>
-
-<p>
-Chapter ke important short questions
-yahan add kiye jayenge.
-</p>
-
+<p>Important short questions.</p>
 </div>
 
-
 <div class="box">
-
 <h4>📝 Long Questions</h4>
-
-<p>
-Chapter ke important long questions
-yahan add kiye jayenge.
-</p>
-
+<p>Important long questions.</p>
 </div>
 
-
 <div class="box">
-
 <h4>🧮 Numericals</h4>
-
-<p>
-Physics ke numerical problems aur
-solutions yahan add kiye jayenge.
-</p>
-
+<p>Numericals and solutions.</p>
 </div>
-
 
 <div class="box">
-
 <h4>✍️ Exercise</h4>
-
-<p>
-Relevant exercise yahan add ki jayegi.
-</p>
-
+<p>Exercise practice.</p>
 </div>
 
 </div>
-
 </div>
 
 
@@ -381,61 +512,479 @@ Relevant exercise yahan add ki jayegi.
 
 <h3>Chapter 2 — Kinematics</h3>
 
-<button onclick="showChapter('physics2')">
+<button onclick="openBox('physics2')">
 Open Chapter
 </button>
-
 
 <div id="physics2" class="content">
 
 <div class="box">
-
 <h4>📖 Lesson</h4>
-
-<p>
-Motion, speed, velocity aur acceleration
-ke concepts.
-</p>
-
+<p>Motion, speed, velocity and acceleration.</p>
 </div>
 
 <div class="box">
-
 <h4>❓ Short Questions</h4>
-
-<p>
-Important short questions yahan
-add kiye jayenge.
-</p>
-
+<p>Important short questions.</p>
 </div>
 
 <div class="box">
-
 <h4>📝 Long Questions</h4>
+<p>Important long questions.</p>
+</div>
 
-<p>
-Important long questions yahan
-add kiye jayenge.
-</p>
+<div class="box">
+<h4>🧮 Numericals</h4>
+<p>Numerical practice.</p>
+</div>
+
+<div class="box">
+<h4>✍️ Exercise</h4>
+<p>Exercise practice.</p>
+</div>
+
+</div>
+</div>
+
+
+<div class="chapter">
+
+<h3>Chapter 3 — Dynamics</h3>
+
+<button onclick="openBox('physics3')">
+Open Chapter
+</button>
+
+<div id="physics3" class="content">
+
+<div class="box">
+<h4>📖 Lesson</h4>
+<p>Force and dynamics ke concepts.</p>
+</div>
+
+<div class="box">
+<h4>❓ Short Questions</h4>
+<p>Important short questions.</p>
+</div>
+
+<div class="box">
+<h4>📝 Long Questions</h4>
+<p>Important long questions.</p>
+</div>
+
+<div class="box">
+<h4>🧮 Numericals</h4>
+<p>Numerical practice.</p>
+</div>
+
+<div class="box">
+<h4>✍️ Exercise</h4>
+<p>Exercise practice.</p>
+</div>
+
+</div>
+</div>
+
+
+<div class="chapter">
+
+<h3>Chapter 4 — Turning Effects of Force</h3>
+
+<button onclick="openBox('physics4')">
+Open Chapter
+</button>
+
+<div id="physics4" class="content">
+
+<div class="box">
+<h4>📖 Lesson</h4>
+<p>Turning effects of force.</p>
+</div>
+
+<div class="box">
+<h4>❓ Short Questions</h4>
+<p>Important short questions.</p>
+</div>
+
+<div class="box">
+<h4>📝 Long Questions</h4>
+<p>Important long questions.</p>
+</div>
+
+<div class="box">
+<h4>🧮 Numericals</h4>
+<p>Numerical practice.</p>
+</div>
+
+<div class="box">
+<h4>✍️ Exercise</h4>
+<p>Exercise practice.</p>
+</div>
+
+</div>
+</div>
+
+</div>
+
+
+<!-- CHEMISTRY -->
+
+<div class="subject searchable">
+
+<h2>🧪 Chemistry</h2>
+
+
+<div class="chapter">
+
+<h3>Chapter 1 — States of Matter and Phase Change</h3>
+
+<button onclick="openBox('chem1')">
+Open Chapter
+</button>
+
+<div id="chem1" class="content">
+
+<div class="box">
+<h4>📖 Lesson</h4>
+<p>States of matter and phase changes.</p>
+</div>
+
+<div class="box">
+<h4>❓ Short Questions</h4>
+<p>Important short questions.</p>
+</div>
+
+<div class="box">
+<h4>📝 Long Questions</h4>
+<p>Important long questions.</p>
+</div>
+
+<div class="box">
+<h4>🔘 MCQs</h4>
+<p>Important MCQs.</p>
+</div>
+
+<div class="box">
+<h4>✍️ Exercise</h4>
+<p>Exercise practice.</p>
+</div>
+
+</div>
+</div>
+
+
+<div class="chapter">
+
+<h3>Chapter 2 — Atomic Structure</h3>
+
+<button onclick="openBox('chem2')">
+Open Chapter
+</button>
+
+<div id="chem2" class="content">
+
+<div class="box">
+<h4>📖 Lesson</h4>
+<p>Atomic structure and subatomic particles.</p>
+</div>
+
+<div class="box">
+<h4>❓ Short Questions</h4>
+<p>Important short questions.</p>
+</div>
+
+<div class="box">
+<h4>📝 Long Questions</h4>
+<p>Important long questions.</p>
+</div>
+
+<div class="box">
+<h4>✍️ Exercise</h4>
+<p>Exercise practice.</p>
+</div>
+
+</div>
+</div>
+
+
+<div class="chapter">
+
+<h3>Chapter 3 — Chemical Bonding</h3>
+
+<button onclick="openBox('chem3')">
+Open Chapter
+</button>
+
+<div id="chem3" class="content">
+
+<div class="box">
+<h4>📖 Lesson</h4>
+<p>Chemical bonding and compounds.</p>
+</div>
+
+<div class="box">
+<h4>❓ Short Questions</h4>
+<p>Important short questions.</p>
+</div>
+
+<div class="box">
+<h4>📝 Long Questions</h4>
+<p>Important long questions.</p>
+</div>
+
+<div class="box">
+<h4>✍️ Exercise</h4>
+<p>Exercise practice.</p>
+</div>
+
+</div>
+</div>
+
+
+<div class="chapter">
+
+<h3>Chapter 4 — Stoichiometry</h3>
+
+<button onclick="openBox('chem4')">
+Open Chapter
+</button>
+
+<div id="chem4" class="content">
+
+<div class="box">
+<h4>📖 Lesson</h4>
+<p>Chemical calculations and stoichiometry.</p>
+</div>
+
+<div class="box">
+<h4>❓ Short Questions</h4>
+<p>Important short questions.</p>
+</div>
+
+<div class="box">
+<h4>📝 Long Questions</h4>
+<p>Important long questions.</p>
+</div>
+
+<div class="box">
+<h4>🧮 Numericals</h4>
+<p>Numerical practice.</p>
+</div>
+
+<div class="box">
+<h4>✍️ Exercise</h4>
+<p>Exercise practice.</p>
+</div>
+
+</div>
+</div>
+
+</div>
+
+
+<!-- BIOLOGY -->
+
+<div class="subject searchable">
+
+<h2>🧬 Biology</h2>
+
+
+<div class="chapter">
+
+<h3>Chapter 1 — The Science of Biology</h3>
+
+<button onclick="openBox('bio1')">
+Open Chapter
+</button>
+
+<div id="bio1" class="content">
+
+<div class="box">
+<h4>📖 Lesson</h4>
+<p>Biology as a science and its branches.</p>
+</div>
+
+<div class="box">
+<h4>❓ Short Questions</h4>
+<p>Important short questions.</p>
+</div>
+
+<div class="box">
+<h4>📝 Long Questions</h4>
+<p>Important long questions.</p>
+</div>
+
+<div class="box">
+<h4>🔘 MCQs</h4>
+<p>Important MCQs.</p>
+</div>
+
+<div class="box">
+<h4>✍️ Exercise</h4>
+<p>Exercise practice.</p>
+</div>
+
+</div>
+</div>
+
+
+<div class="chapter">
+
+<h3>Chapter 2 — Biodiversity</h3>
+
+<button onclick="openBox('bio2')">
+Open Chapter
+</button>
+
+<div id="bio2" class="content">
+
+<div class="box">
+<h4>📖 Lesson</h4>
+<p>Biodiversity and classification.</p>
+</div>
+
+<div class="box">
+<h4>❓ Short Questions</h4>
+<p>Important short questions.</p>
+</div>
+
+<div class="box">
+<h4>📝 Long Questions</h4>
+<p>Important long questions.</p>
+</div>
+
+<div class="box">
+<h4>✍️ Exercise</h4>
+<p>Exercise practice.</p>
+</div>
+
+</div>
+</div>
+
+
+<div class="chapter">
+
+<h3>Chapter 3 — The Cell</h3>
+
+<button onclick="openBox('bio3')">
+Open Chapter
+</button>
+
+<div id="bio3" class="content">
+
+<div class="box">
+<h4>📖 Lesson</h4>
+<p>Cell structure and functions.</p>
+</div>
+
+<div class="box">
+<h4>❓ Short Questions</h4>
+<p>Important short questions.</p>
+</div>
+
+<div class="box">
+<h4>📝 Long Questions</h4>
+<p>Important long questions.</p>
+</div>
+
+<div class="box">
+<h4>✍️ Exercise</h4>
+<p>Exercise practice.</p>
+</div>
+
+</div>
+</div>
+
+</div>
+
+
+<!-- COMPUTER -->
+
+<div class="subject searchable">
+
+<h2>💻 Computer</h2>
+
+<div class="chapter">
+
+<h3>Computer Science — Class 9</h3>
+
+<button onclick="openBox('computer')">
+Open Computer
+</button>
+
+<div id="computer" class="content">
+
+<div class="box">
+<h4>📖 Lessons</h4>
+
+<ul>
+
+<li>Computer Fundamentals</li>
+<li>Data Representation</li>
+<li>Problem Solving</li>
+<li>Algorithms</li>
+<li>Programming</li>
+<li>Data Structures</li>
+<li>Database Concepts</li>
+
+</ul>
 
 </div>
 
 <div class="box">
+<h4>❓ Short Questions</h4>
+<p>Important Computer questions.</p>
+</div>
 
-<h4>🧮 Numericals</h4>
+<div class="box">
+<h4>📝 Long Questions</h4>
+<p>Detailed questions and answers.</p>
+</div>
+
+<div class="box">
+<h4>💻 Practical</h4>
+<p>Programming and practical practice.</p>
+</div>
+
+<div class="box">
+<h4>🔘 MCQs</h4>
+<p>Important Computer MCQs.</p>
+</div>
+
+<div class="box">
+<h4>✍️ Exercise</h4>
+<p>Chapter exercises and practice.</p>
+</div>
+
+</div>
+</div>
+
+</div>
+
+
+<!-- OFFICIAL -->
+
+<div class="subject">
+
+<h2>📑 Official Syllabus</h2>
+
+<div class="box">
 
 <p>
-Numericals aur solutions yahan
-add kiye jayenge.
+PECTAA ki official website par Class 9
+ke current textbooks aur Smart Syllabus
+available hain.
 </p>
 
-</div>
+<a
+href="https://pectaa.edu.pk/curriculum-compliance/"
+target="_blank">
+
+Official PECTAA Syllabus
+
+</a>
 
 </div>
-
-</div>
-
 
 </div>
 
@@ -448,7 +997,10 @@ add kiye jayenge.
 <p>© 2026 Study World</p>
 
 <p>
-📧 mughalbadshaaa978@gmail.com
+📧
+<a href="mailto:mughalbadshaaa978@gmail.com">
+mughalbadshaaa978@gmail.com
+</a>
 </p>
 
 </footer>
@@ -456,20 +1008,42 @@ add kiye jayenge.
 
 <script>
 
-function showChapter(id) {
+function openBox(id){
 
-    let chapter =
-        document.getElementById(id);
+let box=document.getElementById(id);
 
-    if (chapter.style.display === "block") {
+if(box.style.display==="block"){
+box.style.display="none";
+}
+else{
+box.style.display="block";
+}
 
-        chapter.style.display = "none";
+}
 
-    } else {
 
-        chapter.style.display = "block";
+function searchSubjects(){
 
-    }
+let input=document
+.getElementById("search")
+.value
+.toLowerCase();
+
+let subjects=document
+.querySelectorAll(".searchable");
+
+subjects.forEach(function(subject){
+
+let text=subject.innerText.toLowerCase();
+
+if(text.includes(input)){
+subject.style.display="block";
+}
+else{
+subject.style.display="none";
+}
+
+});
 
 }
 
@@ -477,5 +1051,4 @@ function showChapter(id) {
 
 
 </body>
-
 </html>
