@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Class 9 Complete Syllabus - Study World</title>
+
+<meta name="description"
+content="Class 9 complete syllabus, subjects, chapters, questions, MCQs and exercises.">
 
 <style>
 
@@ -17,151 +18,202 @@
 body{
     margin:0;
     font-family:Arial,sans-serif;
-    background:#f3f6fb;
-    color:#222;
+    background:#f1f5f9;
+    color:#172033;
 }
 
 header{
-    background:linear-gradient(135deg,#174ea6,#4285f4);
+    background:linear-gradient(135deg,#174ea6,#0b8043);
     color:white;
     text-align:center;
-    padding:30px 15px;
+    padding:35px 15px;
 }
 
 header h1{
-    margin:0 0 8px;
+    margin:0 0 10px;
+    font-size:32px;
 }
 
 header p{
-    margin:0;
+    margin:5px;
+    font-size:17px;
 }
 
 nav{
-    background:white;
-    padding:14px;
+    background:#ffffff;
+    padding:12px;
     text-align:center;
-    box-shadow:0 2px 8px #ccc;
+    box-shadow:0 2px 8px rgba(0,0,0,.12);
+    position:sticky;
+    top:0;
+    z-index:10;
 }
 
 nav a{
-    color:#174ea6;
     text-decoration:none;
+    color:#174ea6;
     font-weight:bold;
-}
-
-.container{
-    width:94%;
-    max-width:1100px;
-    margin:25px auto;
+    margin:0 8px;
 }
 
 .search{
     text-align:center;
-    margin-bottom:25px;
+    padding:20px 10px;
 }
 
 .search input{
-    width:95%;
+    width:92%;
     max-width:650px;
     padding:15px;
     border:2px solid #174ea6;
     border-radius:12px;
     font-size:16px;
+    outline:none;
+}
+
+.container{
+    width:94%;
+    max-width:1100px;
+    margin:auto;
 }
 
 .subject{
     background:white;
+    margin:25px 0;
     padding:20px;
-    margin-bottom:25px;
-    border-radius:16px;
-    box-shadow:0 4px 15px #ddd;
+    border-radius:18px;
+    box-shadow:0 4px 15px rgba(0,0,0,.10);
 }
 
 .subject h2{
     color:#174ea6;
     margin-top:0;
-    border-bottom:2px solid #e4e9f2;
+    border-bottom:2px solid #eee;
     padding-bottom:10px;
 }
 
 .chapter{
-    background:#f8faff;
-    border:1px solid #dce5f3;
+    background:#f8fafc;
+    border:1px solid #dbe3ec;
     border-radius:12px;
+    margin:12px 0;
+    overflow:hidden;
+}
+
+.chapter-title{
     padding:15px;
-    margin-top:12px;
-}
-
-.chapter h3{
+    cursor:pointer;
+    font-weight:bold;
     color:#174ea6;
-    margin:0 0 12px;
-    font-size:16px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
 }
 
-.openBtn{
+.chapter-title:hover{
+    background:#eaf2ff;
+}
+
+.chapter-content{
+    display:none;
+    padding:18px;
+    background:white;
+    border-top:1px solid #ddd;
+}
+
+.chapter-content h3{
+    color:#0b8043;
+    margin-bottom:8px;
+}
+
+.chapter-content ul{
+    line-height:1.8;
+}
+
+.badge{
     background:#174ea6;
     color:white;
-    border:0;
-    padding:10px 16px;
-    border-radius:8px;
-    cursor:pointer;
+    padding:5px 9px;
+    border-radius:20px;
+    font-size:12px;
 }
 
-.content{
-    display:none;
-    margin-top:15px;
+.back{
+    text-align:center;
+    margin:30px;
 }
 
-.box{
-    background:white;
-    border-left:4px solid #174ea6;
-    padding:13px;
-    margin-top:10px;
-    border-radius:7px;
-    line-height:1.6;
-}
-
-.box h4{
-    color:#174ea6;
-    margin-top:0;
+.back a{
+    display:inline-block;
+    background:#174ea6;
+    color:white;
+    padding:13px 22px;
+    border-radius:10px;
+    text-decoration:none;
+    font-weight:bold;
 }
 
 footer{
-    background:#174ea6;
+    background:#172033;
     color:white;
     text-align:center;
     padding:25px;
-    margin-top:30px;
+    margin-top:40px;
 }
 
 footer a{
-    color:white;
+    color:#8ec5ff;
+}
+
+.no-result{
+    display:none;
+    text-align:center;
+    padding:20px;
+    color:#d00;
+}
+
+@media(max-width:600px){
+
+    header h1{
+        font-size:25px;
+    }
+
+    .subject{
+        padding:15px;
+    }
+
+    nav a{
+        display:inline-block;
+        margin:5px;
+    }
+
 }
 
 </style>
-
 </head>
 
 <body>
 
-
 <header>
 
-<h1>📚 Study World</h1>
+<h1>📚 Class 9 Complete Syllabus</h1>
 
-<p>Class 9 Complete Study Material</p>
+<p>Study World</p>
+
+<p>English • Urdu • Mathematics • Islamiat • Tarjuma-tul-Quran • Physics • Chemistry • Biology • Computer</p>
 
 </header>
 
 
 <nav>
 
-<a href="index.html">🏠 Back to Home</a>
+<a href="index.html">🏠 Home</a>
+
+<a href="#subjects">📚 Subjects</a>
+
+<a href="#contact">📩 Contact</a>
 
 </nav>
-
-
-<div class="container">
 
 
 <div class="search">
@@ -170,574 +222,856 @@ footer a{
 type="text"
 id="searchInput"
 placeholder="🔎 Search subject or chapter..."
-onkeyup="searchChapters()">
+onkeyup="searchChapters()"
+>
 
 </div>
 
 
-<div id="subjects"></div>
+<div class="container" id="subjects">
 
-
+<div id="noResult" class="no-result">
+❌ No subject or chapter found.
 </div>
 
 
-<footer>
+<!-- ENGLISH -->
 
-<p>© 2026 Study World</p>
+<section class="subject">
+
+<h2>📘 English</h2>
+
+<div class="chapter">
+
+<div class="chapter-title" onclick="openChapter(this)">
+1. The Saviour of Mankind <span class="badge">Open</span>
+</div>
+
+<div class="chapter-content">
+
+<h3>📖 Lesson</h3>
+<p>Study the lesson, vocabulary, grammar and comprehension.</p>
+
+<h3>❓ Short Questions</h3>
+<ul>
+<li>Write the main idea of the lesson.</li>
+<li>Write important events of the lesson.</li>
+<li>Explain difficult words.</li>
+</ul>
+
+<h3>📝 Long Questions</h3>
+<ul>
+<li>Write a detailed summary of the lesson.</li>
+<li>Describe the important message of the lesson.</li>
+</ul>
+
+<h3>✍️ Practice</h3>
+<ul>
+<li>Grammar practice</li>
+<li>Comprehension</li>
+<li>Vocabulary</li>
+</ul>
+
+</div>
+</div>
+
+
+<div class="chapter">
+
+<div class="chapter-title" onclick="openChapter(this)">
+2. Patriotism <span class="badge">Open</span>
+</div>
+
+<div class="chapter-content">
+
+<h3>📖 Lesson</h3>
+<p>Study the lesson and understand its main ideas.</p>
+
+<h3>❓ Short Questions</h3>
+<ul>
+<li>What is patriotism?</li>
+<li>Why is love for country important?</li>
+<li>Write the main idea.</li>
+</ul>
+
+<h3>📝 Long Questions</h3>
+<ul>
+<li>Explain the importance of patriotism.</li>
+<li>Write a detailed answer about the lesson.</li>
+</ul>
+
+<h3>✍️ Practice</h3>
+<ul>
+<li>Grammar</li>
+<li>Vocabulary</li>
+<li>Comprehension</li>
+</ul>
+
+</div>
+</div>
+
+
+<div class="chapter">
+
+<div class="chapter-title" onclick="openChapter(this)">
+3. Daffodils <span class="badge">Open</span>
+</div>
+
+<div class="chapter-content">
+
+<h3>📖 Poem</h3>
+<p>Study the poem, theme, vocabulary and questions.</p>
+
+<h3>❓ Short Questions</h3>
+<ul>
+<li>What is the main idea?</li>
+<li>Describe the natural scene.</li>
+</ul>
+
+<h3>📝 Long Questions</h3>
+<ul>
+<li>Explain the theme of the poem.</li>
+<li>Describe the poet's feelings.</li>
+</ul>
+
+</div>
+</div>
+
+
+<div class="chapter">
+
+<div class="chapter-title" onclick="openChapter(this)">
+4. Hazrat Muhammad ﷺ <span class="badge">Open</span>
+</div>
+
+<div class="chapter-content">
+
+<h3>📖 Lesson</h3>
+<p>Read the lesson carefully and prepare vocabulary and comprehension.</p>
+
+<h3>❓ Questions</h3>
+<ul>
+<li>Write the main idea.</li>
+<li>Explain important events.</li>
+<li>Write the lesson summary.</li>
+</ul>
+
+</div>
+</div>
+
+</section>
+
+
+
+<!-- URDU -->
+
+<section class="subject">
+
+<h2>📕 Urdu</h2>
+
+<div class="chapter">
+
+<div class="chapter-title" onclick="openChapter(this)">
+1. حمد <span class="badge">Open</span>
+</div>
+
+<div class="chapter-content">
+
+<h3>📖 سبق</h3>
+<p>حمد کا مطالعہ کریں اور مرکزی خیال سمجھیں۔</p>
+
+<h3>❓ مختصر سوالات</h3>
+<ul>
+<li>حمد کا مرکزی خیال لکھیں۔</li>
+<li>مشکل الفاظ کے معنی لکھیں۔</li>
+</ul>
+
+<h3>📝 تفصیلی سوالات</h3>
+<ul>
+<li>حمد کی تشریح کریں۔</li>
+<li>مرکزی خیال بیان کریں۔</li>
+</ul>
+
+</div>
+</div>
+
+
+<div class="chapter">
+
+<div class="chapter-title" onclick="openChapter(this)">
+2. نعت <span class="badge">Open</span>
+</div>
+
+<div class="chapter-content">
+
+<h3>📖 سبق</h3>
+<p>نعت کا مطالعہ کریں۔</p>
+
+<h3>❓ مختصر سوالات</h3>
+<ul>
+<li>نعت کا مرکزی خیال کیا ہے؟</li>
+<li>مشکل الفاظ کے معنی لکھیں۔</li>
+</ul>
+
+<h3>📝 تفصیلی سوالات</h3>
+<ul>
+<li>نعت کی تشریح کریں۔</li>
+</ul>
+
+</div>
+</div>
+
+
+<div class="chapter">
+
+<div class="chapter-title" onclick="openChapter(this)">
+3. سبق اور نثر <span class="badge">Open</span>
+</div>
+
+<div class="chapter-content">
+
+<h3>📖 سبق</h3>
+<p>سبق کو غور سے پڑھیں اور اہم نکات نوٹ کریں۔</p>
+
+<h3>❓ سوالات</h3>
+<ul>
+<li>مرکزی خیال لکھیں۔</li>
+<li>مشکل الفاظ کے معنی لکھیں۔</li>
+<li>خلاصہ لکھیں۔</li>
+</ul>
+
+</div>
+</div>
+
+</section>
+
+
+
+<!-- MATHEMATICS -->
+
+<section class="subject">
+
+<h2>📐 Mathematics</h2>
+
+<div class="chapter">
+
+<div class="chapter-title" onclick="openChapter(this)">
+Chapter 1 — Matrices and Determinants <span class="badge">Open</span>
+</div>
+
+<div class="chapter-content">
+
+<h3>📖 Lesson</h3>
+<ul>
+<li>Matrices</li>
+<li>Order of a matrix</li>
+<li>Types of matrices</li>
+<li>Operations on matrices</li>
+<li>Determinants</li>
+</ul>
+
+<h3>🧮 Practice</h3>
+<ul>
+<li>Solve matrix problems.</li>
+<li>Find determinants.</li>
+<li>Practice textbook exercises.</li>
+</ul>
+
+</div>
+</div>
+
+
+<div class="chapter">
+
+<div class="chapter-title" onclick="openChapter(this)">
+Chapter 2 — Real and Complex Numbers <span class="badge">Open</span>
+</div>
+
+<div class="chapter-content">
+
+<h3>📖 Lesson</h3>
+
+<ul>
+<li>Real numbers</li>
+<li>Complex numbers</li>
+<li>Properties of numbers</li>
+<li>Operations</li>
+</ul>
+
+<h3>❓ Practice</h3>
+
+<ul>
+<li>Solve numerical questions.</li>
+<li>Practice examples.</li>
+<li>Revise formulas.</li>
+</ul>
+
+</div>
+</div>
+
+
+<div class="chapter">
+
+<div class="chapter-title" onclick="openChapter(this)">
+Chapter 3 — Logarithms <span class="badge">Open</span>
+</div>
+
+<div class="chapter-content">
+
+<h3>📖 Lesson</h3>
+<ul>
+<li>Logarithms</li>
+<li>Laws of logarithms</li>
+<li>Logarithmic expressions</li>
+</ul>
+
+<h3>🧮 Practice</h3>
+<ul>
+<li>Solve logarithmic expressions.</li>
+<li>Apply logarithm laws.</li>
+</ul>
+
+</div>
+</div>
+
+
+<div class="chapter">
+
+<div class="chapter-title" onclick="openChapter(this)">
+Chapter 4 — Algebraic Expressions and Algebraic Formulas <span class="badge">Open</span>
+</div>
+
+<div class="chapter-content">
+
+<h3>📖 Lesson</h3>
+<ul>
+<li>Algebraic expressions</li>
+<li>Identities</li>
+<li>Factorization</li>
+</ul>
+
+<h3>🧮 Practice</h3>
+<ul>
+<li>Solve algebraic expressions.</li>
+<li>Practice identities.</li>
+</ul>
+
+</div>
+</div>
+
+
+<div class="chapter">
+
+<div class="chapter-title" onclick="openChapter(this)">
+Chapter 5 — Linear Equations and Inequalities <span class="badge">Open</span>
+</div>
+
+<div class="chapter-content">
+
+<h3>📖 Lesson</h3>
+
+<ul>
+<li>Linear equations</li>
+<li>Linear inequalities</li>
+<li>Solutions</li>
+</ul>
+
+<h3>🧮 Practice</h3>
+
+<ul>
+<li>Solve equations.</li>
+<li>Solve inequalities.</li>
+</ul>
+
+</div>
+</div>
+
+
+<div class="chapter">
+
+<div class="chapter-title" onclick="openChapter(this)">
+Chapter 6 — Geometry <span class="badge">Open</span>
+</div>
+
+<div class="chapter-content">
+
+<h3>📖 Lesson</h3>
+<ul>
+<li>Geometrical concepts</li>
+<li>Angles</li>
+<li>Triangles</li>
+<li>Geometrical proofs</li>
+</ul>
+
+<h3>🧮 Practice</h3>
+<ul>
+<li>Practice theorems.</li>
+<li>Solve geometrical problems.</li>
+</ul>
+
+</div>
+</div>
+
+</section>
+
+
+
+<!-- ISLAMIAT -->
+
+<section class="subject">
+
+<h2>🕌 Islamiat</h2>
+
+<div class="chapter">
+
+<div class="chapter-title" onclick="openChapter(this)">
+1. Quran Majeed <span class="badge">Open</span>
+</div>
+
+<div class="chapter-content">
+
+<h3>📖 Topics</h3>
+
+<ul>
+<li>Introduction to Quran</li>
+<li>Importance of Quran</li>
+<li>Selected Quranic teachings</li>
+</ul>
+
+<h3>❓ Questions</h3>
+
+<ul>
+<li>Quran ki ahmiyat bayan karein.</li>
+<li>Quran ki taleemat likhein.</li>
+</ul>
+
+</div>
+</div>
+
+
+<div class="chapter">
+
+<div class="chapter-title" onclick="openChapter(this)">
+2. Seerat-un-Nabi ﷺ <span class="badge">Open</span>
+</div>
+
+<div class="chapter-content">
+
+<h3>📖 Topics</h3>
+
+<ul>
+<li>Life of Prophet Muhammad ﷺ</li>
+<li>Character</li>
+<li>Teachings</li>
+<li>Important events</li>
+</ul>
+
+<h3>❓ Questions</h3>
+
+<ul>
+<li>Seerat-un-Nabi ﷺ ki ahmiyat.</li>
+<li>Aap ﷺ ke akhlaq.</li>
+</ul>
+
+</div>
+</div>
+
+
+<div class="chapter">
+
+<div class="chapter-title" onclick="openChapter(this)">
+3. Islamic Ethics <span class="badge">Open</span>
+</div>
+
+<div class="chapter-content">
+
+<h3>📖 Topics</h3>
+
+<ul>
+<li>Truthfulness</li>
+<li>Justice</li>
+<li>Patience</li>
+<li>Honesty</li>
+<li>Respect</li>
+</ul>
+
+</div>
+</div>
+
+</section>
+
+
+
+<!-- TARJUMA TUL QURAN -->
+
+<section class="subject">
+
+<h2>📗 Tarjuma-tul-Quran</h2>
+
+<div class="chapter">
+
+<div class="chapter-title" onclick="openChapter(this)">
+Unit 1 — Selected Surah <span class="badge">Open</span>
+</div>
+
+<div class="chapter-content">
+
+<h3>📖 Study</h3>
 
 <p>
-📧
-<a href="mailto:mughalbadshaaa978@gmail.com">
-mughalbadshaaa978@gmail.com
-</a>
+Selected Quranic verses, translation,
+vocabulary and important teachings.
 </p>
 
-</footer>
+<h3>❓ Questions</h3>
 
+<ul>
+<li>Translation practice.</li>
+<li>Important words and meanings.</li>
+<li>Central teachings.</li>
+</ul>
 
-<script>
+</div>
+</div>
 
 
-const subjects = [
+<div class="chapter">
 
-/* ================= ENGLISH ================= */
+<div class="chapter-title" onclick="openChapter(this)">
+Unit 2 — Quranic Teachings <span class="badge">Open</span>
+</div>
 
-{
-name:"📘 English",
+<div class="chapter-content">
 
-chapters:[
+<h3>📖 Study</h3>
 
-"The Saviour of Mankind",
+<ul>
+<li>Translation</li>
+<li>Vocabulary</li>
+<li>Important teachings</li>
+</ul>
 
-"Patriotism",
+<h3>📝 Practice</h3>
 
-"Daffodils",
+<ul>
+<li>Translate selected verses.</li>
+<li>Learn important vocabulary.</li>
+</ul>
 
-"Hazrat Asma",
+</div>
+</div>
 
-"Women Empowerment through Entrepreneurship",
+</section>
 
-"The Value of Time",
 
-"If",
 
-"The Impact of Globalisation on Culture and Economy",
+<!-- PHYSICS -->
 
-"Quality Education: A Key to Success",
+<section class="subject">
 
-"Wildlife Vignettes — Fascinating Nature",
+<h2>⚡ Physics</h2>
 
-"The Dear Departed"
+<div class="chapter">
 
-]
+<div class="chapter-title" onclick="openChapter(this)">
+Chapter 1 — Physical Quantities and Measurements <span class="badge">Open</span>
+</div>
 
-},
+<div class="chapter-content">
 
+<h3>📖 Topics</h3>
 
-/* ================= URDU ================= */
+<ul>
+<li>Physical quantities</li>
+<li>SI units</li>
+<li>Measurement</li>
+<li>Errors</li>
+<li>Scientific notation</li>
+</ul>
 
-{
-name:"📕 Urdu",
+<h3>🧮 Numericals</h3>
 
-chapters:[
+<ul>
+<li>Unit conversion</li>
+<li>Measurement problems</li>
+</ul>
 
-"حمد",
+</div>
+</div>
 
-"نعت",
 
-"اخلاقِ حسنہ",
+<div class="chapter">
 
-"اپنی مدد آپ",
+<div class="chapter-title" onclick="openChapter(this)">
+Chapter 2 — Kinematics <span class="badge">Open</span>
+</div>
 
-"کلیم اور مرزا ظاہر دار بیگ",
+<div class="chapter-content">
 
-"نام دیو مالی",
+<h3>📖 Topics</h3>
 
-"آرام و سکون",
+<ul>
+<li>Motion</li>
+<li>Distance</li>
+<li>Displacement</li>
+<li>Speed</li>
+<li>Velocity</li>
+<li>Acceleration</li>
+</ul>
 
-"کتبہ",
+<h3>🧮 Numericals</h3>
 
-"ابتدائی حساب",
+<ul>
+<li>Speed calculations</li>
+<li>Velocity calculations</li>
+<li>Acceleration calculations</li>
+</ul>
 
-"لڑی میں پروئے ہوئے مناظر",
+</div>
+</div>
 
-"بھیڑیا",
 
-"محنت کی برکات",
+<div class="chapter">
 
-"جاوید کے نام",
+<div class="chapter-title" onclick="openChapter(this)">
+Chapter 3 — Dynamics <span class="badge">Open</span>
+</div>
 
-"پیامِ لطیف",
+<div class="chapter-content">
 
-"کرکٹ اور مشاعرہ",
+<h3>📖 Topics</h3>
 
-"فقیرانہ آئے صدا کر چلے",
+<ul>
+<li>Force</li>
+<li>Mass</li>
+<li>Newton's laws</li>
+<li>Momentum</li>
+</ul>
 
-"سن تو سہی جہاں میں ہے تیرا افسانہ کیا",
+<h3>🧮 Practice</h3>
 
-"غم ہے یا خوشی ہے تو",
+<ul>
+<li>Force numericals.</li>
+<li>Momentum numericals.</li>
+</ul>
 
-"کاش طوفاں میں سفینے کو اتارا ہوتا"
+</div>
+</div>
 
-]
 
-},
+<div class="chapter">
 
+<div class="chapter-title" onclick="openChapter(this)">
+Chapter 4 — Turning Effect of Forces <span class="badge">Open</span>
+</div>
 
-/* ================= MATHEMATICS ================= */
+<div class="chapter-content">
 
-{
-name:"📗 Mathematics",
+<h3>📖 Topics</h3>
 
-chapters:[
+<ul>
+<li>Moment of force</li>
+<li>Torque</li>
+<li>Equilibrium</li>
+</ul>
 
-"Chapter 1 — Real and Complex Numbers",
+<h3>🧮 Practice</h3>
 
-"Chapter 2 — Logarithms",
+<ul>
+<li>Moment calculations.</li>
+<li>Equilibrium problems.</li>
+</ul>
 
-"Chapter 3 — Sets and Functions",
+</div>
+</div>
 
-"Chapter 4 — Factorization and Algebraic Manipulation",
+</section>
 
-"Chapter 5 — Linear Equations and Inequalities",
 
-"Chapter 6 — Trigonometry",
 
-"Chapter 7 — Coordinate Geometry",
+<!-- CHEMISTRY -->
 
-"Chapter 8 — Logic",
+<section class="subject">
 
-"Chapter 9 — Similar Figures",
+<h2>🧪 Chemistry</h2>
 
-"Chapter 10 — Graphs of Functions",
+<div class="chapter">
 
-"Chapter 11 — Loci and Construction",
+<div class="chapter-title" onclick="openChapter(this)">
+Chapter 1 — Fundamentals of Chemistry <span class="badge">Open</span>
+</div>
 
-"Chapter 12 — Information Handling",
+<div class="chapter-content">
 
-"Chapter 13 — Probability"
+<h3>📖 Topics</h3>
 
-]
+<ul>
+<li>Matter</li>
+<li>Elements</li>
+<li>Compounds</li>
+<li>Mixtures</li>
+<li>Atoms</li>
+</ul>
 
-},
+<h3>❓ Questions</h3>
 
+<ul>
+<li>Define element.</li>
+<li>Define compound.</li>
+<li>Differentiate mixture and compound.</li>
+</ul>
 
-/* ================= ISLAMIAT ================= */
+</div>
+</div>
 
-{
-name:"🕌 Islamiat",
 
-chapters:[
+<div class="chapter">
 
-"باب اول — قرآن مجید و حدیث نبوی ﷺ",
+<div class="chapter-title" onclick="openChapter(this)">
+Chapter 2 — Structure of Atoms <span class="badge">Open</span>
+</div>
 
-"باب دوم — ایمانیات و عبادات",
+<div class="chapter-content">
 
-"باب سوم — سیرت النبی ﷺ",
+<h3>📖 Topics</h3>
 
-"باب چہارم — اخلاق و آداب",
+<ul>
+<li>Atom</li>
+<li>Electron</li>
+<li>Proton</li>
+<li>Neutron</li>
+<li>Atomic number</li>
+<li>Mass number</li>
+</ul>
 
-"باب پنجم — حسن معاملات و معاشرت",
+<h3>❓ Questions</h3>
 
-"باب ششم — ہدایت کے سرچشمے اور مشاہیر اسلام",
+<ul>
+<li>What is an atom?</li>
+<li>What are subatomic particles?</li>
+<li>Define atomic number.</li>
+</ul>
 
-"باب ہفتم — اسلامی تعلیمات اور عصر حاضر کے تقاضے"
+</div>
+</div>
 
-]
 
-},
+<div class="chapter">
 
+<div class="chapter-title" onclick="openChapter(this)">
+Chapter 3 — Periodic Table <span class="badge">Open</span>
+</div>
 
-/* ================= TARJUMA ================= */
+<div class="chapter-content">
 
-{
-name:"📖 Tarjuma-tul-Quran",
+<h3>📖 Topics</h3>
 
-chapters:[
+<ul>
+<li>Periodic table</li>
+<li>Groups</li>
+<li>Periods</li>
+<li>Elements</li>
+<li>Periodic trends</li>
+</ul>
 
-"Unit 1 — Surah Maryam",
+</div>
+</div>
 
-"Unit 2 — Surah Taha",
 
-"Unit 3 — Surah Al-Anbiya",
+<div class="chapter">
 
-"Unit 4 — Surah Al-Hajj",
+<div class="chapter-title" onclick="openChapter(this)">
+Chapter 4 — Chemical Bonding <span class="badge">Open</span>
+</div>
 
-"Unit 5 — Surah Al-Furqan",
+<div class="chapter-content">
 
-"Unit 6 — Surah Ash-Shura",
+<h3>📖 Topics</h3>
 
-"Unit 7 — Surah An-Naml",
+<ul>
+<li>Chemical bonds</li>
+<li>Ionic bond</li>
+<li>Covalent bond</li>
+<li>Valency</li>
+</ul>
 
-"Unit 8 — Surah Al-Qasas",
+<h3>❓ Questions</h3>
 
-"Unit 9 — Surah Al-Ankabut",
+<ul>
+<li>What is chemical bonding?</li>
+<li>Differentiate ionic and covalent bonds.</li>
+</ul>
 
-"Unit 10 — Surah Ar-Rum",
+</div>
+</div>
 
-"Unit 11 — Surah Luqman",
+</section>
 
-"Unit 12 — Surah As-Sajdah",
 
-"Unit 13 — Surah Saba",
 
-"Unit 14 — Surah Fatir",
+<!-- BIOLOGY -->
 
-"Unit 15 — Surah Yaseen",
+<section class="subject">
 
-"Unit 16 — Surah As-Saffat",
+<h2>🧬 Biology</h2>
 
-"Unit 17 — Surah Sad",
+<div class="chapter">
 
-"Unit 18 — Surah Al-Ahqaf"
+<div class="chapter-title" onclick="openChapter(this)">
+Chapter 1 — The Science of Biology <span class="badge">Open</span>
+</div>
 
-]
+<div class="chapter-content">
 
-},
+<h3>📖 Topics</h3>
 
+<ul>
+<li>Biology</li>
+<li>Branches of biology</li>
+<li>Biological method</li>
+<li>Importance of biology</li>
+</ul>
 
-/* ================= PHYSICS ================= */
+<h3>❓ Questions</h3>
 
-{
-name:"⚛️ Physics",
+<ul>
+<li>What is biology?</li>
+<li>Name branches of biology.</li>
+</ul>
 
-chapters:[
+</div>
+</div>
 
-"Chapter 1 — Physical Quantities & Measurements",
 
-"Chapter 2 — Kinematics",
+<div class="chapter">
 
-"Chapter 3 — Dynamics",
+<div class="chapter-title" onclick="openChapter(this)">
+Chapter 2 — Biodiversity <span class="badge">Open</span>
+</div>
 
-"Chapter 4 — Turning Effects of Force",
+<div class="chapter-content">
 
-"Chapter 5 — Work, Energy & Power",
+<h3>📖 Topics</h3>
 
-"Chapter 6 — Mechanical Properties of Matter",
+<ul>
+<li>Biodiversity</li>
+<li>Classification</li>
+<li>Kingdoms</li>
+<li>Species</li>
+</ul>
 
-"Chapter 7 — Thermal Properties of Matter",
+<h3>❓ Questions</h3>
 
-"Chapter 8 — Magnetism",
+<ul>
+<li>Define biodiversity.</li>
+<li>Why is classification important?</li>
+</ul>
 
-"Chapter 9 — Nature of Science"
+</div>
+</div>
 
-]
 
-},
+<div class="chapter">
 
-
-/* ================= CHEMISTRY ================= */
-
-{
-name:"🧪 Chemistry",
-
-chapters:[
-
-"Chapter 1 — States of Matter and Phase Change",
-
-"Chapter 2 — Atomic Structure",
-
-"Chapter 3 — Chemical Bonding",
-
-"Chapter 4 — Stoichiometry",
-
-"Chapter 5 — Energetics",
-
-"Chapter 6 — Equilibria",
-
-"Chapter 7 — Acid Base Chemistry",
-
-"Chapter 8 — Periodic Table and Periodicity",
-
-"Chapter 9 — Group Properties and Elements",
-
-"Chapter 10 — Environmental Chemistry",
-
-"Chapter 11 — Hydrocarbons"
-
-]
-
-},
-
-
-/* ================= BIOLOGY ================= */
-
-{
-name:"🧬 Biology",
-
-chapters:[
-
-"Chapter 1 — The Science of Biology",
-
-"Chapter 2 — Biodiversity",
-
-"Chapter 3 — The Cell",
-
-"Chapter 4 — Cell Cycle",
-
-"Chapter 5 — Tissues, Organs and Systems",
-
-"Chapter 6 — Biomolecules",
-
-"Chapter 7 — Enzymes",
-
-"Chapter 8 — Bioenergetics",
-
-"Chapter 9 — Plant Physiology",
-
-"Chapter 10 — Reproduction in Plants"
-
-]
-
-},
-
-
-/* ================= COMPUTER ================= */
-
-{
-name:"💻 Computer Science",
-
-chapters:[
-
-"Chapter 1 — Introduction to Systems",
-
-"Chapter 2 — Number Systems",
-
-"Chapter 3 — Digital Systems and Logic Design",
-
-"Chapter 4 — System Troubleshooting",
-
-"Chapter 5 — Software System",
-
-"Chapter 6 — Introduction to Computer Networks",
-
-"Chapter 7 — Computational Thinking",
-
-"Chapter 8 — Web Development with HTML, CSS and JavaScript",
-
-"Chapter 9 — Data Science and Data Gathering",
-
-"Chapter 10 — Emerging Technologies in Computer Science",
-
-"Chapter 11 — Ethical, Social and Legal Concerns in Computer Usage",
-
-"Chapter 12 — Entrepreneurship in Digital Age"
-
-]
-
-}
-
-];
-
-
-function createSubjects(){
-
-    let container =
-        document.getElementById("subjects");
-
-    container.innerHTML = "";
-
-
-    subjects.forEach(function(subject){
-
-        let subjectBox =
-            document.createElement("div");
-
-        subjectBox.className = "subject";
-
-
-        let title =
-            document.createElement("h2");
-
-        title.innerText = subject.name;
-
-        subjectBox.appendChild(title);
-
-
-        subject.chapters.forEach(function(chapter){
-
-            let chapterBox =
-                document.createElement("div");
-
-            chapterBox.className = "chapter";
-
-
-            let heading =
-                document.createElement("h3");
-
-            heading.innerText = chapter;
-
-            chapterBox.appendChild(heading);
-
-
-            let button =
-                document.createElement("button");
-
-            button.className = "openBtn";
-
-            button.innerText = "Open Chapter";
-
-
-            let content =
-                document.createElement("div");
-
-            content.className = "content";
-
-
-            content.innerHTML = `
-
-                <div class="box">
-
-                    <h4>📖 Lesson</h4>
-
-                    <p>
-                    ${chapter} ke complete lesson,
-                    concepts aur explanation yahan add honge.
-                    </p>
-
-                </div>
-
-
-                <div class="box">
-
-                    <h4>❓ Short Questions</h4>
-
-                    <p>
-                    Is chapter ke important
-                    short questions aur answers.
-                    </p>
-
-                </div>
-
-
-                <div class="box">
-
-                    <h4>📝 Long Questions</h4>
-
-                    <p>
-                    Is chapter ke important
-                    long questions aur answers.
-                    </p>
-
-                </div>
-
-
-                <div class="box">
-
-                    <h4>🔘 MCQs</h4>
-
-                    <p>
-                    Is chapter ke important MCQs.
-                    </p>
-
-                </div>
-
-
-                <div class="box">
-
-                    <h4>✍️ Exercise</h4>
-
-                    <p>
-                    Is chapter ki textbook exercise
-                    aur practice questions.
-                    </p>
-
-                </div>
-
-
-                <div class="box">
-
-                    <h4>🧮 Numericals / Practice</h4>
-
-                    <p>
-                    Jahan applicable ho,
-                    numericals aur practice questions.
-                    </p>
-
-                </div>
-
-            `;
-
-
-            button.onclick = function(){
-
-                if(content.style.display === "block"){
-
-                    content.style.display = "none";
-
-                    button.innerText = "Open Chapter";
-
-                }
-
-                else{
-
-                    content.style.display = "block";
-
-                    button.innerText = "Close Chapter";
-
-                }
-
-            };
-
-
-            chapterBox.appendChild(button);
-
-            chapterBox.appendChild(content);
-
-            subjectBox.appendChild(chapterBox);
-
-        });
-
-
-        container.appendChild(subjectBox);
-
-    });
-
-}
-
-
-function searchChapters(){
-
-    let search =
-        document
-        .getElementById("searchInput")
-        .value
-        .toLowerCase();
-
-
-    let allSubjects =
-        document.querySelectorAll(".subject");
-
-
-    allSubjects.forEach(function(subject){
-
-        let text =
-            subject.innerText.toLowerCase();
-
-
-        if(text.includes(search)){
-
-            subject.style.display = "block";
-
-        }
-
-        else{
-
-            subject.style.display = "none";
-
-        }
-
-    });
-
-}
-
-
-createSubjects();
-
-
-</script>
-
-
-</body>
-
-</html>
+<div class="chapter-title" onclick="openChapter(this)">
+Chapter 3 —
