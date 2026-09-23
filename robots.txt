@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ubaidmughal33322-crypto.github.io/study-world/sitemap.xml
