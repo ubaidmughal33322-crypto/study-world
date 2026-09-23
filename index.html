@@ -5,7 +5,6 @@
     <meta name="google-site-verification" content="5ab1VycST9ssVsFxGMiQlL5Fi0bYosNuueKCSs6nYEc" />
     <title>Study World</title>
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Study World - Free Online Learning</title>
@@ -13,13 +12,14 @@
     <meta name="description"
         content="Study World is a free online learning website for English, Math, Computer and school classes.">
 
-    <meta name="keywords"
-        content="Study World, free education, English grammar, Math, Computer, Class 5, Class 6, Class 7">
-
     <style>
 
         * {
             box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
         }
 
         body {
@@ -31,8 +31,7 @@
 
         header {
             background:
-                linear-gradient(rgba(10, 60, 130, 0.78),
-                rgba(10, 60, 130, 0.78)),
+                linear-gradient(rgba(10,60,130,.75),rgba(10,60,130,.75)),
                 url("https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=1600&q=80");
 
             background-size: cover;
@@ -40,12 +39,12 @@
 
             color: white;
             text-align: center;
-            padding: 60px 20px;
+            padding: 70px 20px;
         }
 
         header h1 {
             font-size: 42px;
-            margin: 0 0 10px;
+            margin: 0;
         }
 
         header p {
@@ -55,7 +54,7 @@
         nav {
             background: #123b68;
             text-align: center;
-            padding: 14px;
+            padding: 15px;
             position: sticky;
             top: 0;
             z-index: 100;
@@ -64,7 +63,7 @@
         nav a {
             color: white;
             text-decoration: none;
-            margin: 0 10px;
+            margin: 0 9px;
             font-weight: bold;
         }
 
@@ -80,7 +79,6 @@
             border: 2px solid #174ea6;
             border-radius: 12px;
             font-size: 16px;
-            outline: none;
         }
 
         .section {
@@ -89,28 +87,28 @@
             padding: 20px;
         }
 
-        .section h2 {
+        .section h2,
+        .about h2,
+        .contact h2 {
             text-align: center;
             color: #174ea6;
-            margin-bottom: 25px;
         }
 
         .cards {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(3,1fr);
             gap: 20px;
         }
 
         .card {
             background: white;
-            padding: 20px;
+            padding: 22px;
             border-radius: 15px;
-            box-shadow: 0 5px 18px rgba(0,0,0,0.10);
+            box-shadow: 0 5px 18px rgba(0,0,0,.1);
         }
 
         .card h3 {
             color: #174ea6;
-            margin-top: 0;
         }
 
         .card p {
@@ -130,11 +128,6 @@
             cursor: pointer;
         }
 
-        .btn:hover,
-        button:hover {
-            background: #0d3b82;
-        }
-
         .lesson-content {
             display: none;
             margin-top: 15px;
@@ -142,22 +135,6 @@
             background: #eef5ff;
             border-radius: 10px;
             line-height: 1.7;
-        }
-
-        .about,
-        .contact {
-            background: white;
-            max-width: 1100px;
-            margin: 40px auto;
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 5px 18px rgba(0,0,0,0.10);
-        }
-
-        .about h2,
-        .contact h2 {
-            color: #174ea6;
-            text-align: center;
         }
 
         .quiz-card {
@@ -175,33 +152,49 @@
         .question label {
             display: block;
             padding: 7px;
-            cursor: pointer;
         }
 
         .result {
             margin-top: 20px;
             padding: 15px;
-            border-radius: 10px;
             background: #e5f7e9;
             color: #176b2c;
-            font-size: 20px;
-            font-weight: bold;
+            border-radius: 10px;
             text-align: center;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .about,
+        .contact {
+            background: white;
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 18px rgba(0,0,0,.1);
+        }
+
+        .about p,
+        .contact p {
+            line-height: 1.8;
+            font-size: 17px;
+        }
+
+        .contact a {
+            color: #174ea6;
+            font-weight: bold;
         }
 
         footer {
             background: #123b68;
             color: white;
             text-align: center;
-            padding: 30px 15px;
+            padding: 30px;
             margin-top: 50px;
         }
 
-        @media (max-width: 800px) {
-
-            header h1 {
-                font-size: 32px;
-            }
+        @media (max-width:800px) {
 
             .cards {
                 grid-template-columns: 1fr;
@@ -212,15 +205,17 @@
                 margin: 5px;
             }
 
+            header h1 {
+                font-size: 32px;
+            }
         }
 
     </style>
 </head>
 
+
 <body>
 
-
-<!-- HEADER -->
 
 <header>
 
@@ -228,31 +223,22 @@
 
     <p>Free Online Learning Website</p>
 
-    <p>English • Math • Computer • School Classes • Quizzes</p>
+    <p>English • Math • Computer • Classes • Quizzes</p>
 
 </header>
 
 
-<!-- NAVIGATION -->
-
 <nav>
 
     <a href="#home">Home</a>
-
     <a href="#lessons">Lessons</a>
-
     <a href="#classes">Classes</a>
-
     <a href="#quiz">Quiz</a>
-
     <a href="#about">About</a>
-
     <a href="#contact">Contact</a>
 
 </nav>
 
-
-<!-- SEARCH -->
 
 <div class="search-box">
 
@@ -265,7 +251,7 @@
 </div>
 
 
-<!-- POPULAR LESSONS -->
+<!-- HOME -->
 
 <section class="section" id="home">
 
@@ -279,7 +265,7 @@
 
             <p>
                 Learn basic English grammar,
-                nouns, verbs and sentence formation.
+                nouns, verbs and sentences.
             </p>
 
             <a class="btn" href="grammar.html">
@@ -295,7 +281,7 @@
 
             <p>
                 Learn easy Math concepts,
-                formulas and useful examples.
+                formulas and examples.
             </p>
 
             <a class="btn" href="math.html">
@@ -310,8 +296,8 @@
             <h3>💻 Computer Basics</h3>
 
             <p>
-                Learn computer basics,
-                hardware, software and internet.
+                Learn hardware, software
+                and internet basics.
             </p>
 
             <a class="btn" href="computer.html">
@@ -325,7 +311,7 @@
 </section>
 
 
-<!-- SCHOOL CLASSES -->
+<!-- CLASSES -->
 
 <section class="section" id="classes">
 
@@ -337,10 +323,7 @@
 
             <h3>📘 Class 5</h3>
 
-            <p>
-                Class 5 English, Math and
-                Computer lessons.
-            </p>
+            <p>English, Math and Computer lessons.</p>
 
             <a class="btn" href="class5.html">
                 Class 5
@@ -353,10 +336,7 @@
 
             <h3>📗 Class 6</h3>
 
-            <p>
-                Class 6 English, Math and
-                Computer lessons.
-            </p>
+            <p>English, Math and Computer lessons.</p>
 
             <a class="btn" href="class6.html">
                 Class 6
@@ -369,10 +349,7 @@
 
             <h3>📕 Class 7</h3>
 
-            <p>
-                Class 7 English, Math and
-                Computer lessons.
-            </p>
+            <p>English, Math and Computer lessons.</p>
 
             <a class="btn" href="class7.html">
                 Class 7
@@ -385,7 +362,7 @@
 </section>
 
 
-<!-- NEW LESSONS -->
+<!-- LESSONS -->
 
 <section class="section" id="lessons">
 
@@ -394,22 +371,17 @@
     <div class="cards">
 
 
-        <!-- Lesson 1 -->
-
         <div class="card">
 
             <h3>📚 Parts of Speech</h3>
 
-            <p>
-                Learn nouns, pronouns, verbs,
-                adjectives and more.
-            </p>
+            <p>Learn nouns, verbs and adjectives.</p>
 
-            <button onclick="toggleLesson('lesson1')">
+            <button onclick="toggleLesson('l1')">
                 Learn Now
             </button>
 
-            <div id="lesson1" class="lesson-content">
+            <div id="l1" class="lesson-content">
 
                 <b>Noun:</b> Name of a person,
                 place or thing.
@@ -420,69 +392,51 @@
 
                 <br><br>
 
-                <b>Adjective:</b> A word that
-                describes something.
+                <b>Adjective:</b> A describing word.
 
             </div>
 
         </div>
 
-
-        <!-- Lesson 2 -->
 
         <div class="card">
 
             <h3>⏰ English Tenses</h3>
 
-            <p>
-                Learn Present, Past and Future Tense.
-            </p>
+            <p>Learn Present, Past and Future.</p>
 
-            <button onclick="toggleLesson('lesson2')">
+            <button onclick="toggleLesson('l2')">
                 Learn Now
             </button>
 
-            <div id="lesson2" class="lesson-content">
+            <div id="l2" class="lesson-content">
 
-                <b>Present:</b> I play cricket.
+                Present: I play.
 
-                <br><br>
+                <br>
 
-                <b>Past:</b> I played cricket.
+                Past: I played.
 
-                <br><br>
+                <br>
 
-                <b>Future:</b> I will play cricket.
+                Future: I will play.
 
             </div>
 
         </div>
 
 
-        <!-- Lesson 3 -->
-
         <div class="card">
 
             <h3>🍕 Fractions</h3>
 
-            <p>
-                Learn basic fractions with
-                easy examples.
-            </p>
+            <p>Learn basic fractions.</p>
 
-            <button onclick="toggleLesson('lesson3')">
+            <button onclick="toggleLesson('l3')">
                 Learn Now
             </button>
 
-            <div id="lesson3" class="lesson-content">
-
-                A fraction shows a part of a whole.
-
-                <br><br>
-
-                Example:
-
-                <br>
+            <div id="l3" class="lesson-content">
 
                 1/2 means one half.
 
@@ -491,31 +445,19 @@
         </div>
 
 
-        <!-- Lesson 4 -->
-
         <div class="card">
 
             <h3>➗ Basic Algebra</h3>
 
-            <p>
-                Learn simple algebra equations.
-            </p>
+            <p>Learn simple equations.</p>
 
-            <button onclick="toggleLesson('lesson4')">
+            <button onclick="toggleLesson('l4')">
                 Learn Now
             </button>
 
-            <div id="lesson4" class="lesson-content">
-
-                Example:
-
-                <br><br>
+            <div id="l4" class="lesson-content">
 
                 2x + 4 = 10
-
-                <br><br>
-
-                2x = 6
 
                 <br><br>
 
@@ -526,178 +468,56 @@
         </div>
 
 
-        <!-- Lesson 5 -->
-
         <div class="card">
 
             <h3>🔐 Internet Safety</h3>
 
-            <p>
-                Learn how to stay safe online.
-            </p>
+            <p>Learn how to stay safe online.</p>
 
-            <button onclick="toggleLesson('lesson5')">
+            <button onclick="toggleLesson('l5')">
                 Learn Now
             </button>
 
-            <div id="lesson5" class="lesson-content">
+            <div id="l5" class="lesson-content">
 
-                Never share your password,
-                bank information or private
-                information with strangers online.
+                Never share passwords,
+                OTPs or private information.
 
             </div>
 
         </div>
 
-
-        <!-- Lesson 6 -->
-
-        <div class="card">
-
-            <h3>📝 MS Word Basics</h3>
-
-            <p>
-                Learn basic document editing.
-            </p>
-
-            <button onclick="toggleLesson('lesson6')">
-                Learn Now
-            </button>
-
-            <div id="lesson6" class="lesson-content">
-
-                MS Word can be used to create
-                documents, write text and
-                format paragraphs.
-
-            </div>
-
-        </div>
-
-
-        <!-- Lesson 7 -->
-
-        <div class="card">
-
-            <h3>🔬 Basic Science</h3>
-
-            <p>
-                Learn simple science facts.
-            </p>
-
-            <button onclick="toggleLesson('lesson7')">
-                Learn Now
-            </button>
-
-            <div id="lesson7" class="lesson-content">
-
-                Plants need sunlight, water
-                and carbon dioxide to make
-                their food.
-
-            </div>
-
-        </div>
-
-
-        <!-- Lesson 8 -->
-
-        <div class="card">
-
-            <h3>🌍 General Knowledge</h3>
-
-            <p>
-                Learn useful general knowledge.
-            </p>
-
-            <button onclick="toggleLesson('lesson8')">
-                Learn Now
-            </button>
-
-            <div id="lesson8" class="lesson-content">
-
-                Earth is the third planet
-                from the Sun.
-
-            </div>
-
-        </div>
-
-
-        <!-- Lesson 9 -->
-
-        <div class="card">
-
-            <h3>📅 Study Tips</h3>
-
-            <p>
-                Learn how to study effectively.
-            </p>
-
-            <button onclick="toggleLesson('lesson9')">
-                Learn Now
-            </button>
-
-            <div id="lesson9" class="lesson-content">
-
-                Make a study timetable,
-                remove distractions and
-                revise your lessons regularly.
-
-            </div>
-
-        </div>
-
-
-        <!-- Lesson 10 -->
 
         <div class="card">
 
             <h3>💻 HTML Basics</h3>
 
-            <p>
-                Learn how websites are created.
-            </p>
+            <p>Learn how websites are created.</p>
 
-            <button onclick="toggleLesson('lesson10')">
+            <button onclick="toggleLesson('l6')">
                 Learn Now
             </button>
 
-            <div id="lesson10" class="lesson-content">
+            <div id="l6" class="lesson-content">
 
-                HTML is used to create
-                the structure of a website.
-
-                <br><br>
-
-                Example:
-
-                <br><br>
-
-                &lt;h1&gt;Hello World&lt;/h1&gt;
+                HTML creates the structure
+                of a webpage.
 
             </div>
 
         </div>
+
 
     </div>
 
 </section>
 
 
-<!-- QUIZZES -->
+<!-- QUIZ -->
 
 <section class="section" id="quiz">
 
-    <h2>📝 Student Quizzes</h2>
-
-    <p style="text-align:center;">
-        Apni knowledge test karein aur score dekhein!
-    </p>
-
-
-    <!-- CLASS 5 QUIZ -->
+    <h2>📝 Student Quiz</h2>
 
     <div class="card quiz-card">
 
@@ -728,7 +548,7 @@
 
         <div class="question">
 
-            <b>2. "Book" kya hai?</b>
+            <b>2. "School" kya hai?</b>
 
             <label>
                 <input type="radio" name="q2" value="noun">
@@ -815,174 +635,10 @@
 
 
         <button onclick="checkQuiz()">
-            ✅ Check Class 5 Answers
+            ✅ Check Answers
         </button>
 
         <div id="quizResult" class="result"></div>
-
-    </div>
-
-
-    <!-- CLASS 6 QUIZ -->
-
-    <div class="card quiz-card" style="margin-top:30px;">
-
-        <h3>📗 Class 6 Quiz</h3>
-
-
-        <div class="question">
-
-            <b>1. 25% of 100 = ?</b>
-
-            <label>
-                <input type="radio" name="c6q1" value="25">
-                25
-            </label>
-
-            <label>
-                <input type="radio" name="c6q1" value="50">
-                50
-            </label>
-
-            <label>
-                <input type="radio" name="c6q1" value="10">
-                10
-            </label>
-
-        </div>
-
-
-        <div class="question">
-
-            <b>2. Past tense of "go"?</b>
-
-            <label>
-                <input type="radio" name="c6q2" value="went">
-                Went
-            </label>
-
-            <label>
-                <input type="radio" name="c6q2" value="goes">
-                Goes
-            </label>
-
-            <label>
-                <input type="radio" name="c6q2" value="going">
-                Going
-            </label>
-
-        </div>
-
-
-        <div class="question">
-
-            <b>3. Files ko organize karne ke liye kya use hota hai?</b>
-
-            <label>
-                <input type="radio" name="c6q3" value="folder">
-                Folder
-            </label>
-
-            <label>
-                <input type="radio" name="c6q3" value="keyboard">
-                Keyboard
-            </label>
-
-            <label>
-                <input type="radio" name="c6q3" value="speaker">
-                Speaker
-            </label>
-
-        </div>
-
-
-        <button onclick="checkClass6Quiz()">
-            ✅ Check Class 6 Answers
-        </button>
-
-        <div id="class6Result" class="result"></div>
-
-    </div>
-
-
-    <!-- CLASS 7 QUIZ -->
-
-    <div class="card quiz-card" style="margin-top:30px;">
-
-        <h3>📕 Class 7 Quiz</h3>
-
-
-        <div class="question">
-
-            <b>1. 2x + 4 = 10 mein x = ?</b>
-
-            <label>
-                <input type="radio" name="c7q1" value="3">
-                3
-            </label>
-
-            <label>
-                <input type="radio" name="c7q1" value="4">
-                4
-            </label>
-
-            <label>
-                <input type="radio" name="c7q1" value="5">
-                5
-            </label>
-
-        </div>
-
-
-        <div class="question">
-
-            <b>2. Earth kis ke around revolve karti hai?</b>
-
-            <label>
-                <input type="radio" name="c7q2" value="sun">
-                Sun
-            </label>
-
-            <label>
-                <input type="radio" name="c7q2" value="moon">
-                Moon
-            </label>
-
-            <label>
-                <input type="radio" name="c7q2" value="mars">
-                Mars
-            </label>
-
-        </div>
-
-
-        <div class="question">
-
-            <b>3. Strong password mein kya hona chahiye?</b>
-
-            <label>
-                <input type="radio" name="c7q3" value="mix">
-                Letters, numbers aur symbols
-            </label>
-
-            <label>
-                <input type="radio" name="c7q3" value="name">
-                Sirf apna naam
-            </label>
-
-            <label>
-                <input type="radio" name="c7q3" value="123">
-                Sirf 123456
-            </label>
-
-        </div>
-
-
-        <button onclick="checkClass7Quiz()">
-            ✅ Check Class 7 Answers
-        </button>
-
-        <div id="class7Result" class="result"></div>
 
     </div>
 
@@ -998,19 +654,12 @@
     <p>
         Study World ek free educational website hai
         jahan students English, Math, Computer aur
-        different school classes ke lessons aasani
-        se seekh sakte hain.
+        school classes ke lessons seekh sakte hain.
     </p>
 
     <p>
-        Hamara maqsad students ko simple, useful
-        aur easy-to-understand study material
-        provide karna hai.
-    </p>
-
-    <p>
-        Yahan students basic concepts ko online
-        free mein learn aur revise kar sakte hain.
+        Students quizzes solve karke apni practice
+        bhi kar sakte hain.
     </p>
 
 </section>
@@ -1024,15 +673,17 @@
 
     <p>
         Agar aapko website ke lessons ke baare mein
-        koi question, suggestion ya feedback dena ho
+        question, suggestion ya feedback dena ho
         to humse contact karein.
     </p>
 
     <p>
         📧 Email:
-        <a href="mailto:your-email@gmail.com">
-            your-email@gmail.com
+
+        <a href="mailto:mughalbadshaaa978@gmail.com">
+            mughalbadshaaa978@gmail.com
         </a>
+
     </p>
 
 </section>
@@ -1049,205 +700,113 @@
 </footer>
 
 
-<!-- JAVASCRIPT -->
-
 <script>
 
-    /* SEARCH */
 
-    function searchLessons() {
+function searchLessons() {
 
-        let input =
-            document.getElementById("searchInput")
-            .value
-            .toLowerCase();
+    let input =
+        document
+        .getElementById("searchInput")
+        .value
+        .toLowerCase();
 
-        let cards =
-            document.querySelectorAll(".card");
+    let cards =
+        document.querySelectorAll(".card");
 
-        cards.forEach(function(card) {
+    cards.forEach(function(card) {
 
-            let text =
-                card.innerText.toLowerCase();
+        let text =
+            card.innerText.toLowerCase();
 
-            if (text.includes(input)) {
+        if (text.includes(input)) {
 
-                card.style.display = "block";
-
-            } else {
-
-                card.style.display = "none";
-
-            }
-
-        });
-
-    }
-
-
-    /* LESSON BUTTON */
-
-    function toggleLesson(id) {
-
-        let lesson =
-            document.getElementById(id);
-
-        if (lesson.style.display === "block") {
-
-            lesson.style.display = "none";
+            card.style.display = "block";
 
         } else {
 
-            lesson.style.display = "block";
+            card.style.display = "none";
 
         }
 
-    }
+    });
+
+}
 
 
-    /* CLASS 5 QUIZ */
+function toggleLesson(id) {
 
-    function checkQuiz() {
+    let lesson =
+        document.getElementById(id);
 
-        let score = 0;
+    if (lesson.style.display === "block") {
 
+        lesson.style.display = "none";
 
-        let q1 =
-            document.querySelector(
-                'input[name="q1"]:checked'
-            );
+    } else {
 
-        let q2 =
-            document.querySelector(
-                'input[name="q2"]:checked'
-            );
-
-        let q3 =
-            document.querySelector(
-                'input[name="q3"]:checked'
-            );
-
-        let q4 =
-            document.querySelector(
-                'input[name="q4"]:checked'
-            );
-
-        let q5 =
-            document.querySelector(
-                'input[name="q5"]:checked'
-            );
-
-
-        if (q1 && q1.value === "40")
-            score++;
-
-        if (q2 && q2.value === "noun")
-            score++;
-
-        if (q3 && q3.value === "keyboard")
-            score++;
-
-        if (q4 && q4.value === "50")
-            score++;
-
-        if (q5 && q5.value === "star")
-            score++;
-
-
-        document.getElementById(
-            "quizResult"
-        ).innerHTML =
-            "🎉 Your Score: " +
-            score +
-            " / 5";
+        lesson.style.display = "block";
 
     }
 
-
-    /* CLASS 6 QUIZ */
-
-    function checkClass6Quiz() {
-
-        let score = 0;
+}
 
 
-        let q1 =
-            document.querySelector(
-                'input[name="c6q1"]:checked'
-            );
+function checkQuiz() {
 
-        let q2 =
-            document.querySelector(
-                'input[name="c6q2"]:checked'
-            );
-
-        let q3 =
-            document.querySelector(
-                'input[name="c6q3"]:checked'
-            );
+    let score = 0;
 
 
-        if (q1 && q1.value === "25")
-            score++;
+    let q1 =
+        document.querySelector(
+            'input[name="q1"]:checked'
+        );
 
-        if (q2 && q2.value === "went")
-            score++;
+    let q2 =
+        document.querySelector(
+            'input[name="q2"]:checked'
+        );
 
-        if (q3 && q3.value === "folder")
-            score++;
+    let q3 =
+        document.querySelector(
+            'input[name="q3"]:checked'
+        );
 
+    let q4 =
+        document.querySelector(
+            'input[name="q4"]:checked'
+        );
 
-        document.getElementById(
-            "class6Result"
-        ).innerHTML =
-            "🎉 Your Score: " +
-            score +
-            " / 3";
-
-    }
-
-
-    /* CLASS 7 QUIZ */
-
-    function checkClass7Quiz() {
-
-        let score = 0;
-
-
-        let q1 =
-            document.querySelector(
-                'input[name="c7q1"]:checked'
-            );
-
-        let q2 =
-            document.querySelector(
-                'input[name="c7q2"]:checked'
-            );
-
-        let q3 =
-            document.querySelector(
-                'input[name="c7q3"]:checked'
-            );
+    let q5 =
+        document.querySelector(
+            'input[name="q5"]:checked'
+        );
 
 
-        if (q1 && q1.value === "3")
-            score++;
+    if (q1 && q1.value === "40")
+        score++;
 
-        if (q2 && q2.value === "sun")
-            score++;
+    if (q2 && q2.value === "noun")
+        score++;
 
-        if (q3 && q3.value === "mix")
-            score++;
+    if (q3 && q3.value === "keyboard")
+        score++;
+
+    if (q4 && q4.value === "50")
+        score++;
+
+    if (q5 && q5.value === "star")
+        score++;
 
 
-        document.getElementById(
-            "class7Result"
-        ).innerHTML =
-            "🎉 Your Score: " +
-            score +
-            " / 3";
+    document.getElementById(
+        "quizResult"
+    ).innerHTML =
+        "🎉 Your Score: " +
+        score +
+        " / 5";
 
-    }
+}
 
 </script>
 
