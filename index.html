@@ -1,564 +1,189 @@
-html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Study World Pakistan – Class 5 to 9 Notes & Quizzes</title>
-
-    <meta name="description" content="Study World Pakistan provides free Class 5 to 9 notes, lessons, exercises and quizzes for students.">
-
-    <meta name="keywords" content="Study World Pakistan, Class 5 notes, Class 6 notes, Class 7 notes, Class 9 notes, Class 9 syllabus, Class 9 exercises, Class 9 MCQs, Pakistan students">
-
-    <meta name="robots" content="index, follow">
-
-    <link rel="canonical" href="https://ubaidmughal33322-crypto.github.io/study-world/">
-
-    <meta property="og:title" content="Study World Pakistan – Class 5 to 9 Notes & Quizzes">
-    <meta property="og:description" content="Free Class 5 to 9 notes, lessons, exercises and quizzes for students.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://ubaidmughal33322-crypto.github.io/study-world/">
-
-    <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            background: #eef5fc;
-            color: #263238;
-            line-height: 1.6;
-        }
-
-        header {
-            background: linear-gradient(135deg, #174ea6, #1683e8);
-            color: white;
-            text-align: center;
-            padding: 25px 15px;
-        }
-
-        header h1 {
-            font-size: 30px;
-            margin-bottom: 5px;
-        }
-
-        header p {
-            font-size: 15px;
-        }
-
-        nav {
-            background: white;
-            text-align: center;
-            padding: 14px 8px;
-            position: sticky;
-            top: 0;
-            z-index: 10;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.12);
-        }
-
-        nav a {
-            color: #174ea6;
-            text-decoration: none;
-            font-weight: bold;
-            margin: 0 9px;
-            font-size: 14px;
-        }
-
-        .hero {
-            min-height: 280px;
-            background:
-                linear-gradient(rgba(30,60,90,0.65), rgba(30,60,90,0.65)),
-                url("https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=1600&q=80");
-            background-size: cover;
-            background-position: center;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            color: white;
-            padding: 30px 20px;
-        }
-
-        .hero h2 {
-            font-size: 34px;
-            margin-bottom: 10px;
-        }
-
-        .hero p {
-            font-size: 16px;
-        }
-
-        .hero .btn {
-            margin-top: 18px;
-        }
-
-        .container {
-            max-width: 1100px;
-            margin: auto;
-            padding: 25px 15px;
-        }
-
-        section {
-            margin-bottom: 45px;
-        }
-
-        section > h2 {
-            text-align: center;
-            color: #174ea6;
-            margin-bottom: 25px;
-        }
-
-        .search-box {
-            text-align: center;
-            margin-bottom: 25px;
-        }
-
-        .search-box input {
-            width: 90%;
-            max-width: 650px;
-            padding: 14px;
-            border: 2px solid #174ea6;
-            border-radius: 12px;
-            font-size: 16px;
-            outline: none;
-        }
-
-        .cards {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 15px;
-        }
-
-        .card {
-            background: white;
-            padding: 20px;
-            border-radius: 12px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.10);
-        }
-
-        .card h3 {
-            color: #174ea6;
-            font-size: 18px;
-            margin-bottom: 12px;
-        }
-
-        .card p {
-            font-size: 14px;
-            margin-bottom: 15px;
-        }
-
-        .btn {
-            display: inline-block;
-            background: #174ea6;
-            color: white;
-            text-decoration: none;
-            border-radius: 8px;
-            padding: 9px 14px;
-            font-size: 14px;
-            font-weight: bold;
-            border: none;
-            cursor: pointer;
-        }
-
-        .btn:hover {
-            background: #0d3b7a;
-        }
-
-        .quiz {
-            background: white;
-            padding: 20px;
-            margin-bottom: 18px;
-            border-radius: 12px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.10);
-        }
-
-        .quiz h3 {
-            color: #174ea6;
-            margin-bottom: 12px;
-        }
-
-        .quiz label {
-            display: block;
-            margin: 7px 0;
-            padding: 6px;
-        }
-
-        .quiz button {
-            margin-top: 10px;
-            background: #174ea6;
-            color: white;
-            border: none;
-            border-radius: 7px;
-            padding: 9px 15px;
-            cursor: pointer;
-        }
-
-        .result {
-            margin-top: 10px;
-            font-weight: bold;
-        }
-
-        .about,
-        .contact {
-            background: white;
-            padding: 22px;
-            border-radius: 12px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.10);
-        }
-
-        .contact a {
-            color: #174ea6;
-            font-weight: bold;
-        }
-
-        footer {
-            background: #174ea6;
-            color: white;
-            text-align: center;
-            padding: 22px 15px;
-        }
-
-        @media (max-width: 600px) {
-            header h1 {
-                font-size: 25px;
-            }
-
-            .hero h2 {
-                font-size: 27px;
-            }
-
-            nav a {
-                display: inline-block;
-                margin: 4px 6px;
-            }
-
-            .cards {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Study World Pakistan — free notes, lessons and quizzes for Classes 5 to 9.">
+<meta name="theme-color" content="#101b3f">
+<title>Study World Pakistan | Learn Smarter</title>
+<style>
+:root{--navy:#101b3f;--blue:#3157d5;--sky:#eaf1ff;--gold:#ffc857;--ink:#17213b;--muted:#66718a;--white:#fff;--line:#e6eaf2;--green:#168765;--shadow:0 14px 40px rgba(21,38,86,.10)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#f7f9fd;color:var(--ink);line-height:1.6}a{color:inherit;text-decoration:none}button,input,select,textarea{font:inherit}button{cursor:pointer}.wrap{width:min(1120px,92%);margin:auto}
+header{background:linear-gradient(125deg,#101b3f,#263f91);color:white;padding:18px 0 56px;overflow:hidden}
+.topbar{display:flex;align-items:center;justify-content:space-between;gap:16px}.brand{display:flex;align-items:center;gap:11px;font-size:19px;font-weight:800}.logo{display:grid;place-items:center;width:43px;height:43px;background:var(--gold);color:var(--navy);border-radius:14px;font-size:23px}.brand small{display:block;font-size:11px;letter-spacing:1.8px;color:#c9d6ff;font-weight:600}.navlinks{display:flex;gap:20px;align-items:center;font-size:14px}.navlinks a:hover{color:var(--gold)}.menu{display:none;background:transparent;border:1px solid #7182bf;color:white;border-radius:9px;padding:7px 11px}
+.hero{display:grid;grid-template-columns:1.25fr .75fr;gap:35px;align-items:center;padding-top:52px}.eyebrow{display:inline-block;background:#ffffff19;border:1px solid #ffffff30;color:#ffe09b;border-radius:30px;padding:6px 12px;font-size:12px;font-weight:700;letter-spacing:.5px}.hero h1{font-size:clamp(34px,5vw,57px);line-height:1.08;margin:18px 0}.hero h1 span{color:var(--gold)}.hero p{color:#dce4ff;max-width:560px;font-size:17px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}.btn{display:inline-flex;justify-content:center;align-items:center;gap:8px;border:0;border-radius:12px;padding:12px 18px;font-weight:800}.btn-primary{background:var(--gold);color:#1a2445}.btn-light{background:white;color:var(--navy)}.hero-card{background:#ffffff12;border:1px solid #ffffff30;border-radius:26px;padding:24px;backdrop-filter:blur(8px)}.hero-card-top{display:flex;justify-content:space-between;align-items:center}.hero-card h3{margin:12px 0 4px;font-size:23px}.hero-card p{font-size:14px;margin:0 0 18px}.mini-stats{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.mini-stat{background:#ffffff12;border-radius:14px;padding:14px}.mini-stat strong{display:block;font-size:24px;color:var(--gold)}.mini-stat span{font-size:12px;color:#dce4ff}
+.searchbox{background:white;border-radius:18px;padding:14px;box-shadow:var(--shadow);display:flex;gap:10px;margin-top:-28px;position:relative}.searchbox input{border:0;outline:0;flex:1;min-width:0;padding:8px 10px;color:var(--ink)}.searchbox button{background:var(--blue);color:white;border:0;border-radius:12px;padding:11px 19px;font-weight:700}
+section{padding:58px 0}.section-head{display:flex;align-items:end;justify-content:space-between;gap:16px;margin-bottom:24px}.section-head h2{font-size:clamp(25px,3vw,34px);margin:0;line-height:1.2}.section-head p{margin:7px 0 0;color:var(--muted)}.pill{display:inline-block;background:var(--sky);color:var(--blue);padding:6px 11px;border-radius:30px;font-size:12px;font-weight:800;margin-bottom:10px}
+.class-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}.class-card{background:white;border:1px solid var(--line);border-radius:18px;padding:19px 14px;box-shadow:0 6px 20px #182d5810;transition:.2s}.class-card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}.class-icon{display:grid;place-items:center;width:46px;height:46px;border-radius:14px;background:var(--sky);font-size:24px;margin-bottom:12px}.class-card h3{margin:0;font-size:17px}.class-card p{color:var(--muted);font-size:12px;margin:5px 0 13px}.text-link{color:var(--blue);font-size:13px;font-weight:800}
+.features{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.feature{background:white;border:1px solid var(--line);padding:22px;border-radius:18px}.feature .class-icon{background:#fff4d9}.feature h3{margin:0 0 6px}.feature p{margin:0;color:var(--muted);font-size:14px}
+.learning{background:#eef3ff}.subject-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.subject{background:white;border:1px solid #e1e8fa;border-radius:16px;padding:18px;display:flex;gap:13px;align-items:flex-start}.subject .class-icon{flex-shrink:0;margin:0}.subject h3{font-size:16px;margin:0 0 5px}.subject p{font-size:13px;color:var(--muted);margin:0 0 10px}
+.quiz-layout{display:grid;grid-template-columns:.8fr 1.2fr;gap:22px;align-items:start}.quiz-intro{background:var(--navy);color:white;border-radius:22px;padding:26px}.quiz-intro h2{margin:0 0 10px}.quiz-intro p{color:#d6defb}.quiz-box{background:white;border:1px solid var(--line);border-radius:22px;padding:24px;box-shadow:var(--shadow)}.quiz-meta{font-size:12px;color:var(--muted);font-weight:800}.quiz-box h3{margin:10px 0 18px}.options{display:grid;gap:10px}.option{background:#f7f9ff;border:1px solid #e0e6f4;padding:12px 14px;border-radius:12px;text-align:left;color:var(--ink)}.option:hover{border-color:var(--blue)}.option.correct{background:#e7f8f0;border-color:#168765}.option.wrong{background:#fff0f0;border-color:#d84c4c}.quiz-feedback{min-height:25px;font-weight:700;font-size:14px;margin-top:10px}.quiz-next{margin-top:12px;background:var(--blue);color:white;border:0;border-radius:10px;padding:10px 16px;font-weight:700}
+.contact-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:24px}.contact-info{background:linear-gradient(135deg,#101b3f,#3157d5);color:white;border-radius:22px;padding:25px}.contact-info p{color:#dce4ff}.contact-form{background:white;border:1px solid var(--line);border-radius:22px;padding:24px}.field{margin-bottom:13px}.field label{display:block;font-size:13px;font-weight:800;margin-bottom:5px}.field input,.field select,.field textarea{width:100%;padding:12px;border:1px solid #dfe5f0;border-radius:10px;background:#fbfcff}.field textarea{min-height:100px;resize:vertical}.contact-form button{background:var(--blue);color:white;border:0;border-radius:11px;padding:12px 18px;font-weight:800}.form-note{font-size:12px;color:var(--muted);margin-top:10px}
+footer{background:#0b1431;color:#dbe3ff;padding:28px 0}.footer-inner{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap;font-size:13px}.footer-inner strong{color:white}
+.empty-state{display:none;padding:18px;background:white;border:1px dashed #c8d2e7;border-radius:14px;color:var(--muted);text-align:center;grid-column:1/-1}
+@media(max-width:800px){.hero{grid-template-columns:1fr;padding-top:36px}.hero-card{max-width:520px}.class-grid{grid-template-columns:repeat(3,1fr)}.subject-grid{grid-template-columns:repeat(2,1fr)}.quiz-layout,.contact-grid{grid-template-columns:1fr}.navlinks{display:none;position:absolute;top:75px;left:4%;right:4%;background:#172753;padding:16px;border-radius:14px;flex-direction:column;align-items:flex-start;z-index:10}.navlinks.open{display:flex}.menu{display:block}}
+@media(max-width:520px){header{padding-bottom:48px}.brand{font-size:16px}.hero h1{font-size:38px}.hero p{font-size:15px}.class-grid{grid-template-columns:repeat(2,1fr)}.features,.subject-grid{grid-template-columns:1fr}.section-head{align-items:flex-start;flex-direction:column}.searchbox{gap:4px}.searchbox button{padding:10px 12px}.searchbox input{font-size:14px}.mini-stats{gap:8px}section{padding:43px 0}}
+</style>
 </head>
-
 <body>
-
-<header>
-    <h1>📚 Study World Pakistan</h1>
-    <p>Free Notes, Lessons, Exercises & Quizzes for Students</p>
+<header id="home">
+  <div class="wrap">
+    <div class="topbar">
+      <a class="brand" href="#home"><span class="logo">✦</span><span>Study World Pakistan<small>LEARN • PRACTICE • SUCCEED</small></span></a>
+      <button class="menu" id="menuBtn" aria-label="Toggle menu">☰ Menu</button>
+      <nav class="navlinks" id="navlinks"><a href="#classes">Classes</a><a href="#learning">Lessons & Notes</a><a href="#quiz">Quizzes</a><a href="#contact">Contact</a></nav>
+    </div>
+    <div class="hero">
+      <div>
+        <span class="eyebrow">🎓 YOUR FREE LEARNING SPACE</span>
+        <h1>Learn today.<br><span>Lead tomorrow.</span></h1>
+        <p>Simple study resources for Pakistani students. Explore class-wise learning, revise key concepts and test what you know — all in one place.</p>
+        <div class="hero-actions"><a class="btn btn-primary" href="#classes">Explore Classes ↗</a><a class="btn btn-light" href="#quiz">Try a Quiz</a></div>
+      </div>
+      <div class="hero-card">
+        <div class="hero-card-top"><span>📘</span><span class="eyebrow">STUDENT HUB</span></div>
+        <h3>Your next big step starts here.</h3><p>Build confidence one lesson at a time with focused practice and revision.</p>
+        <div class="mini-stats"><div class="mini-stat"><strong>5–9</strong><span>Class levels</span></div><div class="mini-stat"><strong>Free</strong><span>Learning access</span></div><div class="mini-stat"><strong>MCQs</strong><span>Quick practice</span></div><div class="mini-stat"><strong>Anytime</strong><span>Learn at your pace</span></div></div>
+      </div>
+    </div>
+  </div>
 </header>
 
-<nav>
-    <a href="#home">Home</a>
-    <a href="#lessons">Lessons</a>
-    <a href="#classes">Classes</a>
-    <a href="#quizzes">Quiz</a>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
-</nav>
+<main>
+  <div class="wrap">
+    <div class="searchbox" role="search"><span style="font-size:22px;padding:4px">⌕</span><input id="siteSearch" type="search" placeholder="Search classes, subjects or resources..." aria-label="Search learning resources"><button id="searchBtn">Search</button></div>
+  </div>
 
-<section class="hero" id="home">
-    <div>
-        <h2>Learn Better with Study World Pakistan</h2>
-        <p>Free educational resources for Class 5 to Class 9 students.</p>
-
-        <a class="btn" href="#classes">Explore Classes</a>
+  <section id="classes">
+    <div class="wrap">
+      <div class="section-head"><div><span class="pill">CHOOSE YOUR LEVEL</span><h2>Explore your class</h2><p>Start with your class and find a path to learn.</p></div></div>
+      <div class="class-grid searchable">
+        <article class="class-card search-item" data-search="class 5 grade five primary"><div class="class-icon">📗</div><h3>Class 5</h3><p>Build strong basics</p><a class="text-link" href="#learning" data-class="5">Explore resources →</a></article>
+        <article class="class-card search-item" data-search="class 6 grade six middle"><div class="class-icon">📘</div><h3>Class 6</h3><p>Grow your knowledge</p><a class="text-link" href="#learning" data-class="6">Explore resources →</a></article>
+        <article class="class-card search-item" data-search="class 7 grade seven middle"><div class="class-icon">📙</div><h3>Class 7</h3><p>Learn step by step</p><a class="text-link" href="#learning" data-class="7">Explore resources →</a></article>
+        <article class="class-card search-item" data-search="class 8 grade eight middle"><div class="class-icon">📕</div><h3>Class 8</h3><p>Practice with purpose</p><a class="text-link" href="#learning" data-class="8">Explore resources →</a></article>
+        <article class="class-card search-item" data-search="class 9 grade nine matric punjab board"><div class="class-icon">🎓</div><h3>Class 9</h3><p>Prepare for exams</p><a class="text-link" href="#learning" data-class="9">Explore resources →</a></article>
+        <div class="empty-state" id="classEmpty">No matching classes found. Try another search.</div>
+      </div>
     </div>
-</section>
+  </section>
 
-<div class="container">
-
-    <div class="search-box">
-        <input
-            type="text"
-            id="searchInput"
-            placeholder="🔎 Search lessons or classes..."
-            onkeyup="searchLessons()"
-        >
+  <section style="padding-top:0">
+    <div class="wrap">
+      <div class="section-head"><div><span class="pill">WHY STUDY HERE?</span><h2>Learning made simpler</h2><p>Helpful tools to make study time more focused.</p></div></div>
+      <div class="features">
+        <article class="feature"><div class="class-icon">📝</div><h3>Easy-to-use notes</h3><p>Keep key ideas and revision points easy to find.</p></article>
+        <article class="feature"><div class="class-icon">💡</div><h3>Understand lessons</h3><p>Review topics at your own pace and strengthen the basics.</p></article>
+        <article class="feature"><div class="class-icon">✅</div><h3>Practice with MCQs</h3><p>Answer quick questions and get instant feedback.</p></article>
+      </div>
     </div>
+  </section>
 
-    <section id="lessons">
-        <h2>📖 Popular Lessons</h2>
+  <section class="learning" id="learning">
+    <div class="wrap">
+      <div class="section-head"><div><span class="pill">STUDY RESOURCES</span><h2>Lessons & notes</h2><p>Sample resource cards — add your own chapter material as you build the site.</p></div></div>
+      <div class="subject-grid searchable" id="subjectGrid">
+        <article class="subject search-item" data-search="mathematics maths math numbers algebra class 5 6 7 8 9"><div class="class-icon">➗</div><div><h3>Mathematics</h3><p>Numbers, operations, algebra and problem-solving practice.</p><a class="text-link resource-btn" href="#quiz" data-subject="Mathematics">Practice maths →</a></div></article>
+        <article class="subject search-item" data-search="science physics chemistry biology class 5 6 7 8 9"><div class="class-icon">🔬</div><div><h3>General Science</h3><p>Explore scientific ideas, nature and everyday discoveries.</p><a class="text-link resource-btn" href="#quiz" data-subject="Science">Explore science →</a></div></article>
+        <article class="subject search-item" data-search="english grammar reading writing class 5 6 7 8 9"><div class="class-icon">🔤</div><div><h3>English</h3><p>Grammar, vocabulary, reading and writing skills.</p><a class="text-link resource-btn" href="#quiz" data-subject="English">Practice English →</a></div></article>
+        <article class="subject search-item" data-search="urdu language grammar reading class 5 6 7 8 9"><div class="class-icon">📖</div><div><h3>Urdu</h3><p>Language skills, reading and grammar revision.</p><a class="text-link resource-btn" href="#quiz" data-subject="Urdu">Revise Urdu →</a></div></article>
+        <article class="subject search-item" data-search="computer technology digital class 5 6 7 8 9"><div class="class-icon">💻</div><div><h3>Computer Studies</h3><p>Learn about computers and digital fundamentals.</p><a class="text-link resource-btn" href="#quiz" data-subject="Computer Studies">Learn computing →</a></div></article>
+        <article class="subject search-item" data-search="pakistan studies social studies history geography class 5 6 7 8 9"><div class="class-icon">🇵🇰</div><div><h3>Pakistan Studies</h3><p>Review history, geography and civic knowledge.</p><a class="text-link resource-btn" href="#quiz" data-subject="Pakistan Studies">Review topics →</a></div></article>
+      </div>
+    </div>
+  </section>
 
-        <div class="cards">
-
-            <div class="card">
-                <h3>📘 English Grammar</h3>
-                <p>Learn nouns, verbs, tenses, sentences and grammar basics.</p>
-                <a class="btn" href="grammar.html">Open Lesson</a>
-            </div>
-
-            <div class="card">
-                <h3>📐 Math Tips</h3>
-                <p>Practice basic formulas, fractions, percentages and equations.</p>
-                <a class="btn" href="math.html">Open Lesson</a>
-            </div>
-
-            <div class="card">
-                <h3>💻 Computer Basics</h3>
-                <p>Learn computer hardware, software, internet and basic coding.</p>
-                <a class="btn" href="computer.html">Open Lesson</a>
-            </div>
-
+  <section id="quiz">
+    <div class="wrap">
+      <div class="quiz-layout">
+        <div class="quiz-intro"><span class="eyebrow">QUICK KNOWLEDGE CHECK</span><h2>Ready for a mini quiz?</h2><p>Choose an answer to see instant feedback. This starter quiz contains general practice questions; add your syllabus-specific questions later.</p><a class="btn btn-primary" href="#quizBox">Start practising ↓</a></div>
+        <div class="quiz-box" id="quizBox">
+          <div class="quiz-meta" id="quizMeta">QUESTION 1 OF 5 · GENERAL PRACTICE</div>
+          <h3 id="questionText">What is 8 × 7?</h3>
+          <div class="options" id="options">
+            <button class="option" data-answer="0">54</button><button class="option" data-answer="1">56</button><button class="option" data-answer="0">64</button><button class="option" data-answer="0">48</button>
+          </div>
+          <div class="quiz-feedback" id="quizFeedback" aria-live="polite"></div>
+          <button class="quiz-next" id="nextQuestion" hidden>Next question →</button>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <section id="classes">
-        <h2>🎓 Classes</h2>
+  <section id="contact" style="padding-top:0">
+    <div class="wrap">
+      <div class="section-head"><div><span class="pill">GET IN TOUCH</span><h2>Contact Study World</h2><p>Send a message or suggestion about learning resources.</p></div></div>
+      <div class="contact-grid">
+        <div class="contact-info"><h3>Let's make learning better.</h3><p>Have a subject request, correction or idea for a new lesson? Use the form to prepare a message.</p><p>📚 Class 5 to 9 resources<br>💡 Suggestions welcome<br>🌐 Built for learners in Pakistan</p></div>
+        <form class="contact-form" id="contactForm">
+          <div class="field"><label for="name">Your name</label><input id="name" name="name" placeholder="Enter your name" required></div>
+          <div class="field"><label for="email">Email (optional)</label><input id="email" name="email" type="email" placeholder="you@example.com"></div>
+          <div class="field"><label for="topic">Message topic</label><select id="topic" name="topic"><option>Lesson request</option><option>Notes correction</option><option>Quiz suggestion</option><option>Other</option></select></div>
+          <div class="field"><label for="message">Your message</label><textarea id="message" name="message" placeholder="Write your message..." required></textarea></div>
+          <button type="submit">Prepare message ↗</button><p class="form-note" id="formNote">This demo prepares a message on your device; it does not send data to a server.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
 
-        <div class="cards">
-
-            <div class="card">
-                <h3>📕 Class 5</h3>
-                <p>English, Mathematics and Computer lessons.</p>
-                <a class="btn" href="class5.html">Open Class 5</a>
-            </div>
-
-            <div class="card">
-                <h3>📗 Class 6</h3>
-                <p>English, Mathematics and Computer lessons.</p>
-                <a class="btn" href="class6.html">Open Class 6</a>
-            </div>
-
-            <div class="card">
-                <h3>📙 Class 7</h3>
-                <p>English, Mathematics and Computer lessons.</p>
-                <a class="btn" href="class7.html">Open Class 7</a>
-            </div>
-
-            <div class="card">
-                <h3>📘 Class 9</h3>
-                <p>
-                    English, Urdu, Mathematics, Islamiat,
-                    Tarjuma-tul-Quran, Physics, Chemistry,
-                    Biology and Computer.
-                </p>
-                <a class="btn" href="class9.html">Open Class 9</a>
-            </div>
-
-        </div>
-    </section>
-
-    <section id="quizzes">
-        <h2>📝 Class Quizzes</h2>
-
-        <div class="quiz">
-            <h3>Class 5 Quiz</h3>
-
-            <p>1. What is 5 + 5?</p>
-
-            <label>
-                <input type="radio" name="q5" value="10">
-                10
-            </label>
-
-            <label>
-                <input type="radio" name="q5" value="15">
-                15
-            </label>
-
-            <label>
-                <input type="radio" name="q5" value="20">
-                20
-            </label>
-
-            <button onclick="checkQuiz5()">Check Answer</button>
-
-            <div id="result5" class="result"></div>
-        </div>
-
-
-        <div class="quiz">
-            <h3>Class 6 Quiz</h3>
-
-            <p>1. Which planet is known as the Red Planet?</p>
-
-            <label>
-                <input type="radio" name="q6" value="Earth">
-                Earth
-            </label>
-
-            <label>
-                <input type="radio" name="q6" value="Mars">
-                Mars
-            </label>
-
-            <label>
-                <input type="radio" name="q6" value="Jupiter">
-                Jupiter
-            </label>
-
-            <button onclick="checkQuiz6()">Check Answer</button>
-
-            <div id="result6" class="result"></div>
-        </div>
-
-
-        <div class="quiz">
-            <h3>Class 7 Quiz</h3>
-
-            <p>1. What is the chemical formula of water?</p>
-
-            <label>
-                <input type="radio" name="q7" value="CO2">
-                CO₂
-            </label>
-
-            <label>
-                <input type="radio" name="q7" value="H2O">
-                H₂O
-            </label>
-
-            <label>
-                <input type="radio" name="q7" value="O2">
-                O₂
-            </label>
-
-            <button onclick="checkQuiz7()">Check Answer</button>
-
-            <div id="result7" class="result"></div>
-        </div>
-
-    </section>
-
-
-    <section id="about">
-        <h2>ℹ️ About Study World Pakistan</h2>
-
-        <div class="about">
-            <p>
-                Study World Pakistan is a free educational website
-                created to help students learn through simple notes,
-                lessons, exercises and quizzes.
-            </p>
-
-            <br>
-
-            <p>
-                Students can find educational material for
-                Class 5 to Class 9 subjects.
-            </p>
-        </div>
-    </section>
-
-
-    <section id="contact">
-        <h2>📩 Contact Us</h2>
-
-        <div class="contact">
-            <p>
-                If you have a question, suggestion or feedback,
-                contact us by email:
-            </p>
-
-            <br>
-
-            <p>
-                📧
-                <a href="mailto:mughalbadshaaa978@gmail.com">
-                    mughalbadshaaa978@gmail.com
-                </a>
-            </p>
-        </div>
-    </section>
-
-</div>
-
-<footer>
-    <p>© 2026 Study World Pakistan</p>
-    <p>Free Education for Students</p>
-</footer>
-
-
+<footer><div class="wrap footer-inner"><div><strong>Study World Pakistan</strong><br>Learn • Practice • Succeed</div><div>Free learning starter website · <span id="year"></span></div><div><a href="#home">Back to top ↑</a></div></div></footer>
 <script>
+const menuBtn=document.getElementById('menuBtn');
+const navlinks=document.getElementById('navlinks');
+menuBtn.addEventListener('click',()=>navlinks.classList.toggle('open'));
+navlinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>navlinks.classList.remove('open')));
+document.getElementById('year').textContent=new Date().getFullYear();
 
-function searchLessons() {
-
-    let input = document
-        .getElementById("searchInput")
-        .value
-        .toLowerCase();
-
-    let cards = document.querySelectorAll(".card");
-
-    cards.forEach(function(card) {
-
-        let text = card.innerText.toLowerCase();
-
-        if (text.includes(input)) {
-            card.style.display = "block";
-        } else {
-            card.style.display = "none";
-        }
-
-    });
+const searchInput=document.getElementById('siteSearch');
+const searchBtn=document.getElementById('searchBtn');
+function runSearch(){
+  const query=searchInput.value.trim().toLowerCase();
+  const items=[...document.querySelectorAll('.search-item')];
+  let shown=0;
+  items.forEach(item=>{
+    const match=!query || (item.dataset.search+' '+item.innerText).toLowerCase().includes(query);
+    item.style.display=match?'':'none';
+    if(match) shown++;
+  });
+  document.getElementById('classEmpty').style.display=[...document.querySelectorAll('#classes .search-item')].some(el=>el.style.display!=='none')?'none':'block';
+  if(query && shown===0) document.getElementById('classEmpty').style.display='block';
 }
+searchBtn.addEventListener('click',runSearch);
+searchInput.addEventListener('input',runSearch);
+searchInput.addEventListener('keydown',e=>{if(e.key==='Enter')runSearch()});
 
-
-function checkQuiz5() {
-
-    let answer = document.querySelector(
-        'input[name="q5"]:checked'
-    );
-
-    let result = document.getElementById("result5");
-
-    if (!answer) {
-        result.innerText = "Please select an answer.";
-        return;
-    }
-
-    if (answer.value === "10") {
-        result.innerText = "✅ Correct!";
-    } else {
-        result.innerText = "❌ Wrong answer. Try again!";
-    }
+const quiz=[
+ {q:'What is 8 × 7?',opts:['54','56','64','48'],a:1,why:'8 multiplied by 7 equals 56.'},
+ {q:'Which planet is known as the Red Planet?',opts:['Venus','Jupiter','Mars','Mercury'],a:2,why:'Mars is often called the Red Planet because of its reddish surface.'},
+ {q:'Which word is a noun?',opts:['Quickly','Beautiful','School','Run'],a:2,why:'School is a noun because it names a place.'},
+ {q:'What is the opposite of “ancient”?',opts:['Old','Modern','Historic','Past'],a:1,why:'Modern means relating to the present or recent times.'},
+ {q:'How many sides does a triangle have?',opts:['2','3','4','5'],a:1,why:'A triangle has three sides.'}
+];
+let qIndex=0,answered=false,score=0;
+const questionText=document.getElementById('questionText'),options=document.getElementById('options'),feedback=document.getElementById('quizFeedback'),next=document.getElementById('nextQuestion'),meta=document.getElementById('quizMeta');
+function renderQuestion(){
+ answered=false;const q=quiz[qIndex];meta.textContent=`QUESTION ${qIndex+1} OF ${quiz.length} · GENERAL PRACTICE`;questionText.textContent=q.q;feedback.textContent='';next.hidden=true;next.textContent=qIndex===quiz.length-1?'See results ↗':'Next question →';options.innerHTML='';
+ q.opts.forEach((opt,i)=>{const b=document.createElement('button');b.className='option';b.textContent=opt;b.addEventListener('click',()=>chooseAnswer(i,b));options.appendChild(b)});
 }
-
-
-function checkQuiz6() {
-
-    let answer = document.querySelector(
-        'input[name="q6"]:checked'
-    );
-
-    let result = document.getElementById("result6");
-
-    if (!answer) {
-        result.innerText = "Please select an answer.";
-        return;
-    }
-
-    if (answer.value === "Mars") {
-        result.innerText = "✅ Correct!";
-    } else {
-        result.innerText = "❌ Wrong answer. Try again!";
-    }
+function chooseAnswer(i,button){
+ if(answered)return;answered=true;const q=quiz[qIndex];[...options.children].forEach((b,j)=>{b.disabled=true;if(j===q.a)b.classList.add('correct')});
+ if(i===q.a){score++;feedback.textContent='Correct! '+q.why;feedback.style.color='var(--green)'}else{button.classList.add('wrong');feedback.textContent='Not quite. '+q.why;feedback.style.color='#bd3434'}
+ next.hidden=false;
 }
+next.addEventListener('click',()=>{if(qIndex<quiz.length-1){qIndex++;renderQuestion()}else{meta.textContent='QUIZ COMPLETE';questionText.textContent=`You scored ${score} out of ${quiz.length}!`;options.innerHTML='';feedback.textContent=score===quiz.length?'Excellent work — perfect score!':'Good effort! Try again to improve your score.';feedback.style.color='var(--blue)';next.textContent='Try again ↻';next.hidden=false;next.onclick=()=>{qIndex=0;score=0;next.onclick=null;renderQuestion()}}});
+renderQuestion();
 
-
-function checkQuiz7() {
-
-    let answer = document.querySelector(
-        'input[name="q7"]:checked'
-    );
-
-    let result = document.getElementById("result7");
-
-    if (!answer) {
-        result.innerText = "Please select an answer.";
-        return;
-    }
-
-    if (answer.value === "H2O") {
-        result.innerText = "✅ Correct!";
-    } else {
-        result.innerText = "❌ Wrong answer. Try again!";
-    }
-}
-
+document.getElementById('contactForm').addEventListener('submit',e=>{
+ e.preventDefault();
+ const data=new FormData(e.currentTarget);
+ const message=`Study World Pakistan message\nName: ${data.get('name')}\nEmail: ${data.get('email')||'Not provided'}\nTopic: ${data.get('topic')}\nMessage: ${data.get('message')}`;
+ document.getElementById('formNote').textContent='Message prepared below. Copy it and send it to your preferred contact method.';
+ let old=document.getElementById('preparedMessage');if(old)old.remove();
+ const area=document.createElement('textarea');area.id='preparedMessage';area.readOnly=true;area.value=message;area.style.cssText='width:100%;min-height:130px;margin-top:10px;padding:10px;border:1px solid #dfe5f0;border-radius:10px';e.currentTarget.appendChild(area);area.focus();area.select();
+});
+document.querySelectorAll('[data-class]').forEach(link=>link.addEventListener('click',()=>{const n=link.dataset.class;searchInput.value='Class '+n;runSearch()}));
+document.querySelectorAll('[data-subject]').forEach(link=>link.addEventListener('click',()=>{feedback.textContent='You selected '+link.dataset.subject+'. Try the general practice quiz below.';feedback.style.color='var(--blue)'}));
 </script>
-
 </body>
 </html>
