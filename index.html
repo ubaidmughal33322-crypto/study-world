@@ -1,189 +1,476 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Study World Pakistan — free notes, lessons and quizzes for Classes 5 to 9.">
-<meta name="theme-color" content="#101b3f">
-<title>Study World Pakistan | Learn Smarter</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#10346f">
+<meta name="description" content="Study World Pakistan - Class 9 and 10 notes, MCQs, past papers and study resources.">
+<title>Study World Pakistan | Learn Today, Build Tomorrow</title>
 <style>
-:root{--navy:#101b3f;--blue:#3157d5;--sky:#eaf1ff;--gold:#ffc857;--ink:#17213b;--muted:#66718a;--white:#fff;--line:#e6eaf2;--green:#168765;--shadow:0 14px 40px rgba(21,38,86,.10)}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#f7f9fd;color:var(--ink);line-height:1.6}a{color:inherit;text-decoration:none}button,input,select,textarea{font:inherit}button{cursor:pointer}.wrap{width:min(1120px,92%);margin:auto}
-header{background:linear-gradient(125deg,#101b3f,#263f91);color:white;padding:18px 0 56px;overflow:hidden}
-.topbar{display:flex;align-items:center;justify-content:space-between;gap:16px}.brand{display:flex;align-items:center;gap:11px;font-size:19px;font-weight:800}.logo{display:grid;place-items:center;width:43px;height:43px;background:var(--gold);color:var(--navy);border-radius:14px;font-size:23px}.brand small{display:block;font-size:11px;letter-spacing:1.8px;color:#c9d6ff;font-weight:600}.navlinks{display:flex;gap:20px;align-items:center;font-size:14px}.navlinks a:hover{color:var(--gold)}.menu{display:none;background:transparent;border:1px solid #7182bf;color:white;border-radius:9px;padding:7px 11px}
-.hero{display:grid;grid-template-columns:1.25fr .75fr;gap:35px;align-items:center;padding-top:52px}.eyebrow{display:inline-block;background:#ffffff19;border:1px solid #ffffff30;color:#ffe09b;border-radius:30px;padding:6px 12px;font-size:12px;font-weight:700;letter-spacing:.5px}.hero h1{font-size:clamp(34px,5vw,57px);line-height:1.08;margin:18px 0}.hero h1 span{color:var(--gold)}.hero p{color:#dce4ff;max-width:560px;font-size:17px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}.btn{display:inline-flex;justify-content:center;align-items:center;gap:8px;border:0;border-radius:12px;padding:12px 18px;font-weight:800}.btn-primary{background:var(--gold);color:#1a2445}.btn-light{background:white;color:var(--navy)}.hero-card{background:#ffffff12;border:1px solid #ffffff30;border-radius:26px;padding:24px;backdrop-filter:blur(8px)}.hero-card-top{display:flex;justify-content:space-between;align-items:center}.hero-card h3{margin:12px 0 4px;font-size:23px}.hero-card p{font-size:14px;margin:0 0 18px}.mini-stats{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.mini-stat{background:#ffffff12;border-radius:14px;padding:14px}.mini-stat strong{display:block;font-size:24px;color:var(--gold)}.mini-stat span{font-size:12px;color:#dce4ff}
-.searchbox{background:white;border-radius:18px;padding:14px;box-shadow:var(--shadow);display:flex;gap:10px;margin-top:-28px;position:relative}.searchbox input{border:0;outline:0;flex:1;min-width:0;padding:8px 10px;color:var(--ink)}.searchbox button{background:var(--blue);color:white;border:0;border-radius:12px;padding:11px 19px;font-weight:700}
-section{padding:58px 0}.section-head{display:flex;align-items:end;justify-content:space-between;gap:16px;margin-bottom:24px}.section-head h2{font-size:clamp(25px,3vw,34px);margin:0;line-height:1.2}.section-head p{margin:7px 0 0;color:var(--muted)}.pill{display:inline-block;background:var(--sky);color:var(--blue);padding:6px 11px;border-radius:30px;font-size:12px;font-weight:800;margin-bottom:10px}
-.class-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}.class-card{background:white;border:1px solid var(--line);border-radius:18px;padding:19px 14px;box-shadow:0 6px 20px #182d5810;transition:.2s}.class-card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}.class-icon{display:grid;place-items:center;width:46px;height:46px;border-radius:14px;background:var(--sky);font-size:24px;margin-bottom:12px}.class-card h3{margin:0;font-size:17px}.class-card p{color:var(--muted);font-size:12px;margin:5px 0 13px}.text-link{color:var(--blue);font-size:13px;font-weight:800}
-.features{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.feature{background:white;border:1px solid var(--line);padding:22px;border-radius:18px}.feature .class-icon{background:#fff4d9}.feature h3{margin:0 0 6px}.feature p{margin:0;color:var(--muted);font-size:14px}
-.learning{background:#eef3ff}.subject-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.subject{background:white;border:1px solid #e1e8fa;border-radius:16px;padding:18px;display:flex;gap:13px;align-items:flex-start}.subject .class-icon{flex-shrink:0;margin:0}.subject h3{font-size:16px;margin:0 0 5px}.subject p{font-size:13px;color:var(--muted);margin:0 0 10px}
-.quiz-layout{display:grid;grid-template-columns:.8fr 1.2fr;gap:22px;align-items:start}.quiz-intro{background:var(--navy);color:white;border-radius:22px;padding:26px}.quiz-intro h2{margin:0 0 10px}.quiz-intro p{color:#d6defb}.quiz-box{background:white;border:1px solid var(--line);border-radius:22px;padding:24px;box-shadow:var(--shadow)}.quiz-meta{font-size:12px;color:var(--muted);font-weight:800}.quiz-box h3{margin:10px 0 18px}.options{display:grid;gap:10px}.option{background:#f7f9ff;border:1px solid #e0e6f4;padding:12px 14px;border-radius:12px;text-align:left;color:var(--ink)}.option:hover{border-color:var(--blue)}.option.correct{background:#e7f8f0;border-color:#168765}.option.wrong{background:#fff0f0;border-color:#d84c4c}.quiz-feedback{min-height:25px;font-weight:700;font-size:14px;margin-top:10px}.quiz-next{margin-top:12px;background:var(--blue);color:white;border:0;border-radius:10px;padding:10px 16px;font-weight:700}
-.contact-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:24px}.contact-info{background:linear-gradient(135deg,#101b3f,#3157d5);color:white;border-radius:22px;padding:25px}.contact-info p{color:#dce4ff}.contact-form{background:white;border:1px solid var(--line);border-radius:22px;padding:24px}.field{margin-bottom:13px}.field label{display:block;font-size:13px;font-weight:800;margin-bottom:5px}.field input,.field select,.field textarea{width:100%;padding:12px;border:1px solid #dfe5f0;border-radius:10px;background:#fbfcff}.field textarea{min-height:100px;resize:vertical}.contact-form button{background:var(--blue);color:white;border:0;border-radius:11px;padding:12px 18px;font-weight:800}.form-note{font-size:12px;color:var(--muted);margin-top:10px}
-footer{background:#0b1431;color:#dbe3ff;padding:28px 0}.footer-inner{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap;font-size:13px}.footer-inner strong{color:white}
-.empty-state{display:none;padding:18px;background:white;border:1px dashed #c8d2e7;border-radius:14px;color:var(--muted);text-align:center;grid-column:1/-1}
-@media(max-width:800px){.hero{grid-template-columns:1fr;padding-top:36px}.hero-card{max-width:520px}.class-grid{grid-template-columns:repeat(3,1fr)}.subject-grid{grid-template-columns:repeat(2,1fr)}.quiz-layout,.contact-grid{grid-template-columns:1fr}.navlinks{display:none;position:absolute;top:75px;left:4%;right:4%;background:#172753;padding:16px;border-radius:14px;flex-direction:column;align-items:flex-start;z-index:10}.navlinks.open{display:flex}.menu{display:block}}
-@media(max-width:520px){header{padding-bottom:48px}.brand{font-size:16px}.hero h1{font-size:38px}.hero p{font-size:15px}.class-grid{grid-template-columns:repeat(2,1fr)}.features,.subject-grid{grid-template-columns:1fr}.section-head{align-items:flex-start;flex-direction:column}.searchbox{gap:4px}.searchbox button{padding:10px 12px}.searchbox input{font-size:14px}.mini-stats{gap:8px}section{padding:43px 0}}
+:root{
+  --navy:#10346f;--blue:#1765c0;--green:#078451;
+  --pale:#eef5ff;--bg:#f5f8fc;--ink:#172c4d;
+  --muted:#687b96;--line:#e1eaf5;--white:#fff;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{margin:0;background:var(--bg);color:var(--ink);
+font-family:Arial,Helvetica,sans-serif}
+a{color:inherit;text-decoration:none}
+button,input,select{font:inherit}
+button{cursor:pointer}
+.topline{background:var(--navy);color:white;padding:9px 5%;
+font-size:12px;display:flex;justify-content:space-between;gap:10px}
+header{position:sticky;top:0;background:#fff;z-index:20;
+box-shadow:0 2px 12px #102f6010}
+.nav{max-width:1250px;margin:auto;padding:13px 22px;
+display:flex;align-items:center;justify-content:space-between;gap:18px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;
+color:var(--navy);font-size:22px;white-space:nowrap}
+.logo{width:43px;height:43px;border-radius:12px;
+background:#e5f5ee;display:grid;place-items:center;font-size:26px}
+.brand small{display:block;font-size:13px;color:var(--green);margin-top:3px}
+.navlinks{display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+.navlinks a{font-size:13px;font-weight:bold;color:#344a69}
+.navlinks a:hover{color:var(--green)}
+.search{width:240px;max-width:100%;padding:12px 14px;
+border:1px solid var(--line);border-radius:30px;outline:none}
+.search:focus{border-color:var(--blue)}
+.btn{border:0;border-radius:10px;padding:12px 17px;
+display:inline-block;font-weight:bold;font-size:13px}
+.green{background:#08a969;color:white}
+.green:hover{background:#067d4e}
+.blue{background:var(--blue);color:white}
+.light{background:white;color:var(--navy);border:1px solid #dbe7f6}
+.hero{background:linear-gradient(115deg,#0b2b62,#145ab0 72%,#2678c9);
+color:white;overflow:hidden}
+.hero-inner{max-width:1250px;margin:auto;padding:48px 22px;
+display:grid;grid-template-columns:1.25fr .75fr;align-items:center;gap:30px}
+.tag{display:inline-block;border:1px solid #ffffff65;border-radius:25px;
+padding:8px 12px;font-size:12px}
+h1{font-size:clamp(35px,5vw,57px);line-height:1.12;margin:20px 0 12px}
+.hero h1 span{color:#38d58c}
+.hero p{line-height:1.8;color:#e2edff;max-width:600px;font-size:15px}
+.hero-buttons{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
+.hero-art{background:#ffffff12;border:1px solid #ffffff35;
+border-radius:25px;padding:28px;text-align:center}
+.book-art{font-size:82px;line-height:1.3}
+.hero-art h3{margin:8px 0}
+.hero-art p{font-size:13px;margin:8px auto}
+.features{display:flex;gap:16px;flex-wrap:wrap;margin-top:24px}
+.features span{font-size:12px;color:#f2f6ff}
+.wrap{max-width:1250px;margin:auto;padding:0 22px}
+section{padding:40px 0}
+.heading{display:flex;justify-content:space-between;align-items:end;
+gap:16px;margin-bottom:20px}
+.heading h2{font-size:27px;color:var(--navy);margin:0}
+.heading p{color:var(--muted);font-size:13px;line-height:1.6;margin:7px 0 0}
+.subject-layout{display:grid;grid-template-columns:minmax(0,1fr) 235px;gap:22px}
+.subjects{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px}
+.subject{background:white;border:1px solid var(--line);border-radius:15px;
+padding:15px 12px;min-width:0;transition:transform .2s,box-shadow .2s}
+.subject:hover{transform:translateY(-3px);box-shadow:0 9px 24px #163c7212}
+.sub-icon{width:45px;height:45px;border-radius:50%;background:var(--pale);
+display:grid;place-items:center;font-size:24px;margin-bottom:12px}
+.subject h3{font-size:14px;margin:0 0 10px}
+.subject p{font-size:11px;color:var(--muted);margin:0 0 13px}
+.subject button{width:100%;border:0;border-radius:8px;
+background:#eaf3ff;color:var(--blue);font-weight:bold;padding:10px 5px;font-size:12px}
+.side{display:grid;gap:15px;align-content:start}
+.panel{background:white;border:1px solid var(--line);border-radius:15px;
+padding:17px;min-width:0}
+.panel h3{font-size:16px;margin:0 0 14px;color:var(--navy)}
+.quick{display:grid;gap:0}
+.quick a{padding:12px 0;border-bottom:1px solid var(--line);
+font-size:13px;font-weight:bold;display:flex;gap:9px}
+.quick a:last-child{border-bottom:0}
+.quick a:hover{color:var(--green)}
+.strip{background:#e4f6ee;border-radius:15px;padding:20px;
+display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:24px}
+.strip div{font-size:13px;font-weight:bold;color:#07583d}
+.strip small{display:block;color:#547e6d;font-weight:normal;margin-top:5px;line-height:1.5}
+.content-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:17px}
+.resource{display:flex;justify-content:space-between;gap:12px;align-items:center;
+padding:12px 0;border-bottom:1px solid var(--line)}
+.resource:last-child{border-bottom:0}
+.resource b{font-size:12px;line-height:1.5;display:block}
+.resource small{display:block;font-size:11px;color:var(--muted);margin-top:4px}
+.resource a,.resource button{font-size:12px;color:var(--blue);font-weight:bold;
+border:0;background:transparent;white-space:nowrap}
+.banner{background:linear-gradient(120deg,#10488e,#2587dd);
+border-radius:14px;color:white;padding:22px;margin-bottom:15px}
+.banner h3{margin:0 0 8px;color:white}
+.banner p{font-size:13px;line-height:1.6}
+#chapterArea{margin-top:24px}
+.chapter{border:1px solid var(--line);border-radius:10px;
+padding:13px;margin:10px 0;background:#fff}
+.chapter summary{cursor:pointer;font-size:14px;font-weight:bold;color:var(--navy)}
+.chapter-body{font-size:13px;line-height:1.8;color:var(--muted);padding-top:12px}
+.chapter-body h4{color:var(--ink);margin:12px 0 4px}
+.chapter-body .notice{padding:12px;background:#fff7e5;border-radius:8px;color:#77591c}
+.quiz-option{display:block;width:100%;text-align:left;padding:12px;
+border:1px solid var(--line);border-radius:9px;background:white;margin:8px 0}
+.quiz-option:hover{border-color:var(--blue)}
+.quiz-option:disabled{cursor:default}
+#quizResult{font-weight:bold;color:var(--green);margin:12px 0;min-height:20px}
+footer{background:#0d2c60;color:white;padding:32px 0}
+.footer-row{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+footer p{font-size:12px;color:#d6e5ff;line-height:1.8}
+footer a{font-size:12px;margin-right:12px}
+.empty{color:var(--muted);font-size:13px;padding:20px}
+.hide{display:none!important}
+@media(max-width:1050px){
+ .subjects{grid-template-columns:repeat(3,minmax(0,1fr))}
+ .nav{flex-wrap:wrap}.navlinks{gap:12px}
+ .search{width:200px}
+}
+@media(max-width:760px){
+ .topline{justify-content:center;text-align:center}
+ .topline span:last-child{display:none}
+ .hero-inner{grid-template-columns:1fr;padding:38px 18px}
+ .hero-art{display:none}
+ .subject-layout{grid-template-columns:1fr}
+ .side{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .content-grid{grid-template-columns:1fr 1fr}
+ .strip{grid-template-columns:repeat(2,1fr)}
+ .nav{padding:12px 15px}
+ .navlinks{width:100%;justify-content:space-between}
+ .navlinks a{font-size:12px}
+ .search{width:100%;order:3}
+ .wrap{padding:0 15px}
+}
+@media(max-width:480px){
+ .subjects{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+ .subject{padding:13px 10px}
+ .subject h3{font-size:13px}
+ .side,.content-grid{grid-template-columns:1fr}
+ .heading{align-items:stretch;flex-direction:column}
+ .heading h2{font-size:24px}
+ .brand{font-size:19px}
+ .hero h1{font-size:38px}
+ section{padding:30px 0}
+ .hero-inner{padding-top:33px;padding-bottom:36px}
+}
 </style>
 </head>
 <body>
-<header id="home">
-  <div class="wrap">
-    <div class="topbar">
-      <a class="brand" href="#home"><span class="logo">✦</span><span>Study World Pakistan<small>LEARN • PRACTICE • SUCCEED</small></span></a>
-      <button class="menu" id="menuBtn" aria-label="Toggle menu">☰ Menu</button>
-      <nav class="navlinks" id="navlinks"><a href="#classes">Classes</a><a href="#learning">Lessons & Notes</a><a href="#quiz">Quizzes</a><a href="#contact">Contact</a></nav>
-    </div>
-    <div class="hero">
-      <div>
-        <span class="eyebrow">🎓 YOUR FREE LEARNING SPACE</span>
-        <h1>Learn today.<br><span>Lead tomorrow.</span></h1>
-        <p>Simple study resources for Pakistani students. Explore class-wise learning, revise key concepts and test what you know — all in one place.</p>
-        <div class="hero-actions"><a class="btn btn-primary" href="#classes">Explore Classes ↗</a><a class="btn btn-light" href="#quiz">Try a Quiz</a></div>
-      </div>
-      <div class="hero-card">
-        <div class="hero-card-top"><span>📘</span><span class="eyebrow">STUDENT HUB</span></div>
-        <h3>Your next big step starts here.</h3><p>Build confidence one lesson at a time with focused practice and revision.</p>
-        <div class="mini-stats"><div class="mini-stat"><strong>5–9</strong><span>Class levels</span></div><div class="mini-stat"><strong>Free</strong><span>Learning access</span></div><div class="mini-stat"><strong>MCQs</strong><span>Quick practice</span></div><div class="mini-stat"><strong>Anytime</strong><span>Learn at your pace</span></div></div>
-      </div>
-    </div>
+<div class="topline">
+  <span>🇵🇰 Pakistan's Student Learning Portal</span>
+  <span>Learn Today | Build Tomorrow</span>
+</div>
+
+<header>
+<nav class="nav">
+  <a class="brand" href="#home">
+    <span class="logo">📚</span>
+    <span>Study World<small>Pakistan</small></span>
+  </a>
+  <div class="navlinks">
+    <a href="#home">Home</a>
+    <a href="#subjects">Subjects</a>
+    <a href="#notes">Notes</a>
+    <a href="#quiz">MCQs</a>
+    <a href="#papers">Past Papers</a>
   </div>
+  <input id="search" class="search" type="search"
+    placeholder="🔎 Search subjects or chapters..." aria-label="Search study material">
+</nav>
 </header>
 
 <main>
-  <div class="wrap">
-    <div class="searchbox" role="search"><span style="font-size:22px;padding:4px">⌕</span><input id="siteSearch" type="search" placeholder="Search classes, subjects or resources..." aria-label="Search learning resources"><button id="searchBtn">Search</button></div>
+<section class="hero" id="home">
+<div class="hero-inner">
+ <div>
+  <span class="tag">Class 9 & 10 | Pakistan</span>
+  <h1>Study World <span>Pakistan</span></h1>
+  <h2 style="font-size:22px;margin:0">Your Complete Study Partner</h2>
+  <p>Discover subjects, chapter guides, revision questions, practice MCQs and study resources — all in one place.</p>
+  <div class="hero-buttons">
+   <a class="btn green" href="#subjects">Explore Subjects →</a>
+   <a class="btn light" href="#quiz">Practice MCQs</a>
   </div>
+  <div class="features">
+   <span>📘 Chapter-wise study</span>
+   <span>🧠 Practice quizzes</span>
+   <span>📄 Notes & resources</span>
+  </div>
+ </div>
+ <div class="hero-art">
+   <div class="book-art">🇵🇰📚</div>
+   <h3>Dream. Learn. Achieve.</h3>
+   <p>Build your knowledge one chapter at a time.</p>
+   <div class="tag">Free learning resources</div>
+ </div>
+</div>
+</section>
 
-  <section id="classes">
-    <div class="wrap">
-      <div class="section-head"><div><span class="pill">CHOOSE YOUR LEVEL</span><h2>Explore your class</h2><p>Start with your class and find a path to learn.</p></div></div>
-      <div class="class-grid searchable">
-        <article class="class-card search-item" data-search="class 5 grade five primary"><div class="class-icon">📗</div><h3>Class 5</h3><p>Build strong basics</p><a class="text-link" href="#learning" data-class="5">Explore resources →</a></article>
-        <article class="class-card search-item" data-search="class 6 grade six middle"><div class="class-icon">📘</div><h3>Class 6</h3><p>Grow your knowledge</p><a class="text-link" href="#learning" data-class="6">Explore resources →</a></article>
-        <article class="class-card search-item" data-search="class 7 grade seven middle"><div class="class-icon">📙</div><h3>Class 7</h3><p>Learn step by step</p><a class="text-link" href="#learning" data-class="7">Explore resources →</a></article>
-        <article class="class-card search-item" data-search="class 8 grade eight middle"><div class="class-icon">📕</div><h3>Class 8</h3><p>Practice with purpose</p><a class="text-link" href="#learning" data-class="8">Explore resources →</a></article>
-        <article class="class-card search-item" data-search="class 9 grade nine matric punjab board"><div class="class-icon">🎓</div><h3>Class 9</h3><p>Prepare for exams</p><a class="text-link" href="#learning" data-class="9">Explore resources →</a></article>
-        <div class="empty-state" id="classEmpty">No matching classes found. Try another search.</div>
-      </div>
+<section id="subjects">
+<div class="wrap">
+ <div class="heading">
+  <div><h2>📗 Class 9 Subjects</h2>
+   <p>Select a subject to explore its chapters and study guide.</p></div>
+  <a class="btn light" href="#notes">Explore Notes ↓</a>
+ </div>
+ <div class="subject-layout">
+  <div>
+   <div class="subjects" id="subjectGrid"></div>
+   <div id="chapterArea" class="panel hide">
+    <div class="heading">
+     <div><h2 id="chapterTitle">Chapters</h2><p id="chapterDesc"></p></div>
+     <button class="btn light" onclick="closeChapters()">← Subjects</button>
     </div>
-  </section>
+    <div id="chapterList"></div>
+   </div>
+  </div>
+  <aside class="side">
+   <div class="panel">
+    <h3>⚡ Quick Links</h3>
+    <div class="quick">
+     <a href="#notes">📄 Notes & PDFs →</a>
+     <a href="#quiz">🧠 MCQs & Quiz →</a>
+     <a href="#papers">📝 Past Papers →</a>
+     <a href="#resources">📚 Study Resources →</a>
+     <a href="#contact">☎ Contact →</a>
+    </div>
+   </div>
+   <div class="panel">
+    <h3>🎯 Study Tip</h3>
+    <p style="font-size:13px;line-height:1.7;color:var(--muted)">
+     Study one chapter at a time, revise key points, then test yourself with MCQs.
+    </p>
+    <a class="btn green" href="#quiz">Start Practice →</a>
+   </div>
+  </aside>
+ </div>
 
-  <section style="padding-top:0">
-    <div class="wrap">
-      <div class="section-head"><div><span class="pill">WHY STUDY HERE?</span><h2>Learning made simpler</h2><p>Helpful tools to make study time more focused.</p></div></div>
-      <div class="features">
-        <article class="feature"><div class="class-icon">📝</div><h3>Easy-to-use notes</h3><p>Keep key ideas and revision points easy to find.</p></article>
-        <article class="feature"><div class="class-icon">💡</div><h3>Understand lessons</h3><p>Review topics at your own pace and strengthen the basics.</p></article>
-        <article class="feature"><div class="class-icon">✅</div><h3>Practice with MCQs</h3><p>Answer quick questions and get instant feedback.</p></article>
-      </div>
-    </div>
-  </section>
+ <div class="strip">
+  <div>🎓 Student Friendly<small>Simple navigation and clear topics</small></div>
+  <div>📚 Study Resources<small>Organize notes by subject</small></div>
+  <div>📱 Mobile Ready<small>Works on phone and computer</small></div>
+  <div>🇵🇰 Made for Pakistan<small>Board resources can be added</small></div>
+ </div>
+</div>
+</section>
 
-  <section class="learning" id="learning">
-    <div class="wrap">
-      <div class="section-head"><div><span class="pill">STUDY RESOURCES</span><h2>Lessons & notes</h2><p>Sample resource cards — add your own chapter material as you build the site.</p></div></div>
-      <div class="subject-grid searchable" id="subjectGrid">
-        <article class="subject search-item" data-search="mathematics maths math numbers algebra class 5 6 7 8 9"><div class="class-icon">➗</div><div><h3>Mathematics</h3><p>Numbers, operations, algebra and problem-solving practice.</p><a class="text-link resource-btn" href="#quiz" data-subject="Mathematics">Practice maths →</a></div></article>
-        <article class="subject search-item" data-search="science physics chemistry biology class 5 6 7 8 9"><div class="class-icon">🔬</div><div><h3>General Science</h3><p>Explore scientific ideas, nature and everyday discoveries.</p><a class="text-link resource-btn" href="#quiz" data-subject="Science">Explore science →</a></div></article>
-        <article class="subject search-item" data-search="english grammar reading writing class 5 6 7 8 9"><div class="class-icon">🔤</div><div><h3>English</h3><p>Grammar, vocabulary, reading and writing skills.</p><a class="text-link resource-btn" href="#quiz" data-subject="English">Practice English →</a></div></article>
-        <article class="subject search-item" data-search="urdu language grammar reading class 5 6 7 8 9"><div class="class-icon">📖</div><div><h3>Urdu</h3><p>Language skills, reading and grammar revision.</p><a class="text-link resource-btn" href="#quiz" data-subject="Urdu">Revise Urdu →</a></div></article>
-        <article class="subject search-item" data-search="computer technology digital class 5 6 7 8 9"><div class="class-icon">💻</div><div><h3>Computer Studies</h3><p>Learn about computers and digital fundamentals.</p><a class="text-link resource-btn" href="#quiz" data-subject="Computer Studies">Learn computing →</a></div></article>
-        <article class="subject search-item" data-search="pakistan studies social studies history geography class 5 6 7 8 9"><div class="class-icon">🇵🇰</div><div><h3>Pakistan Studies</h3><p>Review history, geography and civic knowledge.</p><a class="text-link resource-btn" href="#quiz" data-subject="Pakistan Studies">Review topics →</a></div></article>
-      </div>
-    </div>
-  </section>
+<section id="notes">
+<div class="wrap">
+ <div class="heading"><div><h2>📄 Popular Study Notes</h2>
+  <p>Replace sample entries with your own notes and PDF links.</p></div></div>
+ <div class="content-grid">
+  <div class="panel">
+   <h3>📘 Notes Library</h3>
+   <div id="noteList"></div>
+  </div>
+  <div class="panel" id="quiz">
+   <h3>🧠 Quick MCQ Quiz</h3>
+   <p id="question" style="font-size:14px;line-height:1.7"></p>
+   <div id="options"></div>
+   <div id="quizResult" aria-live="polite"></div>
+   <button class="btn green" id="next" onclick="nextQuestion()">Next Question →</button>
+   <p id="score" style="font-size:12px;color:var(--muted)"></p>
+  </div>
+  <div class="panel" id="papers">
+   <h3>📝 Past Papers</h3>
+   <div id="paperList"></div>
+   <p style="font-size:12px;line-height:1.7;color:var(--muted)">
+    Add verified past-paper links from your board or trusted source.
+   </p>
+  </div>
+ </div>
+</div>
+</section>
 
-  <section id="quiz">
-    <div class="wrap">
-      <div class="quiz-layout">
-        <div class="quiz-intro"><span class="eyebrow">QUICK KNOWLEDGE CHECK</span><h2>Ready for a mini quiz?</h2><p>Choose an answer to see instant feedback. This starter quiz contains general practice questions; add your syllabus-specific questions later.</p><a class="btn btn-primary" href="#quizBox">Start practising ↓</a></div>
-        <div class="quiz-box" id="quizBox">
-          <div class="quiz-meta" id="quizMeta">QUESTION 1 OF 5 · GENERAL PRACTICE</div>
-          <h3 id="questionText">What is 8 × 7?</h3>
-          <div class="options" id="options">
-            <button class="option" data-answer="0">54</button><button class="option" data-answer="1">56</button><button class="option" data-answer="0">64</button><button class="option" data-answer="0">48</button>
-          </div>
-          <div class="quiz-feedback" id="quizFeedback" aria-live="polite"></div>
-          <button class="quiz-next" id="nextQuestion" hidden>Next question →</button>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact" style="padding-top:0">
-    <div class="wrap">
-      <div class="section-head"><div><span class="pill">GET IN TOUCH</span><h2>Contact Study World</h2><p>Send a message or suggestion about learning resources.</p></div></div>
-      <div class="contact-grid">
-        <div class="contact-info"><h3>Let's make learning better.</h3><p>Have a subject request, correction or idea for a new lesson? Use the form to prepare a message.</p><p>📚 Class 5 to 9 resources<br>💡 Suggestions welcome<br>🌐 Built for learners in Pakistan</p></div>
-        <form class="contact-form" id="contactForm">
-          <div class="field"><label for="name">Your name</label><input id="name" name="name" placeholder="Enter your name" required></div>
-          <div class="field"><label for="email">Email (optional)</label><input id="email" name="email" type="email" placeholder="you@example.com"></div>
-          <div class="field"><label for="topic">Message topic</label><select id="topic" name="topic"><option>Lesson request</option><option>Notes correction</option><option>Quiz suggestion</option><option>Other</option></select></div>
-          <div class="field"><label for="message">Your message</label><textarea id="message" name="message" placeholder="Write your message..." required></textarea></div>
-          <button type="submit">Prepare message ↗</button><p class="form-note" id="formNote">This demo prepares a message on your device; it does not send data to a server.</p>
-        </form>
-      </div>
-    </div>
-  </section>
+<section id="resources">
+<div class="wrap">
+ <div class="heading"><div><h2>⭐ Featured Resources</h2>
+  <p>Useful places for organizing your study materials.</p></div></div>
+ <div class="content-grid">
+  <div class="panel"><h3>📖 Chapter Guides</h3>
+   <p style="font-size:13px;line-height:1.8;color:var(--muted)">Open a subject and select a chapter to view its study sections.</p>
+   <a class="btn light" href="#subjects">Browse Chapters →</a>
+  </div>
+  <div class="panel"><h3>📥 PDF Resources</h3>
+   <p style="font-size:13px;line-height:1.8;color:var(--muted)">Connect each resource to a real PDF file or authorized public link.</p>
+   <a class="btn light" href="#notes">View Notes →</a>
+  </div>
+  <div class="panel"><h3>🏆 Exam Preparation</h3>
+   <p style="font-size:13px;line-height:1.8;color:var(--muted)">Use chapter revision and practice quizzes to review your knowledge.</p>
+   <a class="btn light" href="#quiz">Try MCQs →</a>
+  </div>
+ </div>
+</div>
+</section>
 </main>
 
-<footer><div class="wrap footer-inner"><div><strong>Study World Pakistan</strong><br>Learn • Practice • Succeed</div><div>Free learning starter website · <span id="year"></span></div><div><a href="#home">Back to top ↑</a></div></div></footer>
+<footer id="contact">
+<div class="wrap footer-row">
+ <div><b style="font-size:20px">📚 Study World Pakistan</b>
+  <p>Learn Today | Build Tomorrow<br>Educational resources for students.</p></div>
+ <div><a href="#home">Home</a><a href="#subjects">Subjects</a>
+  <a href="#notes">Notes</a><a href="#quiz">MCQs</a>
+  <p>© <span id="year"></span> Study World Pakistan</p></div>
+</div>
+</footer>
+
 <script>
-const menuBtn=document.getElementById('menuBtn');
-const navlinks=document.getElementById('navlinks');
-menuBtn.addEventListener('click',()=>navlinks.classList.toggle('open'));
-navlinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>navlinks.classList.remove('open')));
-document.getElementById('year').textContent=new Date().getFullYear();
-
-const searchInput=document.getElementById('siteSearch');
-const searchBtn=document.getElementById('searchBtn');
-function runSearch(){
-  const query=searchInput.value.trim().toLowerCase();
-  const items=[...document.querySelectorAll('.search-item')];
-  let shown=0;
-  items.forEach(item=>{
-    const match=!query || (item.dataset.search+' '+item.innerText).toLowerCase().includes(query);
-    item.style.display=match?'':'none';
-    if(match) shown++;
-  });
-  document.getElementById('classEmpty').style.display=[...document.querySelectorAll('#classes .search-item')].some(el=>el.style.display!=='none')?'none':'block';
-  if(query && shown===0) document.getElementById('classEmpty').style.display='block';
-}
-searchBtn.addEventListener('click',runSearch);
-searchInput.addEventListener('input',runSearch);
-searchInput.addEventListener('keydown',e=>{if(e.key==='Enter')runSearch()});
-
-const quiz=[
- {q:'What is 8 × 7?',opts:['54','56','64','48'],a:1,why:'8 multiplied by 7 equals 56.'},
- {q:'Which planet is known as the Red Planet?',opts:['Venus','Jupiter','Mars','Mercury'],a:2,why:'Mars is often called the Red Planet because of its reddish surface.'},
- {q:'Which word is a noun?',opts:['Quickly','Beautiful','School','Run'],a:2,why:'School is a noun because it names a place.'},
- {q:'What is the opposite of “ancient”?',opts:['Old','Modern','Historic','Past'],a:1,why:'Modern means relating to the present or recent times.'},
- {q:'How many sides does a triangle have?',opts:['2','3','4','5'],a:1,why:'A triangle has three sides.'}
+const subjects = [
+ {name:"Urdu",icon:"📘",chapters:["سبق 1 — Sample Chapter","نظم — Sample Poem"]},
+ {name:"English",icon:"📖",chapters:["Unit 1 — Sample Lesson","Grammar — Parts of Speech"]},
+ {name:"Mathematics",icon:"➗",chapters:["Real Numbers","Algebra","Geometry"]},
+ {name:"Physics",icon:"⚛️",chapters:["Physical Quantities","Kinematics","Dynamics"]},
+ {name:"Chemistry",icon:"🧪",chapters:["Fundamentals of Chemistry","Structure of Atoms"]},
+ {name:"Biology",icon:"🌿",chapters:["Introduction to Biology","Solving a Biological Problem"]},
+ {name:"Computer Science",icon:"💻",chapters:["Computer Basics","Data and Information"]},
+ {name:"Pakistan Studies",icon:"🇵🇰",chapters:["Ideological Foundations","Pakistan and Its History"]},
+ {name:"Islamiat",icon:"☪️",chapters:["Quranic Teachings","Islamic Beliefs"]},
+ {name:"General Science",icon:"🔬",chapters:["Science and Everyday Life","Environment"]}
 ];
-let qIndex=0,answered=false,score=0;
-const questionText=document.getElementById('questionText'),options=document.getElementById('options'),feedback=document.getElementById('quizFeedback'),next=document.getElementById('nextQuestion'),meta=document.getElementById('quizMeta');
-function renderQuestion(){
- answered=false;const q=quiz[qIndex];meta.textContent=`QUESTION ${qIndex+1} OF ${quiz.length} · GENERAL PRACTICE`;questionText.textContent=q.q;feedback.textContent='';next.hidden=true;next.textContent=qIndex===quiz.length-1?'See results ↗':'Next question →';options.innerHTML='';
- q.opts.forEach((opt,i)=>{const b=document.createElement('button');b.className='option';b.textContent=opt;b.addEventListener('click',()=>chooseAnswer(i,b));options.appendChild(b)});
+
+const resources = [
+ {title:"Class 9 Mathematics Notes",type:"Sample resource",url:""},
+ {title:"Class 9 Physics Notes",type:"Sample resource",url:""},
+ {title:"Class 9 Chemistry Notes",type:"Sample resource",url:""},
+ {title:"Class 9 English Notes",type:"Sample resource",url:""}
+];
+
+const papers = [
+ {title:"Class 9 Board Past Papers",url:""},
+ {title:"Class 10 Board Past Papers",url:""}
+];
+
+const grid = document.getElementById("subjectGrid");
+const search = document.getElementById("search");
+
+function renderSubjects(filter=""){
+ grid.innerHTML="";
+ const matching=subjects.filter(s=>
+  (s.name+" "+s.chapters.join(" ")).toLowerCase().includes(filter.toLowerCase())
+ );
+ if(!matching.length){
+  grid.innerHTML='<p class="empty">No matching subjects found.</p>';return;
+ }
+ matching.forEach(s=>{
+  const card=document.createElement("article");
+  card.className="subject";
+  const icon=document.createElement("div");
+  icon.className="sub-icon";icon.textContent=s.icon;
+  const title=document.createElement("h3");title.textContent=s.name;
+  const count=document.createElement("p");
+  count.textContent=s.chapters.length+" sample chapters";
+  const btn=document.createElement("button");
+  btn.textContent="Open Subject →";
+  btn.onclick=()=>openChapters(s.name);
+  card.append(icon,title,count,btn);grid.append(card);
+ });
+}
+function openChapters(name){
+ const s=subjects.find(x=>x.name===name);if(!s)return;
+ document.getElementById("chapterArea").classList.remove("hide");
+ document.getElementById("chapterTitle").textContent=s.name+" Chapters";
+ document.getElementById("chapterDesc").textContent="Sample chapter structure — replace with your actual syllabus.";
+ const list=document.getElementById("chapterList");list.innerHTML="";
+ s.chapters.forEach((ch,i)=>{
+  const details=document.createElement("details");details.className="chapter";
+  const summary=document.createElement("summary");summary.textContent=(i+1)+". "+ch;
+  const body=document.createElement("div");body.className="chapter-body";
+  const heading=document.createElement("h4");heading.textContent="Short Questions";
+  const p=document.createElement("p");p.textContent="Add textbook short questions and answers for this chapter here.";
+  const heading2=document.createElement("h4");heading2.textContent="Long Questions";
+  const p2=document.createElement("p");p2.textContent="Add textbook long questions and detailed answers here.";
+  const heading3=document.createElement("h4");heading3.textContent="Exercise";
+  const p3=document.createElement("p");p3.textContent="Add the relevant exercise and textbook reference here.";
+  const notice=document.createElement("p");notice.className="notice";
+  notice.textContent="This is a sample template, not verified textbook content.";
+  body.append(heading,p,heading2,p2,heading3,p3,notice);
+  details.append(summary,body);list.append(details);
+ });
+ document.getElementById("chapterArea").scrollIntoView({behavior:"smooth",block:"start"});
+}
+function closeChapters(){
+ document.getElementById("chapterArea").classList.add("hide");
+ document.getElementById("subjects").scrollIntoView({behavior:"smooth"});
+}
+search.addEventListener("input",()=>{
+ renderSubjects(search.value);
+ const f=search.value.trim().toLowerCase();
+ document.getElementById("noteList").querySelectorAll(".resource").forEach(el=>{
+  el.classList.toggle("hide",!el.textContent.toLowerCase().includes(f));
+ });
+});
+function renderLinks(items,target){
+ const el=document.getElementById(target);el.innerHTML="";
+ items.forEach(item=>{
+  const row=document.createElement("div");row.className="resource";
+  const info=document.createElement("div");
+  const title=document.createElement("b");title.textContent=item.title;
+  const small=document.createElement("small");small.textContent=item.type||"Study resource";
+  info.append(title,small);
+  const link=document.createElement("a");
+  if(item.url){
+   link.href=item.url;link.target="_blank";link.rel="noopener noreferrer";link.textContent="Open ↗";
+  }else{
+   link.href="#";link.textContent="Add link";
+   link.onclick=(e)=>{e.preventDefault();alert("Add the real PDF or past-paper URL in the resources or papers list in index.html.");};
+  }
+  row.append(info,link);el.append(row);
+ });
+}
+renderSubjects();
+renderLinks(resources,"noteList");
+renderLinks(papers,"paperList");
+document.getElementById("year").textContent=new Date().getFullYear();
+
+const questions=[
+ {q:"Which planet is known as the Red Planet?",opts:["Earth","Mars","Venus","Jupiter"],answer:1},
+ {q:"What is the basic unit of life?",opts:["Atom","Organ","Cell","Tissue"],answer:2},
+ {q:"What is 7 × 8?",opts:["54","56","64","48"],answer:1},
+ {q:"Which language is commonly used to structure web pages?",opts:["HTML","SQL","Python only","C"],answer:0},
+ {q:"Pakistan became independent in which year?",opts:["1940","1947","1956","1965"],answer:1}
+];
+let qIndex=0,score=0,answered=false;
+function showQuestion(){
+ const q=questions[qIndex];answered=false;
+ document.getElementById("question").textContent=
+  "Question "+(qIndex+1)+" of "+questions.length+": "+q.q;
+ document.getElementById("options").innerHTML="";
+ document.getElementById("quizResult").textContent="";
+ q.opts.forEach((opt,i)=>{
+  const b=document.createElement("button");b.className="quiz-option";
+  b.textContent=String.fromCharCode(65+i)+". "+opt;
+  b.onclick=()=>chooseAnswer(i,b);document.getElementById("options").append(b);
+ });
+ document.getElementById("next").textContent=
+  qIndex===questions.length-1?"Finish Quiz":"Next Question →";
+ document.getElementById("score").textContent="Score: "+score;
 }
 function chooseAnswer(i,button){
- if(answered)return;answered=true;const q=quiz[qIndex];[...options.children].forEach((b,j)=>{b.disabled=true;if(j===q.a)b.classList.add('correct')});
- if(i===q.a){score++;feedback.textContent='Correct! '+q.why;feedback.style.color='var(--green)'}else{button.classList.add('wrong');feedback.textContent='Not quite. '+q.why;feedback.style.color='#bd3434'}
- next.hidden=false;
+ if(answered)return;answered=true;
+ const q=questions[qIndex];
+ [...document.querySelectorAll(".quiz-option")].forEach((b,j)=>{
+  b.disabled=true;if(j===q.answer)b.classList.add("correct");
+ });
+ if(i===q.answer){score++;document.getElementById("quizResult").textContent="Correct! Well done.";}
+ else{button.style.background="#fff0ed";document.getElementById("quizResult").textContent="Not quite. Review the correct option highlighted above.";}
+ document.getElementById("score").textContent="Score: "+score;
 }
-next.addEventListener('click',()=>{if(qIndex<quiz.length-1){qIndex++;renderQuestion()}else{meta.textContent='QUIZ COMPLETE';questionText.textContent=`You scored ${score} out of ${quiz.length}!`;options.innerHTML='';feedback.textContent=score===quiz.length?'Excellent work — perfect score!':'Good effort! Try again to improve your score.';feedback.style.color='var(--blue)';next.textContent='Try again ↻';next.hidden=false;next.onclick=()=>{qIndex=0;score=0;next.onclick=null;renderQuestion()}}});
-renderQuestion();
-
-document.getElementById('contactForm').addEventListener('submit',e=>{
- e.preventDefault();
- const data=new FormData(e.currentTarget);
- const message=`Study World Pakistan message\nName: ${data.get('name')}\nEmail: ${data.get('email')||'Not provided'}\nTopic: ${data.get('topic')}\nMessage: ${data.get('message')}`;
- document.getElementById('formNote').textContent='Message prepared below. Copy it and send it to your preferred contact method.';
- let old=document.getElementById('preparedMessage');if(old)old.remove();
- const area=document.createElement('textarea');area.id='preparedMessage';area.readOnly=true;area.value=message;area.style.cssText='width:100%;min-height:130px;margin-top:10px;padding:10px;border:1px solid #dfe5f0;border-radius:10px';e.currentTarget.appendChild(area);area.focus();area.select();
-});
-document.querySelectorAll('[data-class]').forEach(link=>link.addEventListener('click',()=>{const n=link.dataset.class;searchInput.value='Class '+n;runSearch()}));
-document.querySelectorAll('[data-subject]').forEach(link=>link.addEventListener('click',()=>{feedback.textContent='You selected '+link.dataset.subject+'. Try the general practice quiz below.';feedback.style.color='var(--blue)'}));
+function nextQuestion(){
+ if(!answered){document.getElementById("quizResult").textContent="Please select an answer first.";return;}
+ if(qIndex===questions.length-1){
+  document.getElementById("question").textContent="Quiz complete!";
+  document.getElementById("options").innerHTML="";
+  document.getElementById("quizResult").textContent="Your final score: "+score+" / "+questions.length;
+  document.getElementById("next").textContent="Restart Quiz";
+  document.getElementById("next").onclick=restartQuiz;
+  return;
+ }
+ qIndex++;showQuestion();
+}
+function restartQuiz(){
+ qIndex=0;score=0;
+ document.getElementById("next").onclick=nextQuestion;showQuestion();
+}
+showQuestion();
 </script>
 </body>
 </html>
